@@ -20,5 +20,5 @@ jobs:
           ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
           ZONE_ID: ${{ secrets.CF_ZONE_ID }}
       - run: |
-        git commit -m 'Updated Flags'
-        git push origin main
+          git commit -m 'Updated Flags'
+          git push origin main
