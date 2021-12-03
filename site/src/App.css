@@ -1,0 +1,49 @@
+header {
+  background-color: #0a0a0a;
+}
+
+.navbar-item {
+  background-color: #242424;
+  border: 0;
+  color: #f6821f;
+  cursor: pointer;
+  padding: 10px;
+  margin: 10px;
+}
+
+.navbar-item:hover {
+  background-color: #1e1e1e;
+}
+
+.navbar-item .selected {
+  background-color: #1e1e1e;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+thead {
+  border-bottom: 2px solid #505050;
+  background-color: #242424;
+}
+
+tr {
+  border-bottom: 1px solid #505050;
+}
+
+th {
+  text-align: left;
+  padding: 5px;
+}
+
+td {
+  width: 50%;
+  padding: 5px;
+}
