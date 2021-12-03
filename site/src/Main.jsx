@@ -75,7 +75,12 @@ export default class App extends Component {
         } else if (loadedData === 'zone_settings') {
           const dataObj = {};
           for (const setting of obj) {
-            dataObj[setting.id] = setting.value;
+            let val = setting.value;
+            if (typeof val === 'object') {
+              val = JSON.stringify(val);
+            }
+
+            dataObj[setting.id] = val;
           }
           data.push({ id: 'Zone Settings', data: dataObj });
         }
