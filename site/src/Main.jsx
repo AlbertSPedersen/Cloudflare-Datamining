@@ -33,14 +33,14 @@ export default class App extends Component {
         */
         const data = [];
 
-        if (loadedData === 'account_flags') {
+        if (loadedData === 'account_flags' || loadedData === 'zone_flags') {
           for (const key of Object.keys(obj)) {
             data.push({
               id: key,
               data: obj[key],
             });
           }
-        } else if (loadedData === 'account_entitlements') {
+        } else if (loadedData === 'account_entitlements' || loadedData === 'zone_entitlements') {
           /*
             {
               "id": "access.users_allowed",
@@ -59,16 +59,19 @@ export default class App extends Component {
               "deleted_date": ""
             }
           */
-          // TODO
-        } else if (loadedData === 'zone_flags') {
-          for (const key of Object.keys(obj)) {
-            data.push({
-              id: key,
-              data: obj[key],
-            });
+          const categories = {};
+
+          for (const entitlement of obj) {
+            console.log(entitlement);
+            let category = categories[entitlement.feature.feature_set] ?? {};
+
+            category[entitlement.id] = entitlement.allocation.value;
+            categories[entitlement.feature.feature_set] = category;
           }
-        } else if (loadedData === 'zone_entitlements') {
-          // TODO
+
+          for (const key of Object.keys(categories)) {
+            data.push({ id: key, data: categories[key] });
+          }
         } else if (loadedData === 'zone_settings') {
           const dataObj = {};
           for (const setting of obj) {
