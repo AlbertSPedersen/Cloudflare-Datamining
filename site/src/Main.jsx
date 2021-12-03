@@ -74,12 +74,7 @@ export default class App extends Component {
         } else if (loadedData === 'zone_settings') {
           const dataObj = {};
           for (const setting of obj) {
-            let val = setting.value;
-            if (typeof val === 'object') {
-              val = JSON.stringify(val);
-            }
-
-            dataObj[setting.id] = val;
+            dataObj[setting.id] = setting.value;
           }
           data.push({ id: 'Zone Settings', data: dataObj });
         }
@@ -128,9 +123,19 @@ function CategoryValue({ flagName, value }) {
   return (
     <tr>
       <td>{flagName}</td>
-      <td>{"" + value}</td>
+      <td>{valueString(value)}</td>
     </tr>
   );
+}
+
+function valueString(value) {
+  if (typeof value === 'object') {
+    return JSON.stringify(value);
+  } else if (typeof value !== 'string') {
+    return "" + value;
+  } else {
+    return value;
+  }
 }
 
 function toTitleCase(str) {
