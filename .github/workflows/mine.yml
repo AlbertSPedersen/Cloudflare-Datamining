@@ -20,9 +20,11 @@ jobs:
           ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
           ZONE_ID: ${{ secrets.CF_ZONE_ID }}
       - name: 'Commit changes'
+        continue-on-error: true
         run: |
           git config user.name "GitHub Actions Bot"
           git config user.email "<>"
           git add data/
           git commit -m 'Updated Flags'
           git push origin main
+      - run: exit 0
