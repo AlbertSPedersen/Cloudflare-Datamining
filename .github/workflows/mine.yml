@@ -1,0 +1,21 @@
+on:
+  schedule:
+    - cron:  '0 * * * *'
+
+jobs:
+  runner:
+    runs-on: ubuntu-latest
+    name: CF Data
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup node
+        uses: actions/setup-node@v2
+        with:
+          node-version: 17
+      - run: npm install
+      - run: npm start
+        env:
+          EMAIL: ${{ secrets.CF_EMAIL }}
+          API_KEY: ${{ secrets.CF_API_KEY }}
+          ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+          ZONE_ID: ${{ secrets.CF_ZONE_ID }}
