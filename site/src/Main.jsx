@@ -62,7 +62,6 @@ export default class App extends Component {
           const categories = {};
 
           for (const entitlement of obj) {
-            console.log(entitlement);
             let category = categories[entitlement.feature.feature_set] ?? {};
 
             category[entitlement.id] = entitlement.allocation.value;
