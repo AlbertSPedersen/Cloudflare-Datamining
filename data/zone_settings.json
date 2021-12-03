@@ -275,9 +275,9 @@
     },
     {
         "id": "ssl",
-        "value": "full",
-        "modified_on": null,
-        "certificate_status": "none",
+        "value": "flexible",
+        "modified_on": "2021-12-03T12:25:45.250506Z",
+        "certificate_status": "active",
         "validation_errors": [],
         "editable": true
     },
