@@ -21,7 +21,7 @@ async function fetchAccountFlags() {
   const flags = await callApi(`/accounts/${process.env.ACCOUNT_ID}/flags`);
 
   if (flags !== null) {
-    await fs.writeFile('account_flags.json', JSON.stringify(flags, null, 4));
+    await fs.writeFile('data/account_flags.json', JSON.stringify(flags, null, 4));
   }
 }
 
@@ -29,7 +29,7 @@ async function fetchZoneFlags() {
   const flags = await callApi(`/zones/${process.env.ZONE_ID}/flags`);
 
   if (flags !== null) {
-    await fs.writeFile('zone_flags.json', JSON.stringify(flags, null, 4));
+    await fs.writeFile('data/zone_flags.json', JSON.stringify(flags, null, 4));
   }
 }
 
@@ -37,7 +37,7 @@ async function fetchAccountEntitlements() {
   const flags = await callApi(`/accounts/${process.env.ACCOUNT_ID}/entitlements`);
 
   if (flags !== null) {
-    await fs.writeFile('account_entitlements.json', JSON.stringify(flags, null, 4));
+    await fs.writeFile('data/account_entitlements.json', JSON.stringify(flags, null, 4));
   }
 }
 
@@ -45,7 +45,7 @@ async function fetchZoneEntitlements() {
   const flags = await callApi(`/zones/${process.env.ZONE_ID}/entitlements`);
 
   if (flags !== null) {
-    await fs.writeFile('zone_entitlements.json', JSON.stringify(flags, null, 4));
+    await fs.writeFile('data/zone_entitlements.json', JSON.stringify(flags, null, 4));
   }
 }
 
@@ -53,7 +53,7 @@ async function fetchZoneSettings() {
   const flags = await callApi(`/zones/${process.env.ZONE_ID}/settings`);
 
   if (flags !== null) {
-    await fs.writeFile('zone_settings.json', JSON.stringify(flags, null, 4));
+    await fs.writeFile('data/zone_settings.json', JSON.stringify(flags, null, 4));
   }
 }
 
