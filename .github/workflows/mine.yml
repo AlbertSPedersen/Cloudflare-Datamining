@@ -19,6 +19,10 @@ jobs:
           API_KEY: ${{ secrets.CF_API_KEY }}
           ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
           ZONE_ID: ${{ secrets.CF_ZONE_ID }}
-      - run: |
+      - name: 'Commit changes'
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "<>"
+          git add data/
           git commit -m 'Updated Flags'
           git push origin main
