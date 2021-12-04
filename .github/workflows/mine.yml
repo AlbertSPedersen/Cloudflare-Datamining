@@ -21,7 +21,6 @@ jobs:
           ZONE_ID: ${{ secrets.CF_ZONE_ID }}
 
       - name: 'Commit changes'
-        continue-on-error: true
         run: |
           git config user.name "GitHub Actions Bot"
           git config user.email "<>"
