@@ -19,12 +19,21 @@ jobs:
           API_KEY: ${{ secrets.CF_API_KEY }}
           ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
           ZONE_ID: ${{ secrets.CF_ZONE_ID }}
+
       - name: 'Commit changes'
-        continue-on-error: true
         run: |
           git config user.name "GitHub Actions Bot"
           git config user.email "<>"
           git add data/
           git commit -m 'Updated Flags'
           git push origin main
-      - run: exit 0
+      - name: 'Don''t fail on no changes'
+        if: failure()
+        run: exit 0
+
+      - name: 'Notify me on Discord'
+        run: |
+          curl \
+            -H 'Content-Type: application/json' \
+            -d '{"content": "**CFData**\nDetected changes to flags/entitlements"}' \
+            ${{ secrets.DISCORD_WEBHOOK }} 
