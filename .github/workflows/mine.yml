@@ -21,17 +21,19 @@ jobs:
           ZONE_ID: ${{ secrets.CF_ZONE_ID }}
 
       - name: 'Commit changes'
+        continue-on-error: true
         run: |
           git config user.name "GitHub Actions Bot"
           git config user.email "<>"
           git add data/
           git commit -m 'Updated Flags'
           git push origin main
-      - name: 'Don''t fail on no changes'
-        if: failure()
-        run: exit 0
 
+      - name: 'Don''t fail on no changes'
+        if: ${{ failure() }}
+        run: exit 0
       - name: 'Notify me on Discord'
+        if: ${{ success() }}
         run: |
           curl \
             -H 'Content-Type: application/json' \
