@@ -12,29 +12,17 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: 17
-      - run: npm install
-      - run: npm start
+      - name: 'Run my scripts'
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "<>"
+          cd scripts
+          npm ci
+          npm run dashboard
+          npm run data
         env:
           EMAIL: ${{ secrets.CF_EMAIL }}
           API_KEY: ${{ secrets.CF_API_KEY }}
           ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
           ZONE_ID: ${{ secrets.CF_ZONE_ID }}
-
-      - name: 'Commit changes'
-        run: |
-          git config user.name "GitHub Actions Bot"
-          git config user.email "<>"
-          git add data/
-          git commit -m 'Updated Flags'
-          git push origin main
-
-      - name: 'Don''t fail on no changes'
-        if: ${{ failure() }}
-        run: exit 0
-      - name: 'Notify me on Discord'
-        if: ${{ success() }}
-        run: |
-          curl \
-            -H 'Content-Type: application/json' \
-            -d '{"content": "**CFData**\nDetected changes to flags/entitlements"}' \
-            ${{ secrets.DISCORD_WEBHOOK }} 
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
