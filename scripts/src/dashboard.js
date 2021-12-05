@@ -35,6 +35,12 @@ async function run() {
 
   console.log(`Found main chunk! ${chunk.chunk} (${chunk.hash})`);
 
+  const lastHash = await fs.readFile(lastHashPath, 'utf8');
+  if (lastHash === chunk.hash) {
+    console.log('No changes detected!');
+    return;
+  }
+
   console.log('Writing to file...');
   buildHash = chunk.hash;
   await write(chunk.code);
