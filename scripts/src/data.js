@@ -1,60 +1,30 @@
+import path from 'path';
 import fs from 'fs/promises';
 import process from 'process';
 import fetch from 'node-fetch';
+import dateFormat from 'dateformat';
+
+import { tryAndPush } from './utils.js';
 
 const BASE = 'https://api.cloudflare.com/client/v4';
 
 async function run() {
   console.log('Fetching...');
-  await fetchAccountFlags();
-  await fetchZoneFlags();
+  // Flags
+  await fetchAndWrite(`/accounts/${process.env.ACCOUNT_ID}/flags`, '../data/account_flags.json');
+  await fetchAndWrite(`/zones/${process.env.ZONE_ID}/flags`, '../data/zone_flags.json');
 
-  await fetchAccountEntitlements();
-  await fetchZoneEntitlements();
+  // Entitlements
+  await fetchAndWrite(`/accounts/${process.env.ACCOUNT_ID}/entitlements`, '../data/account_entitlements.json');
+  await fetchAndWrite(`/zones/${process.env.ZONE_ID}/entitlements`, '../data/zone_entitlements.json');
 
-  await fetchZoneSettings();
+  // Settings
+  await fetchAndWrite(`/zones/${process.env.ZONE_ID}/settings`, '../data/zone_settings.json');
+
+  console.log('Pushing!');
+  await gitPush();
 
   console.log('Done! :)');
-}
-
-async function fetchAccountFlags() {
-  const flags = await callApi(`/accounts/${process.env.ACCOUNT_ID}/flags`);
-
-  if (flags !== null) {
-    await fs.writeFile('data/account_flags.json', JSON.stringify(flags, null, 4));
-  }
-}
-
-async function fetchZoneFlags() {
-  const flags = await callApi(`/zones/${process.env.ZONE_ID}/flags`);
-
-  if (flags !== null) {
-    await fs.writeFile('data/zone_flags.json', JSON.stringify(flags, null, 4));
-  }
-}
-
-async function fetchAccountEntitlements() {
-  const flags = await callApi(`/accounts/${process.env.ACCOUNT_ID}/entitlements`);
-
-  if (flags !== null) {
-    await fs.writeFile('data/account_entitlements.json', JSON.stringify(flags, null, 4));
-  }
-}
-
-async function fetchZoneEntitlements() {
-  const flags = await callApi(`/zones/${process.env.ZONE_ID}/entitlements`);
-
-  if (flags !== null) {
-    await fs.writeFile('data/zone_entitlements.json', JSON.stringify(flags, null, 4));
-  }
-}
-
-async function fetchZoneSettings() {
-  const flags = await callApi(`/zones/${process.env.ZONE_ID}/settings`);
-
-  if (flags !== null) {
-    await fs.writeFile('data/zone_settings.json', JSON.stringify(flags, null, 4));
-  }
 }
 
 async function callApi(path) {
@@ -72,6 +42,27 @@ async function callApi(path) {
     }
   }
   return null;
+}
+
+async function fetchAndWrite(apiPath, filePath) {
+  const json = await callApi(apiPath);
+
+  if (json !== null) {
+    await fs.writeFile(path.resolve(filePath), JSON.stringify(json, null, 4));
+  }
+}
+
+async function gitPush() {
+  const date = new Date();
+  const commitMessage = dateFormat(date, 'd mmmm yyyy') + ` - Updated flags`;
+
+  // Note: File paths are from root
+  await tryAndPush(
+    ['data/'],
+    commitMessage,
+    'CFData - Flags Update',
+    'Pushed flags update: ' + commitMessage
+  )
 }
 
 run();

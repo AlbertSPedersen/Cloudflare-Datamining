@@ -1,11 +1,10 @@
 import path from 'path';
 import fs from 'fs/promises';
-import simpleGit from 'simple-git';
 import jsBeautify from 'js-beautify';
+import dateFormat from 'dateformat';
 
-import { get, sendToDiscord } from './utils.js';
+import { get, sendToDiscord, tryAndPush } from './utils.js';
 
-const git = simpleGit({ baseDir: path.resolve('..') });
 const beautify = jsBeautify.js;
 
 const appScript = /(app\.[a-z0-9]+\.js)/;
@@ -13,7 +12,6 @@ const chunkIds = /(?:\w+\.\w+\((\d+)\)(?:, )?)/g;
 const chunks = /{(?:"\d+":"[0-9a-f]+",)+"\d+":"[0-9a-f]+"}/;
 const dashVersion = /dashVersion: ?"([0-9a-f]+)",/;
 
-const lastHashPath = 'lastHash.txt';
 const mainPath = path.resolve('../dashboard', 'main.js');
 
 let buildHash;
@@ -35,12 +33,6 @@ async function run() {
 
   console.log(`Found main chunk! ${chunk.chunk} (${chunk.hash})`);
 
-  const lastHash = await fs.readFile(lastHashPath, 'utf8');
-  if (lastHash === chunk.hash) {
-    console.log('No changes detected!');
-    return;
-  }
-
   console.log('Writing to file...');
   buildHash = chunk.hash;
   await write(chunk.code);
@@ -56,7 +48,7 @@ async function getChunks() {
   // Find `app.js` bundle
   const match = appScript.exec(text);
   if (match === null || match.length < 2) {
-    sendToDiscord('Failed to find `app.js` bundle!');
+    sendToDiscord('CFData (Error)', 'Failed to find `app.js` bundle!');
     return;
   }
 
@@ -80,7 +72,7 @@ async function getChunks() {
   // Find the chunks from the IDs
   const chunkMatch = chunks.exec(appJs);
   if (chunkMatch === null || chunkMatch.length === 0) {
-    sendToDiscord('Failed to find chunks!');
+    sendToDiscord('CFData (Error)', 'Failed to find chunks!');
     return;
   }
 
@@ -105,7 +97,6 @@ async function findMainChunk(chunks) {
 }
 
 async function write(data) {
-  await fs.writeFile(lastHashPath, buildHash);
   await fs.writeFile(mainPath, beautify(data,
     {
       indent_size: 2,
@@ -119,13 +110,13 @@ async function gitPush() {
   const date = new Date();
   const commitMessage = dateFormat(date, 'd mmmm yyyy') + ` - ${buildHash}`;
 
-  git.add([path.resolve(`../${lastHashPath}`), path.resolve(`../${mainPath}`)]).then(() => {
-    git.commit(commitMessage).then(() => {
-      git.push('origin', 'main').then(() => {
-        sendToDiscord('Pushed ' + commitMessage);
-      }).catch(error => console.error(error));
-    }).catch(error => console.error(error));
-  }).catch(error => console.error(error));
+  // Note: File paths are from root
+  await tryAndPush(
+    ['dashboard/main.js'],
+    commitMessage,
+    'CFData - Dashboard Update',
+    'Pushed dashboard: ' + commitMessage
+  )
 }
 
 run();
