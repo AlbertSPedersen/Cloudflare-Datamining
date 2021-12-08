@@ -301,6 +301,6 @@
         "user_notifications": true
     },
     "zaraz": {
-        "enabled": false
+        "enabled": true
     }
 }
