@@ -80,7 +80,7 @@
         "language_selector_enabled": false
     },
     "intel": {
-        "attack_surface_report": false
+        "attack_surface_report": true
     },
     "kv": {
         "enabled": false
