@@ -32,6 +32,7 @@
         "teams_purpose_justification": false,
         "teams_rule_builder": false,
         "teams_split_tunnel": false,
+        "teams_ssh_logging": false,
         "teams_ui_alpha_engineering_only": false,
         "teams_ui_core": false,
         "tls_client_auth": false
