@@ -25,4 +25,5 @@ jobs:
           API_KEY: ${{ secrets.CF_API_KEY }}
           ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
           ZONE_ID: ${{ secrets.CF_ZONE_ID }}
-          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+          DISCORD_URL: ${{ secrets.DISCORD_URL }}
+          AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
