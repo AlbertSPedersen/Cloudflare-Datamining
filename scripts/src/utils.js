@@ -19,15 +19,20 @@ export function get(url) {
   });
 }
 
-export function sendToDiscord(name, msg) {
-  fetch(process.env.DISCORD_WEBHOOK, {
+export function sendToDiscord(name, msg, publish = false) {
+  fetch(process.env.DISCORD_URL, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
+      Authorization: process.env.AUTH_TOKEN,
     },
     body: JSON.stringify({
-      username: name,
-      content: msg,
+      channel: 'cloudflare-datamining',
+      publish,
+      discord: {
+        username: name,
+        content: msg,
+      }
     }),
   });
 }
@@ -43,7 +48,7 @@ export async function tryAndPush(files, commitMessage, webhookUsername, webhookM
     await git.add(files);
     await git.commit(commitMessage);
     await git.push('origin', 'main');
-    sendToDiscord(webhookUsername, webhookMessage);
+    sendToDiscord(webhookUsername, webhookMessage, true);
   } catch(e) {
     console.error(e);
   }
