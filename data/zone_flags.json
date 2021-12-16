@@ -154,7 +154,7 @@
         "health_checks_tab": true
     },
     "logs": {
-        "instant_log": true
+        "instant_log": false
     },
     "magic_firewall": {
         "analytics": true
