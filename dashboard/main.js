@@ -1266,12 +1266,12 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         }) : Ee[Ae] = je, Ee
       }
       t.g.build = Dt({}, {
-        branch: "release-1639753435",
+        branch: "echen/EW-5921-service-bindings-main",
         isReleaseCandidate: "true",
-        commit: "53bad5d967c59a3de84f02b72a4858469b3cb901",
+        commit: "7187bf2c151cae0eeabbda71665a3713b7c4a29e",
         env: "production",
-        builtAt: 1639753791757,
-        dashVersion: "9068d2ac15c8f9d4a91cb945e5c96ee4df534496",
+        builtAt: 1639766371203,
+        dashVersion: "db9f7ebc5bd5ebbb4bfecccfbd4406e104538f92",
         versions: {
           "@cloudflare/app-dash": "23.21.1",
           node: "14.18.2",
@@ -4976,7 +4976,7 @@ Commit \u2014 `).concat(Z.commit)
         nc = yl,
         Ts = t("../react/pages/home/domain-registration/index.ts"),
         si = a().lazy(function() {
-          return Promise.all([t.e(32535), t.e(85875), t.e(258), t.e(63473), t.e(85474), t.e(69419), t.e(41729), t.e(60590), t.e(54484), t.e(97311), t.e(71712), t.e(44360), t.e(42777), t.e(54427), t.e(34574), t.e(7127), t.e(46137), t.e(67184), t.e(44160), t.e(80663), t.e(34126), t.e(56061), t.e(52435), t.e(77839), t.e(4629), t.e(5866), t.e(33249)]).then(t.bind(t, "../react/pages/zoneless-workers/Main.tsx"))
+          return Promise.all([t.e(32535), t.e(85875), t.e(258), t.e(63473), t.e(85474), t.e(69419), t.e(41729), t.e(60590), t.e(54484), t.e(97311), t.e(71712), t.e(44360), t.e(42777), t.e(54427), t.e(34574), t.e(7127), t.e(46137), t.e(67184), t.e(44160), t.e(80663), t.e(34126), t.e(56061), t.e(52435), t.e(77839), t.e(5866), t.e(58333), t.e(33249)]).then(t.bind(t, "../react/pages/zoneless-workers/Main.tsx"))
         }),
         rc = function(Z) {
           var pe = !!(0, Fo.Z)("zone-level-access"),
@@ -5399,7 +5399,7 @@ Commit \u2014 `).concat(Z.commit)
         }, gn(ae, Z)
       }
       var yn = a().lazy(function() {
-          return Promise.all([t.e(32535), t.e(258), t.e(85474), t.e(78032), t.e(34574), t.e(7127), t.e(52214), t.e(30967), t.e(91914), t.e(4629), t.e(73107)]).then(t.bind(t, "../react/pages/pages/Main.tsx"))
+          return Promise.all([t.e(32535), t.e(258), t.e(85474), t.e(78032), t.e(34574), t.e(7127), t.e(52214), t.e(30967), t.e(91914), t.e(58333), t.e(73107)]).then(t.bind(t, "../react/pages/pages/Main.tsx"))
         }),
         kn = function(ae) {
           an(Z, ae);
@@ -85946,4 +85946,4 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   }
 ]);
 
-//# sourceMappingURL=4a9048eea67228a695e9.js.map
+//# sourceMappingURL=fa3c602ad9a5232922be.js.map
