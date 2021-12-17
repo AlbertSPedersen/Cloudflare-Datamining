@@ -1266,12 +1266,12 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         }) : Ee[Ce] = je, Ee
       }
       t.g.build = Dt({}, {
-        branch: "release-1639666987",
+        branch: "dan/LOUI-2933-sidebar-nav-check-instant-logs-entitlemtn",
         isReleaseCandidate: "true",
-        commit: "4dbc893954c694835b989fbf71b22946cb612305",
+        commit: "df285983cbed904e040e4f83f8d23a9854320459",
         env: "production",
-        builtAt: 1639667459647,
-        dashVersion: "801ea33520fb4a5a15b7f5177f6164452a57b43c",
+        builtAt: 1639695753164,
+        dashVersion: "67c3820a99c94363bc3c9cf3b95fd36999f3e87a",
         versions: {
           "@cloudflare/app-dash": "23.21.1",
           node: "14.18.2",
@@ -9811,7 +9811,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
               title: "navigation.zone.analytics.instant_logs",
               url: "/analytics/instant-logs",
               hasPermission: function(Ee) {
-                return !(0, g.zoneIsDNSOnly)(Ee) && !!(0, A.getZoneFlipperFlag)(Ee, "logs", "instant_log")
+                return !(0, g.zoneIsDNSOnly)(Ee) && !!(0, A.getZoneFlipperFlag)(Ee, "logs", "instant_log") && !!(0, g.getZoneEntitlement)(Ee, "logpush.max_instant_logs_jobs_allowed")
               }
             }]
           }, {
@@ -85771,4 +85771,4 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   }
 ]);
 
-//# sourceMappingURL=ed9ae81b27f871a48ec3.js.map
+//# sourceMappingURL=6118bb2077d6d4e58b9b.js.map
