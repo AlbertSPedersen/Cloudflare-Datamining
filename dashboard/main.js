@@ -1266,12 +1266,12 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         }) : Ee[Ae] = je, Ee
       }
       t.g.build = Dt({}, {
-        branch: "release-1640019661",
+        branch: "rachel/hotfix-modal-focus-trap",
         isReleaseCandidate: "true",
-        commit: "b6ae9fec7fdf77f8fc93e4c2bd62cb6cd27ddbc9",
+        commit: "d4c2c774bacd0d09c143c51b2b8ca4d3d67c0224",
         env: "production",
-        builtAt: 1640020026528,
-        dashVersion: "e267b9c42a8a8ce5f5066ec5b5c03c6e1350ce50",
+        builtAt: 1640043012116,
+        dashVersion: "f3fc6669445f5a665d27fd35c1d30fddbdbd1e5a",
         versions: {
           "@cloudflare/app-dash": "23.21.1",
           node: "14.18.2",
@@ -71155,7 +71155,11 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
           key: "render",
           value: function() {
             var re = this;
-            return e().createElement(x(), null, e().createElement("div", {
+            return e().createElement(x(), {
+              focusTrapOptions: {
+                fallbackFocus: "#focusFallback"
+              }
+            }, e().createElement("div", {
               ref: function(Ne) {
                 return re.backdrop = Ne
               },
@@ -71164,7 +71168,9 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
               onMouseDown: this.handleBackdropMouseDown,
               onMouseUp: this.handleBackdropMouseUp,
               onClick: this.handleBackdropClick,
-              "aria-hidden": !0
+              "aria-hidden": !0,
+              tabIndex: "-1",
+              id: "focusFallback"
             }, e().createElement("div", {
               ref: function(Ne) {
                 return re.modal = Ne
@@ -85953,4 +85959,4 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   }
 ]);
 
-//# sourceMappingURL=c38ba4ff990cd28d3357.js.map
+//# sourceMappingURL=4eb435d3cc5aa4180085.js.map
