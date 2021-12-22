@@ -1266,14 +1266,14 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         }) : he[Oe] = qe, he
       }
       e.g.build = At({}, {
-        branch: "hturan/APIOPS-5111",
+        branch: "release-1640194673",
         isReleaseCandidate: "true",
-        commit: "db510ed1121a801b4cc011d4c472799f06f05ae7",
+        commit: "294ef8082ea42d37d5364e7a9948992500b387c2",
         env: "production",
-        builtAt: 1640116011321,
-        dashVersion: "8d01753eb429433d7d3180d60ab4cc70f43b3976",
+        builtAt: 1640195044394,
+        dashVersion: "f0d2adeb3700843812ff367b0a2e32932df5c633",
         versions: {
-          "@cloudflare/app-dash": "23.21.1",
+          "@cloudflare/app-dash": "23.23.10",
           node: "14.18.2",
           yarn: "1.18.0",
           webpack: "5.38.1"
@@ -9466,7 +9466,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         E = function(he, Oe, qe) {
           var Qe = arguments.length > 3 && arguments[3] !== void 0 ? arguments[3] : "read",
             Se = (0, C.getZone)(he),
-            _e = !Y.zs.includes(qe);
+            _e = Y.zs.includes(qe);
           if (D(he)) return (0, Y.WL)(he, _e ? qe : (0, Y.my)(qe, Y.ZZ[Qe === "edit" ? "update" : Qe]), (0, Y.j)(Se == null ? void 0 : Se.id));
           var Ae = (0, z.getPermission)(he)(Oe);
           return Ae[Qe === "update" ? "edit" : Qe]
@@ -9561,7 +9561,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
           }, {
             title: "navigation.account.http_applications",
             url: "/http-applications",
-            iconType: "internet-browser",
+            iconType: "applications",
             labels: ["beta"],
             hasPermission: function(he) {
               return c(he) && (0, _.dU)(he)
@@ -12375,7 +12375,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         },
         Tn = Sn,
         An = t().lazy(function() {
-          return Promise.all([e.e(258), e.e(88449), e.e(57623)]).then(e.bind(e, "../react/pages/zaraz/Main.tsx"))
+          return Promise.all([e.e(258), e.e(57623)]).then(e.bind(e, "../react/pages/zaraz/Main.tsx"))
         }),
         Hn = function(ze) {
           return t().createElement(An, ze)
@@ -83617,4 +83617,4 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   }
 ]);
 
-//# sourceMappingURL=2998c168a493f1dcdc18.js.map
+//# sourceMappingURL=ffc6d556dd2b39d3eb7b.js.map
