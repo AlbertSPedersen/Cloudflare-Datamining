@@ -1266,12 +1266,12 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         }) : he[Oe] = qe, he
       }
       e.g.build = At({}, {
-        branch: "release-1640194673",
+        branch: "hotfix/UI-5014-spectrum-page-sidebar-nav",
         isReleaseCandidate: "true",
-        commit: "294ef8082ea42d37d5364e7a9948992500b387c2",
+        commit: "5de9c6ebde7f8b1d57d8912d7058d64e7da740e2",
         env: "production",
-        builtAt: 1640195044394,
-        dashVersion: "f0d2adeb3700843812ff367b0a2e32932df5c633",
+        builtAt: 1640208892595,
+        dashVersion: "8e379158bdb35ae373724064cf5ec91a92a19579",
         versions: {
           "@cloudflare/app-dash": "23.23.10",
           node: "14.18.2",
@@ -9846,11 +9846,11 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
             url: "/spectrum",
             iconType: "spectrum",
             hasPermission: function(he) {
-              if ((0, p.zoneIsDNSOnly)(he) || !E(he, "zone_settings", "spectrum.app")) return !1;
-              var Oe = (0, C.getZone)(he),
-                qe = !!((0, h.userHasEntZones)(he) || (0, C.userHasDelegatedEntZones)(he)),
+              var Oe = (0, C.getZone)(he);
+              if ((0, p.zoneIsDNSOnly)(he) || !E(he, "zone_settings", "spectrum.app") || !Oe) return !1;
+              var qe = !!((0, h.userHasEntZones)(he) || (0, C.userHasDelegatedEntZones)(he)),
                 Qe = !!(0, C.getZoneFlipperFlag)(he, "spectrum", "enabled"),
-                Se = !!(Oe && (0, C.isFree)(Oe));
+                Se = !!(0, C.isFree)(Oe);
               return Qe || qe || !Se
             }
           }, {
@@ -83617,4 +83617,4 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   }
 ]);
 
-//# sourceMappingURL=ffc6d556dd2b39d3eb7b.js.map
+//# sourceMappingURL=818b3d015b6cbe50a7fe.js.map
