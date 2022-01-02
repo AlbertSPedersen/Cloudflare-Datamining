@@ -41,6 +41,11 @@ const nav = [
     id: 'zone_settings',
     name: 'Zone Settings',
   },
+  {
+    path: '/graphql',
+    id: 'graphql',
+    name: 'GraphQL',
+  }
 ]
 
 export default class App extends Component {

@@ -77,6 +77,13 @@ export default class App extends Component {
             dataObj[setting.id] = setting.value;
           }
           data.push({ id: 'Zone Settings', data: dataObj });
+        } else if (loadedData === 'graphql') {
+          for (const key of Object.keys(obj)) {
+            data.push({
+              id: key,
+              data: obj[key],
+            });
+          }
         }
 
         this.setState({ oldData: loadedData, loadedData, data });
@@ -93,16 +100,16 @@ export default class App extends Component {
       <div className='container'>
         <h1>{name}</h1>
 
-        {data.map(category => <Category key={category.id} category={category} />)}
+        {data.map(category => <Category key={category.id} category={category} loadedData={loadedData} />)}
       </div>
     );
   }
 }
 
-function Category({ category }) {
+function Category({ category, loadedData }) {
   return (
     <div className='category'>
-      <h2>{toTitleCase(category.id)}</h2>
+      <h2>{loadedData !== 'graphql' ? toTitleCase(category.id) : category.id}</h2>
 
       <table className='table'>
         <thead>
