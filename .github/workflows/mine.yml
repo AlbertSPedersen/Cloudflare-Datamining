@@ -24,7 +24,9 @@ jobs:
           npm run graphql
         env:
           EMAIL: ${{ secrets.CF_EMAIL }}
+          EMAIL_2: ${{ secrets.CF_EMAIL_2 }}
           API_KEY: ${{ secrets.CF_API_KEY }}
+          API_KEY_2: ${{ secrets.CF_API_KEY_2 }}
           ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
           ZONE_ID: ${{ secrets.CF_ZONE_ID }}
           DISCORD_URL: ${{ secrets.DISCORD_URL }}
