@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "dashboard": "node src/dashboard.js",
-    "data": "node src/data.js"
+    "data": "node src/data.js",
+    "graphql": "node src/graphql.js"
   },
   "keywords": [],
   "author": "",
