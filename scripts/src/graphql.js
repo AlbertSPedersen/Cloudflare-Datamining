@@ -10,8 +10,8 @@ async function run() {
   const typesRes = await fetch('https://api.cloudflare.com/client/v4/graphql', {
     method: 'POST',
     headers: {
-      'X-Auth-Email': process.env.CF_EMAIL,
-      'X-Auth-Key': process.env.CF_KEY,
+      'X-Auth-Email': process.env.EMAIL_2,
+      'X-Auth-Key': process.env.API_KEY_2,
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
@@ -68,7 +68,7 @@ async function run() {
   await fs.writeFile(path.resolve('../data/graphql.json'), JSON.stringify(result, null, 4));
 
   const prefix = dateFormat(date, 'd mmmm yyyy');
-  await utils.tryAndPush(
+  await tryAndPush(
     ['data/graphql.json'],
     `${prefix} - GraphQL Data was updated!`,
     'CFData - GraphQL Data Update',
