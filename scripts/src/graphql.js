@@ -1,6 +1,8 @@
+import path from 'path';
 import fs from 'fs/promises';
 import process from 'process';
 import fetch from 'node-fetch';
+import dateFormat from 'dateformat';
 
 import { tryAndPush } from './utils.js';
 
@@ -46,8 +48,8 @@ async function run() {
   const fieldsRes = await fetch('https://api.cloudflare.com/client/v4/graphql', {
     method: 'POST',
     headers: {
-      'X-Auth-Email': process.env.CF_EMAIL,
-      'X-Auth-Key': process.env.CF_KEY,
+      'X-Auth-Email': process.env.EMAIL_2,
+      'X-Auth-Key': process.env.API_KEY_2,
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
@@ -58,6 +60,7 @@ async function run() {
   const fields = await fieldsRes.json();
 
   for (const type of Object.keys(result)) {
+    console.log(fields);
     const typeFields = fields.data[type].fields;
 
     for (const field of typeFields) {
@@ -67,7 +70,7 @@ async function run() {
 
   await fs.writeFile(path.resolve('../data/graphql.json'), JSON.stringify(result, null, 4));
 
-  const prefix = dateFormat(date, 'd mmmm yyyy');
+  const prefix = dateFormat(new Date(), 'd mmmm yyyy');
   await tryAndPush(
     ['data/graphql.json'],
     `${prefix} - GraphQL Data was updated!`,
