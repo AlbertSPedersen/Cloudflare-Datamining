@@ -21,6 +21,7 @@ jobs:
           npm ci
           npm run dashboard
           npm run data
+          npm run graphql
         env:
           EMAIL: ${{ secrets.CF_EMAIL }}
           API_KEY: ${{ secrets.CF_API_KEY }}
