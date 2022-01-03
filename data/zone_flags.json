@@ -274,7 +274,8 @@
         "maxConnectionsPerHostname": 10,
         "maxConnectionsPerNamedTunnel": 100,
         "max_named_tunnels_per_account": 1000,
-        "max_routes_per_account": 1000
+        "max_routes_per_account": 1000,
+        "max_vnets_per_account": 1000
     },
     "workers": {
         "actors": false,
