@@ -76,6 +76,13 @@ export default class App extends Component {
               key = {item.id}
             />
           )}
+
+          <NavbarItem
+            path = ''
+            name = 'Discord'
+            onClick = {() => window.open('https://walshy.dev/discord', '_blank')}
+            key = 'discord'
+          />
         </header>
 
         <Routes key={selectedData}>
