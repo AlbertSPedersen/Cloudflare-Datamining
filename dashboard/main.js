@@ -1319,14 +1319,14 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         }) : Pe[Ee] = ge, Pe
       }
       t.g.build = Hn({}, {
-        branch: "release-1641308608",
+        branch: "release-1641394985",
         isReleaseCandidate: "true",
-        commit: "37c158b27d9f2e855b1e19ef72e4da259a4ede15",
+        commit: "68fccdd22aa646d228ae64bc78d6708b4ee8b369",
         env: "production",
-        builtAt: 1641309049072,
-        dashVersion: "ad2389f00fd2a8562a9d0d6b06276835aa4494fb",
+        builtAt: 1641395407694,
+        dashVersion: "85f903f8e8b60360e634913f9e4901dde4c9e691",
         versions: {
-          "@cloudflare/app-dash": "23.25.5",
+          "@cloudflare/app-dash": "23.26.4",
           node: "14.18.2",
           yarn: "1.18.0",
           webpack: "5.38.1"
@@ -20340,7 +20340,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         z = (0, n.createSelector)("userDetails", N),
         U = function(L) {
           var d = z(L);
-          return d && (d["2FA-RECOVERY"] === "scheduled" || d["2FA-RECOVERY"] === "sent")
+          return d && d["2FA-RECOVERY"] === "scheduled"
         },
         x = function(L) {
           var d = z(L);
@@ -43572,7 +43572,9 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
           clickedDetailTabsTriggers: "Workers:DetailTab:Triggers",
           clickedDetailTabsSettings: "Workers:DetailTab:Settings",
           clickedBundledUsageModel: "Workers:Clicked Bundled Usage Model",
-          clickedUnboundUsageModel: "Workers:Clicked Unbound Usage Model"
+          clickedUnboundUsageModel: "Workers:Clicked Unbound Usage Model",
+          clickedGreenComputeSetting: "Workers:Clicked Green Compute Setting",
+          clickedGlobalComputeSetting: "Workers:Clicked Global Compute Setting"
         },
         A = "workers.dev",
         N = "YYYY-MM-DD HH:mm:SS ZZ",
@@ -59359,4 +59361,4 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   }
 ]);
 
-//# sourceMappingURL=68bf34ddf2a907462eb6.js.map
+//# sourceMappingURL=688f581666bba79ea33d.js.map
