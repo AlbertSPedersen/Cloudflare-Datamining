@@ -252,7 +252,7 @@
         "max_fps": 30,
         "mp4download": true,
         "quality_parameter": 23,
-        "source_stats": false,
+        "source_stats": true,
         "srt": false,
         "storageUseEmail": true,
         "storage_0": false,
