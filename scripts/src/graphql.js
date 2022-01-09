@@ -48,8 +48,8 @@ async function run() {
   const fieldsRes = await fetch('https://api.cloudflare.com/client/v4/graphql', {
     method: 'POST',
     headers: {
-      'X-Auth-Email': process.env.EMAIL_2,
-      'X-Auth-Key': process.env.API_KEY_2,
+      'X-Auth-Email': process.env.EMAIL,
+      'X-Auth-Key': process.env.API_KEY,
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
