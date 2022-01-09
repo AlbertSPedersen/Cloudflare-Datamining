@@ -12,8 +12,8 @@ async function run() {
   const typesRes = await fetch('https://api.cloudflare.com/client/v4/graphql', {
     method: 'POST',
     headers: {
-      'X-Auth-Email': process.env.EMAIL_2,
-      'X-Auth-Key': process.env.API_KEY_2,
+      'X-Auth-Email': process.env.EMAIL,
+      'X-Auth-Key': process.env.API_KEY,
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
@@ -60,7 +60,6 @@ async function run() {
   const fields = await fieldsRes.json();
 
   for (const type of Object.keys(result)) {
-    console.log(fields);
     const typeFields = fields.data[type].fields;
 
     for (const field of typeFields) {
@@ -76,7 +75,7 @@ async function run() {
     `${prefix} - GraphQL Data was updated!`,
     'CFData - GraphQL Data Update',
     'Pushed GraphQL Data: ' + prefix
-    )
+  )
 }
 
 run();
