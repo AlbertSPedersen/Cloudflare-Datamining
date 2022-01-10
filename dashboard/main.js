@@ -1319,12 +1319,12 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         }) : Ae[Ce] = ge, Ae
       }
       t.g.build = Vn({}, {
-        branch: "release-1641826994",
+        branch: "robert/PINS-66",
         isReleaseCandidate: "true",
-        commit: "f974f1d27814b27e77c984daf4f40c53e5d16f20",
+        commit: "fbba4660f30f9763cfa13e12dafbbf1ab00e21c6",
         env: "production",
-        builtAt: 1641827424920,
-        dashVersion: "f136b3f9751781985cfbb8e03c8cdb126f9caca3",
+        builtAt: 1641845257130,
+        dashVersion: "29ca9ac1cd107ec6c8b7489c2a1642be1a9066a2",
         versions: {
           "@cloudflare/app-dash": "23.27.16",
           node: "14.18.2",
@@ -1371,10 +1371,9 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
       var Nn = {};
 
       function it(Ae) {
-        Nn = Vn({}, Nn, Ae);
-        return;
-        if (typeof Nn.microfrontendsReady == "number" && typeof Nn.gatesReady == "number" && typeof Nn.startInit == "number") {
-          var Ce, ge;
+        if (Nn = Vn({}, Nn, Ae), typeof Nn.microfrontendsReady == "number" && typeof Nn.gatesReady == "number" && typeof Nn.startInit == "number") {
+          var Ce = Nn.gatesReady - Nn.startInit,
+            ge = Nn.microfrontendsReady - Nn.startInit;
           R.default.sendEvent("finish loading gates and microfrontends", {
             gatesDelayed: Math.round((Ce - ge) / 1e3)
           })
@@ -45047,9 +45046,8 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
             env: "production",
             countryCode: t.g.bootstrap.ip_country
           },
-          apiKey: "aa526e99767d43fab5864ccfc52ffb39",
-          url: "https://staging.gates.cloudflare.com/api/v1/runtime",
-          mode: "v1"
+          apiKey: "a23ecf39a767418a832c8f8a5a902a8c",
+          mode: "v2_dry"
         }
       }
 
@@ -59358,4 +59356,4 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   }
 ]);
 
-//# sourceMappingURL=99af92e56ed5c4c6a229.js.map
+//# sourceMappingURL=599e5834352a82f89825.js.map
