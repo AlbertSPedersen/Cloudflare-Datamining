@@ -1319,12 +1319,12 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         }) : Ae[Ce] = ge, Ae
       }
       t.g.build = Vn({}, {
-        branch: "robert/PINS-66",
+        branch: "mark/CUSTESC-16887-hotfix",
         isReleaseCandidate: "true",
-        commit: "fbba4660f30f9763cfa13e12dafbbf1ab00e21c6",
+        commit: "c03d34dbc2dadc7f53e1206af4e5c6b218a02033",
         env: "production",
-        builtAt: 1641845257130,
-        dashVersion: "29ca9ac1cd107ec6c8b7489c2a1642be1a9066a2",
+        builtAt: 1641906448285,
+        dashVersion: "dcb00ec12017ac1f9e0bd376a58b3ce7bd7a6470",
         versions: {
           "@cloudflare/app-dash": "23.27.16",
           node: "14.18.2",
@@ -46626,7 +46626,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
           ee = p.spacing,
           r = ee === void 0 ? 2 : ee,
           J = D(p, ["id", "name", "className", "indeterminate", "checked", "value", "onChange", "disabled", "testId", "label", "invalid", "noLabel", "spacing"]),
-          Q = e().createElement(z, {
+          Q = e().createElement("div", null, e().createElement(z, {
             type: "checkbox",
             name: c,
             id: l,
@@ -46637,7 +46637,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
             indeterminate: Y,
             className: B,
             "data-testid": b
-          });
+          }));
         return $ ? Q : e().createElement(o.__, M({
           display: "flex",
           alignItems: "center",
@@ -46707,7 +46707,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
               disabled: x,
               checked: l.includes(j.props.value),
               onChange: function(b) {
-                return u(j.props.value, b.target.checked)
+                return u(j.props.value, !b.target.checked)
               }
             }) : j
           });
@@ -59356,4 +59356,4 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   }
 ]);
 
-//# sourceMappingURL=599e5834352a82f89825.js.map
+//# sourceMappingURL=3b1106f9ba9228a0825b.js.map
