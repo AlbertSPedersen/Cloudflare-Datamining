@@ -1319,14 +1319,14 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         }) : Ae[Ce] = ge, Ae
       }
       t.g.build = Vn({}, {
-        branch: "mark/CUSTESC-16887-hotfix",
+        branch: "release-1641913454",
         isReleaseCandidate: "true",
-        commit: "c03d34dbc2dadc7f53e1206af4e5c6b218a02033",
+        commit: "951db3b257b8cab22158389e917fc485ff4a0f67",
         env: "production",
-        builtAt: 1641906448285,
-        dashVersion: "dcb00ec12017ac1f9e0bd376a58b3ce7bd7a6470",
+        builtAt: 1641936393759,
+        dashVersion: "1db446862d947cb32254518fd1d79238f3b82db6",
         versions: {
-          "@cloudflare/app-dash": "23.27.16",
+          "@cloudflare/app-dash": "23.27.22",
           node: "14.18.2",
           yarn: "1.18.0",
           webpack: "5.38.1"
@@ -21413,7 +21413,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
       });
       var n;
       (function(o) {
-        o.http_requests = "http_requests", o.firewall_events = "firewall_events", o.spectrum_events = "spectrum_events", o.nel_reports = "nel_reports"
+        o.http_requests = "http_requests", o.firewall_events = "firewall_events", o.spectrum_events = "spectrum_events", o.nel_reports = "nel_reports", o.dns_logs = "dns_logs"
       })(n || (n = {}));
       var e;
       (function(o) {
@@ -59356,4 +59356,4 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   }
 ]);
 
-//# sourceMappingURL=3b1106f9ba9228a0825b.js.map
+//# sourceMappingURL=8d7ebee53da8603a1a4d.js.map
