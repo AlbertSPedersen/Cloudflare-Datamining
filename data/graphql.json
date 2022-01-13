@@ -820,7 +820,7 @@
         "sum": "The sum of values for a metric per dimension"
     },
     "AccountImagesRequestsAdaptiveGroupsAvg": {
-        "requests": ""
+        "sampleInterval": ""
     },
     "AccountImagesRequestsAdaptiveGroupsDimensions": {
         "date": "The date the event occurred at the edge",
