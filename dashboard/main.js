@@ -1201,7 +1201,11 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
 
       function Kn() {
         var Qe = document.getElementById("loading-state");
-        !Qe || Qe.parentNode.removeChild(Qe)
+        if (!!Qe) {
+          Qe.parentNode.removeChild(Qe);
+          var He = document.getElementById("loading-styles");
+          !He || He.parentNode.removeChild(He)
+        }
       }
 
       function Gn(Qe) {
@@ -1312,14 +1316,14 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         }) : Qe[He] = Ee, Qe
       }
       t.g.build = Rt({}, {
-        branch: "release-1642172629",
+        branch: "release-1642431816",
         isReleaseCandidate: "true",
-        commit: "bae1a6cd4dd3b473d8e912d0f64e4fef038d56a4",
+        commit: "6989c2f0a11d63379663352647b8c12a21c08b02",
         env: "production",
-        builtAt: 1642173085813,
-        dashVersion: "40591ae0f623e5b6f21bea48c0c3e7e334a3f073",
+        builtAt: 1642432273749,
+        dashVersion: "0b85ab8f9fc498fd923b2eb9e419071519229025",
         versions: {
-          "@cloudflare/app-dash": "23.28.3",
+          "@cloudflare/app-dash": "23.28.6",
           node: "14.18.3",
           yarn: "1.18.0",
           webpack: "5.38.1"
@@ -49869,19 +49873,19 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
             className: P ? E : void 0,
             disabled: v
           }, p));
-        return P ? u : e().createElement("div", null, e().createElement("label", {
+        return P ? u : e().createElement("label", {
           htmlFor: S,
           className: E
         }, u, x && e().createElement(M, {
           disabled: v
-        }, x)))
+        }, x))
       }
       var I = (0, w.createStyledComponent)(function(A) {
         var x = A.theme,
           S = A.disabled;
         return {
           cursor: S ? "default" : "pointer",
-          display: "inline-block",
+          display: "block",
           margin: "initial",
           padding: 0,
           "&:first-child": {
@@ -58063,4 +58067,4 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   }
 ]);
 
-//# sourceMappingURL=24199026d83931aaa53a.js.map
+//# sourceMappingURL=7abda7cbc698b35e4463.js.map
