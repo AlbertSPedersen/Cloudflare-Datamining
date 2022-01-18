@@ -1316,14 +1316,14 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         }) : Qe[He] = Ee, Qe
       }
       t.g.build = Rt({}, {
-        branch: "release-1642431816",
+        branch: "release-1642518249",
         isReleaseCandidate: "true",
-        commit: "6989c2f0a11d63379663352647b8c12a21c08b02",
+        commit: "8679c692b7497df2a5906fba76924b528a9b1a23",
         env: "production",
-        builtAt: 1642432273749,
-        dashVersion: "0b85ab8f9fc498fd923b2eb9e419071519229025",
+        builtAt: 1642518619320,
+        dashVersion: "f46ee979e01333832ead69c69d027226cba0eeca",
         versions: {
-          "@cloudflare/app-dash": "23.28.6",
+          "@cloudflare/app-dash": "23.28.9",
           node: "14.18.3",
           yarn: "1.18.0",
           webpack: "5.38.1"
@@ -45155,7 +45155,8 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
             onChange: m,
             indeterminate: H,
             className: D,
-            "data-testid": h
+            "data-testid": h,
+            value: s
           }));
         return V ? $ : e().createElement(i.__, j({
           display: "flex",
@@ -58067,4 +58068,4 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   }
 ]);
 
-//# sourceMappingURL=7abda7cbc698b35e4463.js.map
+//# sourceMappingURL=0dc3a3aaaf9cba875ef4.js.map
