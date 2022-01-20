@@ -1316,12 +1316,12 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         }) : Qe[He] = Ee, Qe
       }
       t.g.build = Rt({}, {
-        branch: "release-1642691027",
+        branch: "hotfix-release-new-translation-keys",
         isReleaseCandidate: "true",
-        commit: "66093716b2cd53264356f0b06b8633eccf6509b4",
+        commit: "47cc6ffb9101e07e48e4335765d654ec9d2678a4",
         env: "production",
-        builtAt: 1642692343745,
-        dashVersion: "fc28ccbc9064642cf5e5dbc6c6bee143a351cbfc",
+        builtAt: 1642709907125,
+        dashVersion: "db2ca5d44ee848bbf272de6ca0d74d609feb67d8",
         versions: {
           "@cloudflare/app-dash": "23.29.5",
           node: "14.18.3",
@@ -58249,4 +58249,4 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   }
 ]);
 
-//# sourceMappingURL=7c8067ad6402e20ad3a4.js.map
+//# sourceMappingURL=2b1d792502f18094d4e9.js.map
