@@ -1316,14 +1316,14 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         }) : Ke[Fe] = Xe, Ke
       }
       t.g.build = Rt({}, {
-        branch: "release-1643123058",
+        branch: "release-1643209428",
         isReleaseCandidate: "true",
-        commit: "24517f765dec97101c63bfc139580b26fe8a0083",
+        commit: "32e5fdda77a919c439e710d0c956c7df20c5d786",
         env: "production",
-        builtAt: 1643133646998,
-        dashVersion: "eccbdc7d814fae7d45c3ce947be67fb6556efef4",
+        builtAt: 1643209896531,
+        dashVersion: "5f3d3e0044621502500b3d001feaa8de559f1752",
         versions: {
-          "@cloudflare/app-dash": "23.29.5",
+          "@cloudflare/app-dash": "24.0.0",
           node: "14.18.3",
           yarn: "1.18.0",
           webpack: "5.38.1"
@@ -57970,4 +57970,4 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   }
 ]);
 
-//# sourceMappingURL=98194ae131724dd43962.js.map
+//# sourceMappingURL=44a8accb6a7ba31acf59.js.map
