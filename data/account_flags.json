@@ -54,7 +54,7 @@
         "show_integration_webhooks": false
     },
     "billing": {
-        "compliance-docs-enable": true,
+        "compliance-docs-enable": false,
         "contract_self_service_allowed": false,
         "cr-compliance-docs": false,
         "enable_delay_downgrade": true,
