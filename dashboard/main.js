@@ -1316,12 +1316,12 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         }) : Ke[Fe] = Xe, Ke
       }
       t.g.build = Rt({}, {
-        branch: "release-1643209428",
+        branch: "release-1643295850",
         isReleaseCandidate: "true",
-        commit: "32e5fdda77a919c439e710d0c956c7df20c5d786",
+        commit: "d3a04112dd92c86b81e0ed3d523cf7a9ff646e22",
         env: "production",
-        builtAt: 1643209896531,
-        dashVersion: "5f3d3e0044621502500b3d001feaa8de559f1752",
+        builtAt: 1643296218052,
+        dashVersion: "7ea685c91868d55fea57c8c57d5098e733916a82",
         versions: {
           "@cloudflare/app-dash": "24.0.0",
           node: "14.18.3",
@@ -1337,7 +1337,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
           return regeneratorRuntime.wrap(function(Ct) {
             for (;;) switch (Ct.prev = Ct.next) {
               case 0:
-                return $e = (0, k.b)(), et = (Xe == null ? void 0 : Xe.data) || {}, $e.dispatch((0, Un.mW)("user", et == null ? void 0 : et.user)), Vn(), De = Xe == null || (lt = Xe.data) === null || lt === void 0 || (ke = lt.user) === null || ke === void 0 ? void 0 : ke.id, Yt(De), t.g.bootstrap = Xe, De && I.ZP.setUserId(De), st = L(), Ct.next = 11, Promise.all([(0, y.n)(), Promise.all([t.e(94007), t.e(9529), t.e(6329)]).then(t.bind(t, "../microfrontends/index.ts"))]);
+                return $e = (0, k.b)(), et = (Xe == null ? void 0 : Xe.data) || {}, $e.dispatch((0, Un.mW)("user", et == null ? void 0 : et.user)), Vn(), De = Xe == null || (lt = Xe.data) === null || lt === void 0 || (ke = lt.user) === null || ke === void 0 ? void 0 : ke.id, Yt(De), t.g.bootstrap = Xe, De && I.ZP.setUserId(De), st = L(), Ct.next = 11, Promise.all([(0, y.n)(), Promise.all([t.e(51459), t.e(9529), t.e(6329)]).then(t.bind(t, "../microfrontends/index.ts"))]);
               case 11:
                 return bt = Ct.sent, Ft = Xn(bt, 2), _t = Ft[1].initializeSingleSpa, C(), I.ZP.identify(Rt({}, (0, I.TJ)())), Ct.abrupt("return", _t({
                   store: $e,
@@ -7297,7 +7297,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         e = t("../react/app/redux/makeActionCreator.ts"),
         R = t("../react/common/selectors/userSelectors.ts"),
         a = t("../react/common/actionTypes.ts"),
-        s = t("../node_modules/moment/moment.js"),
+        s = t("../../../../node_modules/moment/moment.js"),
         M = t.n(s);
 
       function x() {
@@ -15729,7 +15729,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         })(J),
         Q = t("../../../common/intl/intl-react/src/index.ts"),
         $ = t("../react/utils/fetchIfNeeded.ts"),
-        X = t("../node_modules/moment/moment.js"),
+        X = t("../../../../node_modules/moment/moment.js"),
         ne = t.n(X),
         Ee = t("../../../common/util/util-sparrow/src/index.ts"),
         ve = t("../react/common/selectors/zoneSelectors.ts"),
@@ -17648,7 +17648,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         e = t("../../../../node_modules/seamless-immutable/seamless-immutable.production.min.js"),
         R = t.n(e),
         a = t("../../../../node_modules/reselect/lib/index.js"),
-        s = t("../node_modules/moment/moment.js"),
+        s = t("../../../../node_modules/moment/moment.js"),
         M = t.n(s),
         x = t("../react/common/utils/formatDate.ts"),
         _ = t("../react/app/redux/normalizer.js"),
@@ -18104,7 +18104,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         L = (0, n.P1)("billingOutstandingTransactions", B),
         k = function(u) {
           var f = L(u);
-          return Array.isArray(f) && f.length
+          return !!(Array.isArray(f) && f.length)
         },
         w = function(u) {
           var f = (0, e.gX)(u);
@@ -19064,7 +19064,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         e = t("../react/app/redux/normalizer.js"),
         R = t("../../../../node_modules/lodash.get/index.js"),
         a = t.n(R),
-        s = t("../node_modules/moment/moment.js"),
+        s = t("../../../../node_modules/moment/moment.js"),
         M = t.n(s),
         x = t("../react/common/constants/billing/index.ts"),
         _ = (0, e.P1)("zone", function(G) {
@@ -20204,7 +20204,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         _ = t("../../../common/style/style-container/src/index.ts"),
         U = t("../../../../node_modules/url/url.js"),
         j = t("../../../../node_modules/lodash-es/forEach.js"),
-        S = t("../../../../node_modules/querystring/index.js"),
+        S = t("../node_modules/querystring/index.js"),
         N;
       (function(i) {
         i.CloudflareAppsToken = "CloudflareAppsToken", i.CloudflareAppsAuthAttempts = "CloudflareAppsAuthAttempts"
@@ -23381,7 +23381,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
             return F
           }
         },
-        $a = t("../node_modules/moment/moment.js"),
+        $a = t("../../../../node_modules/moment/moment.js"),
         Na = t.n($a),
         to = t("../../../common/component/component-icon/src/index.js"),
         no = t("../react/common/components/Markdown.js");
@@ -34260,7 +34260,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
           return ee
         }
       });
-      var n = t("../node_modules/moment/moment.js"),
+      var n = t("../../../../node_modules/moment/moment.js"),
         e = t.n(n),
         R = t("../react/pages/home/domain-registration/types.ts"),
         a = t("../react/pages/home/domain-registration/config.tsx"),
@@ -35066,7 +35066,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         _ = t("../react/common/selectors/accountSelectors.ts"),
         U = t("../react/utils/zoneLevelAccess.ts"),
         j = a().lazy(function() {
-          return Promise.all([t.e(10368), t.e(47261), t.e(14269), t.e(92465), t.e(60985), t.e(19696), t.e(1119), t.e(9529), t.e(28587), t.e(20224)]).then(t.bind(t, "../react/pages/home/domain-registration/components/DomainRegistration.tsx"))
+          return Promise.all([t.e(10368), t.e(4806), t.e(47261), t.e(14269), t.e(92465), t.e(60985), t.e(19696), t.e(1119), t.e(9529), t.e(28587), t.e(20224)]).then(t.bind(t, "../react/pages/home/domain-registration/components/DomainRegistration.tsx"))
         }),
         S = function(z) {
           var B, L = !!(0, U.P)(),
@@ -36635,7 +36635,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
       });
       var n = t("../react/pages/home/domain-registration/types.ts"),
         e = t("../react/pages/home/domain-registration/bulk-transfer-util.ts"),
-        R = t("../node_modules/moment/moment.js"),
+        R = t("../../../../node_modules/moment/moment.js"),
         a = t.n(R),
         s = t("../react/pages/home/domain-registration/config.tsx"),
         M = {
@@ -42758,7 +42758,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
           return w
         }
       });
-      var n = t("../node_modules/moment/moment.js"),
+      var n = t("../../../../node_modules/moment/moment.js"),
         e = t.n(n),
         R = t("../../../common/intl/intl-core/src/types.ts"),
         a = t("../react/utils/objectKeys.ts"),
@@ -47246,7 +47246,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
       });
       var n = t("webpack/sharing/consume/default/react/react"),
         e = t.n(n),
-        R = t("../../../../node_modules/@stripe/stripe-js/pure.js"),
+        R = t("../../../common/component/component-payment-form/node_modules/@stripe/stripe-js/pure.js"),
         a = t("../../../../node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js"),
         s = t("../../../common/util/util-http/src/index.ts"),
         M = t("../../../../node_modules/react-redux/es/index.js"),
@@ -55670,7 +55670,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
       });
       var n = t("../../../common/util/util-formatters/node_modules/d3-format/src/index.js"),
         e = t("../../../common/intl/intl-core/src/types.ts"),
-        R = t("../../../common/util/util-formatters/node_modules/moment/moment.js"),
+        R = t("../../../../node_modules/moment/moment.js"),
         a = t.n(R),
         s = e.Q.en_US,
         M = "USD",
@@ -57970,4 +57970,4 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   }
 ]);
 
-//# sourceMappingURL=44a8accb6a7ba31acf59.js.map
+//# sourceMappingURL=940f3b5b05a59808d42e.js.map
