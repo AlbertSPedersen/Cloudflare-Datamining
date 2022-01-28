@@ -1316,12 +1316,12 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         }) : Ke[Fe] = Xe, Ke
       }
       t.g.build = Rt({}, {
-        branch: "release-1643295850",
+        branch: "release-1643382226",
         isReleaseCandidate: "true",
-        commit: "d3a04112dd92c86b81e0ed3d523cf7a9ff646e22",
+        commit: "0800d495d2d9214a8b2d6930cb2ce59081c46b4a",
         env: "production",
-        builtAt: 1643296218052,
-        dashVersion: "7ea685c91868d55fea57c8c57d5098e733916a82",
+        builtAt: 1643382570015,
+        dashVersion: "122a8bbf6c11fd671cc2665095acb360d1d9f5c1",
         versions: {
           "@cloudflare/app-dash": "24.0.0",
           node: "14.18.3",
@@ -28834,7 +28834,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
       }
 
       function z() {
-        var ce = P(["/accounts/", "/email-fwdr/addresses"]);
+        var ce = P(["/accounts/", "/email-fwdr/addresses?limit=1000000"]);
         return z = function() {
           return ce
         }, ce
@@ -57970,4 +57970,4 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   }
 ]);
 
-//# sourceMappingURL=940f3b5b05a59808d42e.js.map
+//# sourceMappingURL=631fab9082328daf090d.js.map
