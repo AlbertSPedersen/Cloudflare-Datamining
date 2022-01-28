@@ -153,6 +153,7 @@
         "enabled": false,
         "green_compute": false,
         "live_tailing": false,
+        "r2_admin_bindings": false,
         "r2_bindings": false,
         "request_cpu_ms": -1,
         "same_zone_worker_on_subrequest": false,
