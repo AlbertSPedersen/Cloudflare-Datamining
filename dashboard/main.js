@@ -1316,12 +1316,12 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         }) : Ke[Fe] = Xe, Ke
       }
       t.g.build = Rt({}, {
-        branch: "release-1643814201",
+        branch: "dan/LOUI-3046-magic-transit-healthchecks-overflow-hotfix",
         isReleaseCandidate: "true",
-        commit: "b36447c128460f4ae5dc8e3c51ab097758b530d2",
+        commit: "18662978debf21656beaf6670fc13a9f4ca0c8ea",
         env: "production",
-        builtAt: 1643814548647,
-        dashVersion: "0ba714dc0b51d9d7008dc4ee4af73a1b3e2219e1",
+        builtAt: 1643832899742,
+        dashVersion: "8dcb0c27a36b4456e10ac271d325d444934bc5ff",
         versions: {
           "@cloudflare/app-dash": "24.1.10",
           node: "14.18.3",
@@ -58103,4 +58103,4 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   }
 ]);
 
-//# sourceMappingURL=e1abee7c3ce002391b60.js.map
+//# sourceMappingURL=fb0fb20f692fc2a24e4a.js.map
