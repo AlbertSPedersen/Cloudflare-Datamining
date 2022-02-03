@@ -1316,12 +1316,12 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         }) : Ke[Fe] = Xe, Ke
       }
       t.g.build = Rt({}, {
-        branch: "dan/LOUI-3046-magic-transit-healthchecks-overflow-hotfix",
+        branch: "release-1643900641",
         isReleaseCandidate: "true",
-        commit: "18662978debf21656beaf6670fc13a9f4ca0c8ea",
+        commit: "f9055045e13c5fee357d8be04b7333f31917185e",
         env: "production",
-        builtAt: 1643832899742,
-        dashVersion: "8dcb0c27a36b4456e10ac271d325d444934bc5ff",
+        builtAt: 1643905269310,
+        dashVersion: "0f38915f6cf19b3037dbe5bdb949e2617722e6f4",
         versions: {
           "@cloudflare/app-dash": "24.1.10",
           node: "14.18.3",
@@ -42010,6 +42010,15 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         }, {
           value: "tcp",
           label: "TCP"
+        }, {
+          value: "udp_icmp",
+          label: "UDP ICMP"
+        }, {
+          value: "icmp_ping",
+          label: "ICMP Ping"
+        }, {
+          value: "smtp",
+          label: "SMTP"
         }],
         d = [{
           value: "GET",
@@ -58103,4 +58112,4 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   }
 ]);
 
-//# sourceMappingURL=fb0fb20f692fc2a24e4a.js.map
+//# sourceMappingURL=8f622114271777f7d7c5.js.map
