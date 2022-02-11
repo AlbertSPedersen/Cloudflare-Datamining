@@ -24,6 +24,7 @@
         "custom_auth_domain": false,
         "device_posture_ui": false,
         "disable_login_lockdown": false,
+        "dlp_dlpscan": false,
         "malware_scanning": false,
         "s2s_posture": false,
         "teams_biso_beta": false,
