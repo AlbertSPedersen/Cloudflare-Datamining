@@ -107,7 +107,7 @@
         "opted_in": false,
         "registration": true,
         "registration-api-enabled": false,
-        "registration-override": true,
+        "registration-override": false,
         "tweeted": false
     },
     "stream": {
