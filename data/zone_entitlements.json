@@ -1066,5 +1066,37 @@
         "created_date": "2021-11-18T23:53:16.000000",
         "edited_date": "2021-11-18T23:53:16.000000",
         "deleted_date": ""
+    },
+    {
+        "id": "rulesets.fw_global_rulesets_execute_request_late_transform_managed_headers_allowed",
+        "feature": {
+            "feature_set": "rulesets",
+            "id": 984,
+            "key": "rulesets.fw_global_rulesets_execute_request_late_transform_managed_headers_allowed",
+            "name": "Rulesets - Executing late request transform managed headers ruleset allowed"
+        },
+        "allocation": {
+            "value": true,
+            "type": "bool"
+        },
+        "created_date": "2022-02-16T22:15:14.000000",
+        "edited_date": "2022-02-16T22:15:14.000000",
+        "deleted_date": ""
+    },
+    {
+        "id": "rulesets.fw_global_rulesets_execute_response_managed_headers_allowed",
+        "feature": {
+            "feature_set": "rulesets",
+            "id": 985,
+            "key": "rulesets.fw_global_rulesets_execute_response_managed_headers_allowed",
+            "name": "Rulesets - Executing reponse managed headers ruleset allowed"
+        },
+        "allocation": {
+            "value": true,
+            "type": "bool"
+        },
+        "created_date": "2022-02-16T22:15:14.000000",
+        "edited_date": "2022-02-16T22:15:14.000000",
+        "deleted_date": ""
     }
 ]
