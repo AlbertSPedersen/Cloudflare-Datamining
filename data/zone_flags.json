@@ -48,6 +48,7 @@
     "account_analytics": {
         "carbon_dashboard": true,
         "dos_analytics": false,
+        "dos_analytics_v2": false,
         "grey_cloud": true,
         "overview": true
     },
@@ -254,7 +255,7 @@
         "live": true,
         "maxProcessingConcurrency": 120,
         "maxWatermarks": 1000,
-        "max_fps": 30,
+        "max_fps": 60,
         "mp4download": true,
         "quality_parameter": 23,
         "rtmp_playback": false,
