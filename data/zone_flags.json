@@ -162,7 +162,11 @@
     },
     "magic_transit": {
         "configuration": false,
-        "mt_healthchecks": false
+        "mt_healthchecks": false,
+        "mt_home": false
+    },
+    "magicwan": {
+        "mw_home": false
     },
     "nel_reporting": {
         "enable": false,
