@@ -60,6 +60,7 @@
         "contract_self_service_allowed": false,
         "cr-compliance-docs": false,
         "enable_delay_downgrade": true,
+        "invoices-view-disallowed": false,
         "no_cf_free_zero_cost": true,
         "show_old_dedicated_certs": false,
         "ubb_alerts": false,
