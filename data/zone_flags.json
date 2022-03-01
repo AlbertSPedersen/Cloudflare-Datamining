@@ -87,6 +87,7 @@
     },
     "cache": {
         "analytics": true,
+        "cache_reserve_beta": false,
         "crawlhints_card": true,
         "crawlhints_enabled": false,
         "earlyhints_beta_signup": false,
