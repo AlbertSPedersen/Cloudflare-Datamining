@@ -132,7 +132,8 @@
         "per_rule_activity_sparkline": true,
         "rule_log_ref_field": false,
         "rule_preview": true,
-        "tab_analytics": true
+        "tab_analytics": true,
+        "waf_tab": false
     },
     "http_applications": {
         "beta_access": false
