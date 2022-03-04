@@ -115,7 +115,8 @@
         "ends_at": 0,
         "pii": false,
         "ratio": 0,
-        "starts_at": 0
+        "starts_at": 0,
+        "uri": ""
     },
     "email": {
         "beta": false,
