@@ -267,7 +267,7 @@
         "quality_parameter": 23,
         "rtmp_playback": false,
         "source_stats": true,
-        "srt": false,
+        "srt": true,
         "storageUseEmail": true,
         "storage_0": false,
         "storage_1": true,
