@@ -55,6 +55,9 @@
         "show_integration_pagerduty": false,
         "show_integration_webhooks": false
     },
+    "anomaly_detection_alerter": {
+        "http_origin_error_alert_high_sensitivity_enabled": false
+    },
     "billing": {
         "compliance-docs-enable": false,
         "contract_self_service_allowed": false,

@@ -68,6 +68,9 @@
         "zap_enabled": true,
         "zap_opt_in": false
     },
+    "anomaly_detection_alerter": {
+        "http_origin_error_alert_high_sensitivity_enabled": false
+    },
     "billing": {
         "compliance-docs-enable": false,
         "contract_self_service_allowed": false,
