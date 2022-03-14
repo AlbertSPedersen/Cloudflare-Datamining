@@ -2698,7 +2698,7 @@
         "httpRequests1hGroups": "Hourly rollups of request data",
         "httpRequests1mByColoGroups": "Deprecated. Minutely rollups of request data by colo",
         "httpRequests1mGroups": "Minutely rollups of request data",
-        "httpRequestsAdaptiveGroups": "Beta. Aggregated HTTP requests data (10% sample) with adaptive sampling",
+        "httpRequestsAdaptiveGroups": "Aggregated HTTP requests data with adaptive sampling",
         "imageResizingRequests1mGroups": "Minutely rollups of Image Resizing requests",
         "loadBalancingRequestsAdaptive": "Raw Load Balancing origin requests with adaptive sampling",
         "loadBalancingRequestsAdaptiveGroups": "Aggregated Load Balancing origin requests with adaptive sampling",
