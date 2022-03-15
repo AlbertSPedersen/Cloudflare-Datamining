@@ -137,7 +137,7 @@
         "rule_log_ref_field": false,
         "rule_preview": true,
         "tab_analytics": true,
-        "waf_tab": false
+        "waf_tab": true
     },
     "http_applications": {
         "beta_access": false
