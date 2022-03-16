@@ -128,7 +128,7 @@
     },
     "firewall": {
         "analytics_load_on_scroll": false,
-        "api_shield_tab": false,
+        "api_shield_tab": true,
         "captcha_solved_rate": true,
         "filter_ui": true,
         "managed_rules_matched_data": false,
