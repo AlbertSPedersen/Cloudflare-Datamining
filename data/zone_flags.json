@@ -255,6 +255,7 @@
         "connect": true,
         "connect_destination_limit": 10,
         "connect_source_limit": 1000,
+        "custom_hostnames": false,
         "encode2": true,
         "encoding_bufsize_multiple": 1,
         "encoding_maxbitrate_multiple": 1,
