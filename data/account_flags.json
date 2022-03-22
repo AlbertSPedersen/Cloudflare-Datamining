@@ -60,7 +60,7 @@
         "http_origin_error_rate_alert_high_sensitivity_enabled": false
     },
     "billing": {
-        "compliance-docs-enable": false,
+        "compliance-docs-enable": true,
         "contract_self_service_allowed": false,
         "cr-compliance-docs": false,
         "enable_delay_downgrade": true,
