@@ -16,38 +16,6 @@
         "deleted_date": ""
     },
     {
-        "id": "dedicated_certificates",
-        "feature": {
-            "feature_set": "dedicated_certificates",
-            "id": 3,
-            "key": "dedicated_certificates",
-            "name": "Dedicated Certificates"
-        },
-        "allocation": {
-            "value": 0,
-            "type": "max_count"
-        },
-        "created_date": "2021-07-13T21:46:04.000000",
-        "edited_date": "2021-07-13T21:46:04.000000",
-        "deleted_date": ""
-    },
-    {
-        "id": "dedicated_certificates_custom",
-        "feature": {
-            "feature_set": "dedicated_certificates",
-            "id": 4,
-            "key": "dedicated_certificates_custom",
-            "name": "Dedicated Certificates Custom"
-        },
-        "allocation": {
-            "value": 0,
-            "type": "max_count"
-        },
-        "created_date": "2021-07-13T21:46:04.000000",
-        "edited_date": "2021-07-13T21:46:04.000000",
-        "deleted_date": ""
-    },
-    {
         "id": "rate_limiting.allow_body_control",
         "feature": {
             "feature_set": "rate_limiting",
@@ -1068,6 +1036,22 @@
         "deleted_date": ""
     },
     {
+        "id": "rulesets.origin_rule_max",
+        "feature": {
+            "feature_set": "rulesets",
+            "id": 983,
+            "key": "rulesets.origin_rule_max",
+            "name": "Rulesets - Origin Rule Max"
+        },
+        "allocation": {
+            "value": 10,
+            "type": "max_count"
+        },
+        "created_date": "2022-03-23T19:14:13.000000",
+        "edited_date": "2022-03-23T19:14:13.000000",
+        "deleted_date": ""
+    },
+    {
         "id": "rulesets.fw_global_rulesets_execute_request_late_transform_managed_headers_allowed",
         "feature": {
             "feature_set": "rulesets",
@@ -1097,6 +1081,22 @@
         },
         "created_date": "2022-02-16T22:15:14.000000",
         "edited_date": "2022-02-16T22:15:14.000000",
+        "deleted_date": ""
+    },
+    {
+        "id": "rulesets.origin_rule_origin_port_allowed",
+        "feature": {
+            "feature_set": "rulesets",
+            "id": 1007,
+            "key": "rulesets.origin_rule_origin_port_allowed",
+            "name": "Rulesets - Origin Rule Origin Port Allowed"
+        },
+        "allocation": {
+            "value": true,
+            "type": "bool"
+        },
+        "created_date": "2022-03-23T19:14:13.000000",
+        "edited_date": "2022-03-23T19:14:13.000000",
         "deleted_date": ""
     }
 ]
