@@ -162,7 +162,7 @@
         "cloudflare_pages_functions_beta": true,
         "cloudflare_pages_functions_daily_limit": 100000,
         "cloudflare_pages_gitlab_beta": true,
-        "cloudflare_pages_internal_ewc": false,
+        "cloudflare_pages_internal_ewc": true,
         "cloudflare_pages_preview_branch_syntax_preview": false,
         "cloudflare_pages_project_limit_override": false,
         "cloudflare_pages_skip_commit": false,
