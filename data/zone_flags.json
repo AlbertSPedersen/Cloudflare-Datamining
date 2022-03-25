@@ -329,7 +329,8 @@
         "text_binding_size_limit_exception": 5120,
         "trace_workers_self_tracing": false,
         "use_pipeline": false,
-        "user_notifications": true
+        "user_notifications": true,
+        "workers_for_saas": false
     },
     "zaraz": {
         "enabled": true
