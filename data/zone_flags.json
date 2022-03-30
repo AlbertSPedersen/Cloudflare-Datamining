@@ -273,6 +273,7 @@
         "rtmp_playback": false,
         "source_stats": true,
         "srt": true,
+        "srt_playback": false,
         "storageUseEmail": true,
         "storage_0": false,
         "storage_1": true,
