@@ -217,6 +217,7 @@
         "global_wave": 0,
         "opted_in": false,
         "partner": false,
+        "registrar-managed": false,
         "registration": true,
         "registration-api-enabled": false,
         "registration-override": false,
