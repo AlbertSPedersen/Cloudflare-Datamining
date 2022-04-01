@@ -73,7 +73,7 @@
         "ipv6ExtensionHeaders": "List of Extension Header numbers included in the IPv6 packet header",
         "ipv6FlowLabel": "Value of the Flow Label header field in the IPv6 packet",
         "ipv6Identification": "Value of the Identification extension header field in the IPv6 packet",
-        "mitigationSystem": "Which system dropped the packet (possible values: local, global)",
+        "mitigationSystem": "Which system dropped the packet (possible values: dosd, flowtrackd, magic-firewall)",
         "outcome": "The action that was taken on the packet (possible values: pass, drop)",
         "sampleInterval": "ABR sample interval",
         "sourceAsn": "ASN associated with the source IP of the packet, or 0 if there was no mapping available",
@@ -1179,7 +1179,7 @@
         "ipv6ExtensionHeaders": "List of Extension Header numbers included in the IPv6 packet header",
         "ipv6FlowLabel": "Value of the Flow Label header field in the IPv6 packet",
         "ipv6Identification": "Value of the Identification extension header field in the IPv6 packet",
-        "mitigationSystem": "Which system dropped the packet (possible values: local, global)",
+        "mitigationSystem": "Which system dropped the packet (possible values: dosd, flowtrackd, magic-firewall)",
         "outcome": "The action that was taken on the packet (possible values: pass, drop)",
         "sampleInterval": "ABR sample interval",
         "sourceAsn": "ASN associated with the source IP of the packet, or 0 if there was no mapping available",
@@ -1238,6 +1238,21 @@
     },
     "AccountMagicTransitTunnelHealthChecksAdaptiveGroupsFilter_InputObject": {},
     "AccountMagicTransitTunnelHealthChecksAdaptiveGroupsOrderBy": {},
+    "AccountMagicTransitTunnelTrafficAdaptiveGroups": {
+        "avg": "Ingress bandwidth in bits per second for a past duration",
+        "dimensions": "List of dimensions to group by"
+    },
+    "AccountMagicTransitTunnelTrafficAdaptiveGroupsAvg": {
+        "tunnelTrafficPast5": "Average of bandwidth per second over the last 5 minutes, when filter is applied"
+    },
+    "AccountMagicTransitTunnelTrafficAdaptiveGroupsDimensions": {
+        "datetime": "Date and time that the packet was received",
+        "direction": "Traffic Direction",
+        "system": "System to collect info on",
+        "tunnelName": "Egress device info"
+    },
+    "AccountMagicTransitTunnelTrafficAdaptiveGroupsFilter_InputObject": {},
+    "AccountMagicTransitTunnelTrafficAdaptiveGroupsOrderBy": {},
     "AccountNelReportsAdaptiveGroups": {
         "avg": "",
         "count": "The number of NEL Reports",
@@ -1540,6 +1555,7 @@
         "magicFirewallSamplesAdaptiveGroups": "",
         "magicTransitNetworkAnalyticsAdaptiveGroups": "",
         "magicTransitTunnelHealthChecksAdaptiveGroups": "",
+        "magicTransitTunnelTrafficAdaptiveGroups": "",
         "nelReportsAdaptiveGroups": "",
         "pagesFunctionsInvocationsAdaptiveGroups": "",
         "rumPageloadEventsAdaptiveGroups": "",
@@ -1629,7 +1645,7 @@
         "ipv6ExtensionHeaders": "List of Extension Header numbers included in the IPv6 packet header",
         "ipv6FlowLabel": "Value of the Flow Label header field in the IPv6 packet",
         "ipv6Identification": "Value of the Identification extension header field in the IPv6 packet",
-        "mitigationSystem": "Which system dropped the packet (possible values: local, global)",
+        "mitigationSystem": "Which system dropped the packet (possible values: dosd, flowtrackd, magic-firewall)",
         "outcome": "The action that was taken on the packet (possible values: pass, drop)",
         "sampleInterval": "ABR sample interval",
         "sourceAsn": "ASN associated with the source IP of the packet, or 0 if there was no mapping available",
@@ -1871,6 +1887,42 @@
         "notOlderThan": "Cannot reach for data beyond this distance in the past (seconds)"
     },
     "Time": {},
+    "ZoneEmailRoutingAdaptive": {
+        "datetime": "The date and time the source email was received",
+        "dkim": "DKIM check status of the source email",
+        "dmarc": "DMARC check status of the source email",
+        "errorDetail": "Detailed error message (if any)",
+        "from": "The sender email address of the source email",
+        "messageId": "The Message-ID header of the source email (if present)",
+        "ruleMatched": "The UUID of the routing rule matched by the source email",
+        "sampleInterval": "ABR sample interval",
+        "sessionId": "Unique identifier for the email log entry (note: retries for the same email may result in multiple log entries)",
+        "spf": "SPF check status of the source email",
+        "status": "The resulting outcome (action) for the email",
+        "subject": "The subject of the source email",
+        "to": "The recipient email address of the source email"
+    },
+    "ZoneEmailRoutingAdaptiveFilter_InputObject": {},
+    "ZoneEmailRoutingAdaptiveGroups": {
+        "count": "Number of emails processed (approximation when sampleInterval > 1)",
+        "dimensions": "List of dimensions to group by"
+    },
+    "ZoneEmailRoutingAdaptiveGroupsDimensions": {
+        "date": "The date the source email was received",
+        "datetimeFifteenMinutes": "The date and time the source email was received truncated to fifteen minutes",
+        "datetimeFiveMinutes": "The date and time the source email was received truncated to five minutes",
+        "datetimeHour": "The date and time the source email was received truncated to the hour",
+        "datetimeMinute": "The date and time the source email was received truncated to the minute",
+        "dkim": "DKIM check status of the source email",
+        "dmarc": "DMARC check status of the source email",
+        "ruleMatched": "The UUID of the routing rule matched by the source email",
+        "sampleInterval": "ABR sample interval",
+        "spf": "SPF check status of the source email",
+        "status": "The resulting outcome (action) for the email"
+    },
+    "ZoneEmailRoutingAdaptiveGroupsFilter_InputObject": {},
+    "ZoneEmailRoutingAdaptiveGroupsOrderBy": {},
+    "ZoneEmailRoutingAdaptiveOrderBy": {},
     "ZoneFilter_InputObject": {},
     "ZoneFirewallEventsAdaptive": {
         "action": "The code of the first-class action the Cloudflare Firewall took on this request",
@@ -2590,6 +2642,8 @@
     "ZoneNelReportsAdaptiveGroupsFilter_InputObject": {},
     "ZoneNelReportsAdaptiveGroupsOrderBy": {},
     "ZoneSettings": {
+        "emailRoutingAdaptive": "",
+        "emailRoutingAdaptiveGroups": "",
         "firewallEventsAdaptive": "",
         "firewallEventsAdaptiveByTimeGroups": "",
         "firewallEventsAdaptiveGroups": "",
@@ -2652,6 +2706,7 @@
         "magicFirewallSamplesAdaptiveGroups": "Data to visualize traffic allowed and blocked by Magic Firewall rules",
         "magicTransitNetworkAnalyticsAdaptiveGroups": "Network analytics data for Magic Transit traffic",
         "magicTransitTunnelHealthChecksAdaptiveGroups": "Beta. Magic Transit Health check results for customer GRE Tunnels with adaptive sampling (ABR).",
+        "magicTransitTunnelTrafficAdaptiveGroups": "Bandwidth usage metric of a Magic Transit tunnel.",
         "nelReportsAdaptiveGroups": "Data to visualize network error logs",
         "pagesFunctionsInvocationsAdaptiveGroups": "Pages Functions invocations with adaptive sampling",
         "rumPageloadEventsAdaptiveGroups": "Beta. Aggregated RUM pageload event metrics with adaptive sampling",
@@ -2686,6 +2741,8 @@
         "zones": ""
     },
     "zone": {
+        "emailRoutingAdaptive": "Beta. Raw email routing logs with adaptive sampling",
+        "emailRoutingAdaptiveGroups": "Beta. Aggregated email routing logs with adaptive sampling",
         "firewallEventsAdaptive": "Raw Firewall events with adaptive sampling",
         "firewallEventsAdaptiveByTimeGroups": "Aggregated Firewall events with adaptive sampling grouped by time",
         "firewallEventsAdaptiveGroups": "Aggregated Firewall events with adaptive sampling",
