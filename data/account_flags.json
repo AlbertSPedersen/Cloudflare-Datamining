@@ -23,6 +23,7 @@
         "s2s_posture": false,
         "teams_biso_beta": false,
         "teams_browser_isolate": false,
+        "teams_casb_beta": false,
         "teams_dashboard": false,
         "teams_devices_enrollment": false,
         "teams_dot_enabled": false,
