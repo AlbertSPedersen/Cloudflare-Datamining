@@ -329,7 +329,7 @@
         "same_zone_worker_on_subrequest": false,
         "scheduled": false,
         "script_limit_exception": 100,
-        "script_rebalancing": false,
+        "script_rebalancing": true,
         "script_size_limit_exception_mb": 1,
         "scripts": 1000,
         "service_bindings": false,
