@@ -294,7 +294,7 @@
     },
     "warp": {
         "allowedTunnels": 1000,
-        "enabled": true,
+        "enabled": false,
         "maxConnectionsPerHostname": 10,
         "maxConnectionsPerNamedTunnel": 100,
         "max_named_tunnels_per_account": 1000,
