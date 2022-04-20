@@ -764,22 +764,6 @@
         "deleted_date": ""
     },
     {
-        "id": "authoritative_dns.wildcard_proxy_record_allowed",
-        "feature": {
-            "feature_set": "dns",
-            "id": 725,
-            "key": "authoritative_dns.wildcard_proxy_record_allowed",
-            "name": "Authoritative DNS - Wildcard Proxying Allowed"
-        },
-        "allocation": {
-            "value": false,
-            "type": "bool"
-        },
-        "created_date": "2020-10-13T16:50:09.000000",
-        "edited_date": "2020-10-13T16:50:09.000000",
-        "deleted_date": ""
-    },
-    {
         "id": "dns_records_api.bypass_anti_abuse_logic",
         "feature": {
             "feature_set": "dns",
