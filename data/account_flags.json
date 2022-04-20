@@ -1,4 +1,7 @@
 {
+    "ChallengeAPI": {
+        "beta": false
+    },
     "CloudflareImages": {
         "beta_access": false
     },
