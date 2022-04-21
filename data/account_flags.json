@@ -181,7 +181,7 @@
         "durable_object_alarms": false,
         "durable_objects": false,
         "enabled": false,
-        "green_compute": false,
+        "green_compute": true,
         "live_tailing": false,
         "origin_workers": false,
         "r2_admin_bindings": false,
