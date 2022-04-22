@@ -337,6 +337,7 @@
         "script_size_limit_exception_mb": 1,
         "scripts": 1000,
         "service_bindings": false,
+        "subrequest_limit": 50,
         "tail_rps_limit": 200,
         "text_binding_size_limit_exception": 5120,
         "trace_workers_self_tracing": false,
