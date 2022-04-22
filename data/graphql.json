@@ -495,8 +495,10 @@
     "AccountGatewayL4DownstreamSessionsAdaptiveGroupsSum": {
         "bytesRecvd": "Total bytes received in this session",
         "bytesSent": "Total bytes sent in this session",
+        "clientBytesRetransmitted": "Total bytes retransmitted by client in this session",
         "packetsRecvd": "Total number of packets received in this session",
-        "packetsSent": "Total number of packets sent in this session"
+        "packetsSent": "Total number of packets sent in this session",
+        "tokenAuthDurationUs": "Time taken for client token authentication in microseconds"
     },
     "AccountGatewayL4UpstreamSessionsAdaptiveGroups": {
         "count": "The number of upstream sessions",
@@ -517,6 +519,7 @@
         "downstreamSessionId": "Downstream session identifier of this session",
         "httpConnectReqStatus": "Client HTTP CONNECT request status. Possible values are unknown | success | failure",
         "quicErrorCode": "QUIC error code. Possible values are https://www.iana.org/assignments/quic/quic.xhtml#quic-transport-error-codes",
+        "transport": "Transport protocol used for this session. Possible values are tcp | quic | udp",
         "transportStatus": "Transport status. Possible values are unknown | success | failure"
     },
     "AccountGatewayL4UpstreamSessionsAdaptiveGroupsFilter_InputObject": {},
@@ -529,8 +532,12 @@
     "AccountGatewayL4UpstreamSessionsAdaptiveGroupsSum": {
         "bytesRecvd": "Total bytes received in this session",
         "bytesSent": "Total bytes sent in this session",
+        "connectReqHandlingDurationUs": "Time taken for CONNECT request handling in microseconds",
+        "originBytesRetransmitted": "Total bytes retransmitted by origin in this session",
         "packetsRecvd": "Total number of packets received in this session",
-        "packetsSent": "Total number of packets sent in this session"
+        "packetsSent": "Total number of packets sent in this session",
+        "totalTunnelSetupDurationUs": "Total time taken for tunnel setup in microseconds",
+        "tunnelSetupDurationUs": "Time taken for tunnel setup in microseconds"
     },
     "AccountHttpRequests1dGroups": {
         "avg": "The average value for a metric per dimension",
@@ -1239,17 +1246,22 @@
     "AccountMagicTransitTunnelHealthChecksAdaptiveGroupsFilter_InputObject": {},
     "AccountMagicTransitTunnelHealthChecksAdaptiveGroupsOrderBy": {},
     "AccountMagicTransitTunnelTrafficAdaptiveGroups": {
-        "avg": "Ingress bandwidth in bits per second for a past duration",
+        "avg": "Ingress/Egress bandwidth in bits per second for a past duration",
         "dimensions": "List of dimensions to group by"
     },
     "AccountMagicTransitTunnelTrafficAdaptiveGroupsAvg": {
-        "tunnelTrafficPast5": "Average of bandwidth per second over the last 5 minutes, when filter is applied"
+        "bitRateFifteenMinutes": "Sum of bits received, divided by 900 seconds, providing a per-second bit rate when grouped by datetimeFifteenMinutes",
+        "bitRateFiveMinutes": "Sum of bits received, divided by 300 seconds, providing a per-second bit rate when grouped by datetimeFiveMinutes",
+        "bitRateHour": "Sum of bits received, divided by 3600 seconds, providing a per-second bit rate when grouped by datetimeHour"
     },
     "AccountMagicTransitTunnelTrafficAdaptiveGroupsDimensions": {
         "datetime": "Date and time that the packet was received",
+        "datetimeFifteenMinutes": "Date and time that the packet was received, rounded to the start of the nearest fifteen minutes",
+        "datetimeFiveMinutes": "Date and time that the packet was received, rounded to the start of the nearest five minutes",
+        "datetimeHour": "Date and time that the packet was received, rounded to the start of the nearest hour",
         "direction": "Traffic Direction",
         "system": "System to collect info on",
-        "tunnelName": "Egress device info"
+        "tunnelName": "Tunnel device name"
     },
     "AccountMagicTransitTunnelTrafficAdaptiveGroupsFilter_InputObject": {},
     "AccountMagicTransitTunnelTrafficAdaptiveGroupsOrderBy": {},
@@ -1307,6 +1319,46 @@
         "subrequests": "Sum of Subrequests",
         "wallTime": "Sum of Wall Time"
     },
+    "AccountR2OperationsAdaptiveGroups": {
+        "dimensions": "List of dimensions to group by",
+        "sum": "The sum of values for a metric per dimension"
+    },
+    "AccountR2OperationsAdaptiveGroupsDimensions": {
+        "actionStatus": "Status of the R2 operation",
+        "actionType": "The name of the R2 operation",
+        "bucketName": "The name of the R2 bucket, if applicable to this request",
+        "date": "Request timestamp, truncated to start of a day",
+        "datetime": "Request timestamp",
+        "datetimeHour": "Request timestamp, truncated to start of an hour",
+        "datetimeMinute": "Request timestamp, truncated to start of an minute",
+        "objectName": "The name of the R2 object, if applicable to this request",
+        "responseStatusCode": "HTTP status code returned by R2"
+    },
+    "AccountR2OperationsAdaptiveGroupsFilter_InputObject": {},
+    "AccountR2OperationsAdaptiveGroupsOrderBy": {},
+    "AccountR2OperationsAdaptiveGroupsSum": {
+        "requests": "Sum of Requests",
+        "responseObjectSize": "Sum of Response Object Sizes"
+    },
+    "AccountR2StorageAdaptiveGroups": {
+        "dimensions": "List of dimensions to group by",
+        "max": "The max of values for a metric per dimension"
+    },
+    "AccountR2StorageAdaptiveGroupsDimensions": {
+        "bucketName": "The name of the R2 bucket, if applicable to this request",
+        "date": "Storage sample timestamp, truncated to start of a day",
+        "datetime": "Storage sample timestamp",
+        "datetimeHour": "Storage sample timestamp, truncated to start of an hour",
+        "datetimeMinute": "Storage sample timestamp, truncated to start of an minute"
+    },
+    "AccountR2StorageAdaptiveGroupsFilter_InputObject": {},
+    "AccountR2StorageAdaptiveGroupsMax": {
+        "metadataSize": "Max of metadata size",
+        "objectCount": "Max of object count",
+        "payloadSize": "Max of payload size",
+        "uploadCount": "Max of upload count"
+    },
+    "AccountR2StorageAdaptiveGroupsOrderBy": {},
     "AccountRumPageloadEventsAdaptiveGroups": {
         "avg": "",
         "count": "The number of pages viewed by end-users",
@@ -1462,7 +1514,6 @@
         "cumulativeLayoutShift": "Cumulative Layout Shift (Core Web Vitals) (negative value indicates N/A)",
         "firstInputDelay": "First Input Delay (Core Web Vitals) in microseconds (negative value indicates N/A)",
         "largestContentfulPaint": "Largest Contentful Paint (Core Web Vitals) in microseconds (negative value indicates N/A)",
-        "largestContentfulPaintElementSize": "Size of the largest object in bytes (negative value indicates N/A)",
         "sampleInterval": "Average sample interval"
     },
     "AccountRumWebVitalsEventsAdaptiveGroupsDimensions": {
@@ -1506,10 +1557,6 @@
         "firstInputDelayP75": "First Input Delay (Core Web Vitals) in microseconds (negative value indicates N/A)",
         "firstInputDelayP90": "First Input Delay (Core Web Vitals) in microseconds (negative value indicates N/A)",
         "firstInputDelayP99": "First Input Delay (Core Web Vitals) in microseconds (negative value indicates N/A)",
-        "largestContentfulPaintElementSizeP50": "Size of the largest object in bytes (negative value indicates N/A)",
-        "largestContentfulPaintElementSizeP75": "Size of the largest object in bytes (negative value indicates N/A)",
-        "largestContentfulPaintElementSizeP90": "Size of the largest object in bytes (negative value indicates N/A)",
-        "largestContentfulPaintElementSizeP99": "Size of the largest object in bytes (negative value indicates N/A)",
         "largestContentfulPaintP50": "Largest Contentful Paint (Core Web Vitals) in microseconds (negative value indicates N/A)",
         "largestContentfulPaintP75": "Largest Contentful Paint (Core Web Vitals) in microseconds (negative value indicates N/A)",
         "largestContentfulPaintP90": "Largest Contentful Paint (Core Web Vitals) in microseconds (negative value indicates N/A)",
@@ -1558,6 +1605,8 @@
         "magicTransitTunnelTrafficAdaptiveGroups": "",
         "nelReportsAdaptiveGroups": "",
         "pagesFunctionsInvocationsAdaptiveGroups": "",
+        "r2OperationsAdaptiveGroups": "",
+        "r2StorageAdaptiveGroups": "",
         "rumPageloadEventsAdaptiveGroups": "",
         "rumPerformanceEventsAdaptiveGroups": "",
         "rumWebVitalsEventsAdaptive": "",
@@ -2661,7 +2710,9 @@
         "loadBalancingRequestsAdaptive": "",
         "loadBalancingRequestsAdaptiveGroups": "",
         "nelReportsAdaptiveGroups": "",
-        "synAvgPps1mGroups": ""
+        "synAvgPps1mGroups": "",
+        "waitingRoomAnalyticsAdaptive": "",
+        "waitingRoomAnalyticsAdaptiveGroups": ""
     },
     "ZoneSynAvgPps1mGroups": {
         "count": "Counts a number of rows per specific dimensions",
@@ -2681,6 +2732,85 @@
     "ZoneSynAvgPps1mGroupsSum": {
         "avgPpsPerMinute": "Avg packets per second for this minute."
     },
+    "ZoneWaitingRoomAnalyticsAdaptive": {
+        "abandoningUsersPerMinute": "Number of users abandoning the queue per minute",
+        "datetime": "The date and time of the state of analytics for the waiting room",
+        "maxEstimatedTimeMinutes": "Maximum value of estimated time in minutes",
+        "newUsersPerMinute": "Actual value of new users per minute",
+        "newUsersPerMinuteConfig": "Configured value of new users per minute",
+        "sampleInterval": "ABR sample interval",
+        "sessionDuration": "Configured value of session duration",
+        "timeBetweenRefreshesP50": "50th percentile of the time between session refreshes in minutes",
+        "timeBetweenRefreshesP75": "75th percentile of the time between session refreshes in minutes",
+        "timeBetweenRefreshesP90": "90th percentile of the time between session refreshes in minutes",
+        "timeBetweenRefreshesP95": "95th percentile of the time between session refreshes in minutes",
+        "timeInQueueP50": "50th percentile of the time spent waiting in queue in minutes",
+        "timeInQueueP75": "75th percentile of the time spent waiting in queue in minutes",
+        "timeInQueueP90": "90th percentile of the time spent waiting in queue in minutes",
+        "timeInQueueP95": "95th percentile of the time spent waiting in queue in minutes",
+        "timeOnOriginP50": "50th percentile of the time spent on the origin in minutes",
+        "timeOnOriginP75": "75th percentile of the time spent on the origin in minutes",
+        "timeOnOriginP90": "90th percentile of the time spent on the origin in minutes",
+        "timeOnOriginP95": "95th percentile of the time spent on the origin in minutes",
+        "totalActiveUsers": "Actual value of total active users",
+        "totalActiveUsersConfig": "Configured value of total active users",
+        "totalQueuedUsers": "Total number of users that are queued",
+        "waitingRoomId": "Unique Identifier for the waiting room",
+        "waitingRoomName": "Name of the waiting room"
+    },
+    "ZoneWaitingRoomAnalyticsAdaptiveFilter_InputObject": {},
+    "ZoneWaitingRoomAnalyticsAdaptiveGroups": {
+        "avg": "The avg of values for a metric per dimension",
+        "avgWeighted": "The avgWeighted values for a metric per dimension",
+        "dimensions": "List of dimensions to group by",
+        "max": "The max value for a metric per dimenstion"
+    },
+    "ZoneWaitingRoomAnalyticsAdaptiveGroupsAvg": {
+        "abandoningUsersPerMinute": "Average rate of users abandoning the queue",
+        "maxEstimatedTimeMinutes": "Average of the maximum estimated wait time per minute",
+        "newUsersPerMinute": "Average rate of new users per minute",
+        "newUsersPerMinuteConfig": "Configured value of new users per minute",
+        "sessionDuration": "Configured value of session duration",
+        "totalActiveUsers": "Average rate of total active users",
+        "totalActiveUsersConfig": "Configured value of total active users",
+        "totalQueuedUsers": "Average of total queued users"
+    },
+    "ZoneWaitingRoomAnalyticsAdaptiveGroupsAvgWeighted": {
+        "timeBetweenRefreshesP50": "Weighted average of 50th percentile of time spent between session refreshes in minutes",
+        "timeBetweenRefreshesP75": "Weighted average of 75th percentile of time spent between session refreshes in minutes",
+        "timeBetweenRefreshesP90": "Weighted average of 90th percentile of time spent between session refreshes in minutes",
+        "timeBetweenRefreshesP95": "Weighted average of 95th percentile of time spent between session refreshes in minutes",
+        "timeInQueueP50": "Weighted average of 50th percentile of time spent in queue in minutes",
+        "timeInQueueP75": "Weighted average of 75th percentile of time spent in queue in minutes",
+        "timeInQueueP90": "Weighted average of 90th percentile of time spent in queue in minutes",
+        "timeInQueueP95": "Weighted average of 95th percentile of time spent in queue in minutes",
+        "timeOnOriginP50": "Weighted average of 50th percentile of time spent on origin in minutes",
+        "timeOnOriginP75": "Weighted average of 75th percentile of time spent on origin in minutes",
+        "timeOnOriginP90": "Weighted average of 90th percentile of time spent on origin in minutes",
+        "timeOnOriginP95": "Weighted average of 95th percentile of time spent on origin in minutes"
+    },
+    "ZoneWaitingRoomAnalyticsAdaptiveGroupsDimensions": {
+        "date": "The date the event was written to the database",
+        "datetime": "The date and time the event was written to the database",
+        "datetimeFifteenMinutes": "The date and time the event was written to the database, truncated to a multiple of 15 minutes",
+        "datetimeFiveMinutes": "The date and time the event was written to the database, truncated to a multiple of 5 minutes",
+        "datetimeHour": "The date and time the event was written to the database, truncated to the hour",
+        "datetimeMinute": "The date and time the event was written to the database, truncated to the minute",
+        "sampleInterval": "ABR sample interval"
+    },
+    "ZoneWaitingRoomAnalyticsAdaptiveGroupsFilter_InputObject": {},
+    "ZoneWaitingRoomAnalyticsAdaptiveGroupsMax": {
+        "abandoningUsersPerMinute": "The maximum value of users abandoning the queue every minute",
+        "maxEstimatedTimeMinutes": "The maximum value of estimated time in minutes",
+        "newUsersPerMinute": "The maximum value of the actual new users per minute",
+        "newUsersPerMinuteConfig": "The maximum value of the configured new users per minute",
+        "sessionDuration": "The maximum value of the configured session duration configuration",
+        "totalActiveUsers": "The maximum value of the actual total active users",
+        "totalActiveUsersConfig": "The maximum value of the configured total active users",
+        "totalQueuedUsers": "The maximum value of total number of queued users"
+    },
+    "ZoneWaitingRoomAnalyticsAdaptiveGroupsOrderBy": {},
+    "ZoneWaitingRoomAnalyticsAdaptiveOrderBy": {},
     "account": {
         "accountTag": "",
         "cdnNetworkAnalyticsAdaptiveGroups": "Network analytics data for Cloudflare CDN traffic",
@@ -2709,6 +2839,8 @@
         "magicTransitTunnelTrafficAdaptiveGroups": "Bandwidth usage metric of a Magic Transit tunnel.",
         "nelReportsAdaptiveGroups": "Data to visualize network error logs",
         "pagesFunctionsInvocationsAdaptiveGroups": "Pages Functions invocations with adaptive sampling",
+        "r2OperationsAdaptiveGroups": "Beta. R2 operations with adaptive sampling",
+        "r2StorageAdaptiveGroups": "Beta. R2 storage with adaptive sampling",
         "rumPageloadEventsAdaptiveGroups": "Beta. Aggregated RUM pageload event metrics with adaptive sampling",
         "rumPerformanceEventsAdaptiveGroups": "Beta. Aggregated RUM performance event metrics with adaptive sampling",
         "rumWebVitalsEventsAdaptive": "Beta. RUM Web Vitals event metrics with adaptive sampling",
@@ -2762,6 +2894,8 @@
         "nelReportsAdaptiveGroups": "Data to visualize network error logs",
         "settings": "",
         "synAvgPps1mGroups": "Minutely rollups of average packets per second sent in a SYN attack",
+        "waitingRoomAnalyticsAdaptive": "Beta. Raw waiting room analytics logs",
+        "waitingRoomAnalyticsAdaptiveGroups": "Beta. Aggregated waiting room analytics logs with adaptive sampling",
         "zoneTag": ""
     }
 }
