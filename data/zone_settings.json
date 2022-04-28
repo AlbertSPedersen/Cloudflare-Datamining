@@ -138,6 +138,12 @@
         "editable": true
     },
     {
+        "id": "long_lived_grpc",
+        "value": "off",
+        "modified_on": null,
+        "editable": false
+    },
+    {
         "id": "max_upload",
         "value": 100,
         "modified_on": null,
