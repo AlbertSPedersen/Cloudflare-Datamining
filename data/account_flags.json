@@ -166,6 +166,7 @@
         "actors": false,
         "appworker_develop": false,
         "bulk_compute": true,
+        "cfsql_bindings": false,
         "cloudflare_pages": false,
         "cloudflare_pages_admin": false,
         "cloudflare_pages_concurrent_builds_limit": 1,
