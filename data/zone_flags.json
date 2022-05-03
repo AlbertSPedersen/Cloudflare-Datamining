@@ -99,6 +99,7 @@
     "cache": {
         "analytics": true,
         "cache_reserve_beta": false,
+        "cache_reserve_beta_accepted": false,
         "crawlhints_card": true,
         "crawlhints_enabled": false,
         "earlyhints_beta_signup": false,
