@@ -105,6 +105,20 @@
         "bits": "Sum of bits received",
         "packets": "Sum of packets received"
     },
+    "AccountCustomEventsAdaptiveGroups": {
+        "count": "The number of values for a metric per dimension",
+        "dimensions": "List of dimensions to group by"
+    },
+    "AccountCustomEventsAdaptiveGroupsDimensions": {
+        "datetime": "The date and time the event occurred",
+        "datetimeFifteenMinutes": "The date and time the event occurred truncated to a multiple of 15 minutes",
+        "datetimeFiveMinutes": "The date and time the event occurred truncated to a multiple of 5 minutes",
+        "datetimeHour": "The date and time the event occurred truncated to the start of an hour",
+        "datetimeMinute": "The date and time the event occurred truncated to the start of a minute",
+        "name": "The metric name"
+    },
+    "AccountCustomEventsAdaptiveGroupsFilter_InputObject": {},
+    "AccountCustomEventsAdaptiveGroupsOrderBy": {},
     "AccountDosdAttackAnalyticsGroups": {
         "attackId": "Unique identifier of the mitigation that matched the packet, if any",
         "attackType": "Type of attack traffic",
@@ -539,6 +553,34 @@
         "totalTunnelSetupDurationUs": "Total time taken for tunnel setup in microseconds",
         "tunnelSetupDurationUs": "Time taken for tunnel setup in microseconds"
     },
+    "AccountGatewayResolverByCategoryAdaptiveGroups": {
+        "count": "The number of Gateway Resolver queries",
+        "dimensions": "List of dimensions to group by"
+    },
+    "AccountGatewayResolverByCategoryAdaptiveGroupsDimensions": {
+        "categoryId": "ID of the category that was assigned to the domain",
+        "datetime": "The date and time the DNS query was resolved",
+        "datetimeHour": "The date and time the event occurred at the edge truncated to hours",
+        "datetimeMinute": "The date and time the event occurred at the edge truncated to minutes",
+        "locationId": "The uuid identifying the customer Location used when resolving",
+        "resolverDecision": "Enum identifier for the decision made by gateway-resolver, one of: (0, unknown) (1, allowedByQueryName) (2, blockedByQueryName) (3, blockedByCategory) (4, allowedOnNoLocation) (5, allowedOnNoPolicyMatch) (6, blockedAlwaysCategory) (7, overrideForSafeSearch) (8, overrideApplied) (9, blockedRule) (10, allowedRule)\n"
+    },
+    "AccountGatewayResolverByCategoryAdaptiveGroupsFilter_InputObject": {},
+    "AccountGatewayResolverByCategoryAdaptiveGroupsOrderBy": {},
+    "AccountGatewayResolverQueriesAdaptiveGroups": {
+        "count": "The number of Gateway Resolver queries",
+        "dimensions": "List of dimensions to group by"
+    },
+    "AccountGatewayResolverQueriesAdaptiveGroupsDimensions": {
+        "datetime": "The date and time the DNS query was resolved",
+        "datetimeHour": "The date and time the event occurred at the edge truncated to hours",
+        "datetimeMinute": "The date and time the event occurred at the edge truncated to minutes",
+        "locationId": "The uuid identifying the customer Location used when resolving",
+        "queryNameReversed": "Name of the query in reverse order, e.g. com.cloudflare.teams.dash",
+        "resolverDecision": "Enum identifier for the decision made by gateway-resolver, one of: (0, unknown) (1, allowedByQueryName) (2, blockedByQueryName) (3, blockedByCategory) (4, allowedOnNoLocation) (5, allowedOnNoPolicyMatch) (6, blockedAlwaysCategory) (7, overrideForSafeSearch) (8, overrideApplied) (9, blockedRule) (10, allowedRule)\n"
+    },
+    "AccountGatewayResolverQueriesAdaptiveGroupsFilter_InputObject": {},
+    "AccountGatewayResolverQueriesAdaptiveGroupsOrderBy": {},
     "AccountHttpRequests1dGroups": {
         "avg": "The average value for a metric per dimension",
         "dimensions": "List of dimensions to group by",
@@ -1580,6 +1622,7 @@
     "AccountRumWebVitalsEventsAdaptiveOrderBy": {},
     "AccountSettings": {
         "cdnNetworkAnalyticsAdaptiveGroups": "",
+        "customEventsAdaptiveGroups": "",
         "dosdAttackAnalyticsGroups": "",
         "dosdNetworkAnalyticsAdaptiveGroups": "",
         "durableObjectsInvocationsAdaptiveGroups": "",
@@ -1589,6 +1632,8 @@
         "flowtrackdNetworkAnalyticsAdaptiveGroups": "",
         "gatewayL4DownstreamSessionsAdaptiveGroups": "",
         "gatewayL4UpstreamSessionsAdaptiveGroups": "",
+        "gatewayResolverByCategoryAdaptiveGroups": "",
+        "gatewayResolverQueriesAdaptiveGroups": "",
         "httpRequests1dGroups": "",
         "httpRequests1hGroups": "",
         "httpRequests1mGroups": "",
@@ -2824,6 +2869,7 @@
     "account": {
         "accountTag": "",
         "cdnNetworkAnalyticsAdaptiveGroups": "Network analytics data for Cloudflare CDN traffic",
+        "customEventsAdaptiveGroups": "Beta. Custom Events with adaptive sampling",
         "dosdAttackAnalyticsGroups": "Attack analytics metadata for attacks detected by dosd",
         "dosdNetworkAnalyticsAdaptiveGroups": "Network analytics data for dosd",
         "durableObjectsInvocationsAdaptiveGroups": "Durable Objects invocations with adaptive sampling",
@@ -2833,6 +2879,8 @@
         "flowtrackdNetworkAnalyticsAdaptiveGroups": "Network analytics data for flowtrackd",
         "gatewayL4DownstreamSessionsAdaptiveGroups": "Aggregated metrics about downstream (client to edge) L4 Gateway Sessions. Metrics are reported on TCP or UDP session close",
         "gatewayL4UpstreamSessionsAdaptiveGroups": "Aggregated metrics about upstream (edge to client) L4 Gateway Sessions. Metrics are reported on TCP, QUIC or UDP session close",
+        "gatewayResolverByCategoryAdaptiveGroups": "BETA - Aggregate counts of Gateway Resolver queries by category with adaptive sampling",
+        "gatewayResolverQueriesAdaptiveGroups": "BETA - Aggregate counts of Gateway Resolver queries with adaptive sampling",
         "httpRequests1dGroups": "Daily rollups of request data",
         "httpRequests1hGroups": "Hourly rollups of request data",
         "httpRequests1mGroups": "Minutely rollups of request data",
