@@ -170,6 +170,7 @@
         "cloudflare_pages": false,
         "cloudflare_pages_admin": false,
         "cloudflare_pages_concurrent_builds_limit": 1,
+        "cloudflare_pages_direct_uploads": false,
         "cloudflare_pages_functions_beta": true,
         "cloudflare_pages_functions_daily_limit": 100000,
         "cloudflare_pages_gitlab_beta": true,
