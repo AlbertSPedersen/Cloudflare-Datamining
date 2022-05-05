@@ -1982,6 +1982,39 @@
         "notOlderThan": "Cannot reach for data beyond this distance in the past (seconds)"
     },
     "Time": {},
+    "ZoneCacheReserveOperationsAdaptiveGroups": {
+        "dimensions": "List of dimensions to group by",
+        "sum": "The sum of values for a metric per dimension"
+    },
+    "ZoneCacheReserveOperationsAdaptiveGroupsDimensions": {
+        "actionStatus": "Status of the R2 operation",
+        "date": "Request timestamp, truncated to start of a day",
+        "datetime": "Request timestamp",
+        "datetimeHour": "Request timestamp, truncated to start of an hour",
+        "datetimeMinute": "Request timestamp, truncated to start of an minute",
+        "operationClass": "Billable class of storage operation"
+    },
+    "ZoneCacheReserveOperationsAdaptiveGroupsFilter_InputObject": {},
+    "ZoneCacheReserveOperationsAdaptiveGroupsOrderBy": {},
+    "ZoneCacheReserveOperationsAdaptiveGroupsSum": {
+        "requests": "Sum of Requests"
+    },
+    "ZoneCacheReserveStorageAdaptiveGroups": {
+        "dimensions": "List of dimensions to group by",
+        "max": "The max of values for a metric per dimension"
+    },
+    "ZoneCacheReserveStorageAdaptiveGroupsDimensions": {
+        "bucketHash": "Hash of bucket containing stored objects",
+        "date": "Storage sample timestamp, truncated to start of a day",
+        "datetime": "Storage sample timestamp",
+        "datetimeHour": "Storage sample timestamp, truncated to start of an hour",
+        "datetimeMinute": "Storage sample timestamp, truncated to start of an minute"
+    },
+    "ZoneCacheReserveStorageAdaptiveGroupsFilter_InputObject": {},
+    "ZoneCacheReserveStorageAdaptiveGroupsMax": {
+        "storedBytes": "Payload and metadata size of objects in bucket"
+    },
+    "ZoneCacheReserveStorageAdaptiveGroupsOrderBy": {},
     "ZoneEmailRoutingAdaptive": {
         "datetime": "The date and time the source email was received",
         "dkim": "DKIM check status of the source email",
@@ -2746,6 +2779,8 @@
     "ZoneNelReportsAdaptiveGroupsFilter_InputObject": {},
     "ZoneNelReportsAdaptiveGroupsOrderBy": {},
     "ZoneSettings": {
+        "cacheReserveOperationsAdaptiveGroups": "",
+        "cacheReserveStorageAdaptiveGroups": "",
         "emailRoutingAdaptive": "",
         "emailRoutingAdaptiveGroups": "",
         "firewallEventsAdaptive": "",
@@ -2931,6 +2966,8 @@
         "zones": ""
     },
     "zone": {
+        "cacheReserveOperationsAdaptiveGroups": "Beta. Cache Reserve operations with adaptive sampling",
+        "cacheReserveStorageAdaptiveGroups": "Beta. Cache Reserve storage with adaptive sampling",
         "emailRoutingAdaptive": "Beta. Raw email routing logs with adaptive sampling",
         "emailRoutingAdaptiveGroups": "Beta. Aggregated email routing logs with adaptive sampling",
         "firewallEventsAdaptive": "Raw Firewall events with adaptive sampling",
