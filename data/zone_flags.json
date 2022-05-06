@@ -132,7 +132,9 @@
     },
     "email": {
         "beta": false,
-        "visible": false
+        "visible": false,
+        "workers_enabled": false,
+        "workers_waitlist": false
     },
     "firewall": {
         "analytics_load_on_scroll": false,
