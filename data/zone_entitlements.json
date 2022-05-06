@@ -1082,5 +1082,21 @@
         "created_date": "2022-03-23T19:14:13.000000",
         "edited_date": "2022-03-23T19:14:13.000000",
         "deleted_date": ""
+    },
+    {
+        "id": "rulesets.custom_errors_max_rules",
+        "feature": {
+            "feature_set": "rulesets",
+            "id": 1018,
+            "key": "rulesets.custom_errors_max_rules",
+            "name": "Rulesets - Custom Errors Rules Max"
+        },
+        "allocation": {
+            "value": 0,
+            "type": "max_count"
+        },
+        "created_date": "2022-05-04T17:47:28.000000",
+        "edited_date": "2022-05-04T17:47:28.000000",
+        "deleted_date": ""
     }
 ]
