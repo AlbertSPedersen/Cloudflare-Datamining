@@ -5,6 +5,9 @@
     "CloudflareImages": {
         "beta_access": false
     },
+    "CloudflarePubsub": {
+        "enabled": false
+    },
     "Ninjapanelrelatedproductandfeatures": {
         "use_mobx_np_auth_component": true
     },

@@ -5,6 +5,9 @@
     "CloudflareImages": {
         "beta_access": false
     },
+    "CloudflarePubsub": {
+        "enabled": false
+    },
     "Secondary DNS": {
         "enable": false,
         "onboarding": true,
