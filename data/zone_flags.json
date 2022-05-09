@@ -331,7 +331,7 @@
         "cloudflare_pages_preview_branch_syntax_preview": false,
         "cloudflare_pages_project_limit_override": false,
         "cloudflare_pages_skip_commit": false,
-        "cloudflare_pages_streaming_logs": false,
+        "cloudflare_pages_streaming_logs": true,
         "cron_triggers": -1,
         "durable_object_alarms": false,
         "durable_objects": false,
