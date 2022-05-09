@@ -212,6 +212,9 @@
         "enabled": true,
         "show_signup_ui": false
     },
+    "r2": {
+        "r2_logpush": false
+    },
     "real_user_monitoring": {
         "enabled": false,
         "releaseVer": 1,
