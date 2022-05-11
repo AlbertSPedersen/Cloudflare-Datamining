@@ -191,7 +191,7 @@
         "live_tailing": false,
         "origin_workers": false,
         "r2_admin_bindings": false,
-        "r2_bindings": false,
+        "r2_bindings": true,
         "request_cpu_ms": -1,
         "same_zone_worker_on_subrequest": false,
         "scheduled": false,

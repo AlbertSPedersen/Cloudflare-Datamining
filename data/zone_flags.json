@@ -101,7 +101,7 @@
     },
     "cache": {
         "analytics": true,
-        "cache_reserve_beta": false,
+        "cache_reserve_beta": true,
         "cache_reserve_beta_accepted": false,
         "crawlhints_card": true,
         "crawlhints_enabled": false,
@@ -216,7 +216,7 @@
         "show_signup_ui": false
     },
     "r2": {
-        "r2_logpush": false
+        "r2_logpush": true
     },
     "real_user_monitoring": {
         "enabled": false,
@@ -340,7 +340,7 @@
         "live_tailing": false,
         "origin_workers": false,
         "r2_admin_bindings": false,
-        "r2_bindings": false,
+        "r2_bindings": true,
         "request_cpu_ms": -1,
         "same_zone_worker_on_subrequest": false,
         "scheduled": false,
