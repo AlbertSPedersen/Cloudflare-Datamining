@@ -105,20 +105,6 @@
         "bits": "Sum of bits received",
         "packets": "Sum of packets received"
     },
-    "AccountCustomEventsAdaptiveGroups": {
-        "count": "The number of values for a metric per dimension",
-        "dimensions": "List of dimensions to group by"
-    },
-    "AccountCustomEventsAdaptiveGroupsDimensions": {
-        "datetime": "The date and time the event occurred",
-        "datetimeFifteenMinutes": "The date and time the event occurred truncated to a multiple of 15 minutes",
-        "datetimeFiveMinutes": "The date and time the event occurred truncated to a multiple of 5 minutes",
-        "datetimeHour": "The date and time the event occurred truncated to the start of an hour",
-        "datetimeMinute": "The date and time the event occurred truncated to the start of a minute",
-        "name": "The metric name"
-    },
-    "AccountCustomEventsAdaptiveGroupsFilter_InputObject": {},
-    "AccountCustomEventsAdaptiveGroupsOrderBy": {},
     "AccountDosdAttackAnalyticsGroups": {
         "attackId": "Unique identifier of the mitigation that matched the packet, if any",
         "attackType": "Type of attack traffic",
@@ -1622,7 +1608,6 @@
     "AccountRumWebVitalsEventsAdaptiveOrderBy": {},
     "AccountSettings": {
         "cdnNetworkAnalyticsAdaptiveGroups": "",
-        "customEventsAdaptiveGroups": "",
         "dosdAttackAnalyticsGroups": "",
         "dosdNetworkAnalyticsAdaptiveGroups": "",
         "durableObjectsInvocationsAdaptiveGroups": "",
@@ -1661,6 +1646,7 @@
         "videoBufferEventsAdaptiveGroups": "",
         "videoPlaybackEventsAdaptiveGroups": "",
         "videoQualityEventsAdaptiveGroups": "",
+        "workersAnalyticsEngineAdaptiveGroups": "",
         "workersInvocationsAdaptive": "",
         "workersInvocationsScheduled": "",
         "workersSubrequestsAdaptiveGroups": ""
@@ -1870,6 +1856,20 @@
     },
     "AccountVideoQualityEventsAdaptiveGroupsFilter_InputObject": {},
     "AccountVideoQualityEventsAdaptiveGroupsOrderBy": {},
+    "AccountWorkersAnalyticsEngineAdaptiveGroups": {
+        "count": "The number of values for a metric per dimension",
+        "dimensions": "List of dimensions to group by"
+    },
+    "AccountWorkersAnalyticsEngineAdaptiveGroupsDimensions": {
+        "datetime": "The date and time the event occurred",
+        "datetimeFifteenMinutes": "The date and time the event occurred truncated to a multiple of 15 minutes",
+        "datetimeFiveMinutes": "The date and time the event occurred truncated to a multiple of 5 minutes",
+        "datetimeHour": "The date and time the event occurred truncated to the start of an hour",
+        "datetimeMinute": "The date and time the event occurred truncated to the start of a minute",
+        "name": "The metric name"
+    },
+    "AccountWorkersAnalyticsEngineAdaptiveGroupsFilter_InputObject": {},
+    "AccountWorkersAnalyticsEngineAdaptiveGroupsOrderBy": {},
     "AccountWorkersInvocationsAdaptive": {
         "avg": "The average value used for sample interval",
         "dimensions": "List of dimensions to group by",
@@ -2904,7 +2904,6 @@
     "account": {
         "accountTag": "",
         "cdnNetworkAnalyticsAdaptiveGroups": "Network analytics data for Cloudflare CDN traffic",
-        "customEventsAdaptiveGroups": "Beta. Custom Events with adaptive sampling",
         "dosdAttackAnalyticsGroups": "Attack analytics metadata for attacks detected by dosd",
         "dosdNetworkAnalyticsAdaptiveGroups": "Network analytics data for dosd",
         "durableObjectsInvocationsAdaptiveGroups": "Durable Objects invocations with adaptive sampling",
@@ -2944,6 +2943,7 @@
         "videoBufferEventsAdaptiveGroups": "Beta. Aggregated video streaming buffer event metrics with adaptive sampling",
         "videoPlaybackEventsAdaptiveGroups": "Beta. Aggregated video streaming playback event metrics with adaptive sampling",
         "videoQualityEventsAdaptiveGroups": "Beta. Aggregated video streaming quality change event metrics with adaptive sampling",
+        "workersAnalyticsEngineAdaptiveGroups": "Beta. Custom Events with adaptive sampling",
         "workersInvocationsAdaptive": "Beta. Workers invocations with adaptive sampling",
         "workersInvocationsScheduled": "Workers scheduled invocations",
         "workersSubrequestsAdaptiveGroups": "Beta. Workers subrequests with adaptive sampling",
