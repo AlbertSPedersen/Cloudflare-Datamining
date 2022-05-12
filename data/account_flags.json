@@ -3,7 +3,8 @@
         "beta": false
     },
     "CloudflareImages": {
-        "beta_access": false
+        "beta_access": false,
+        "sourcing_kit_enabled": false
     },
     "CloudflarePubsub": {
         "enabled": false
