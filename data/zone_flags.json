@@ -5,7 +5,7 @@
     "CloudflareImages": {
         "beta_access": false,
         "sourcing_kit_enabled": false,
-        "sourcing_kit_waitlist": false
+        "sourcing_kit_waitlist": true
     },
     "CloudflarePubsub": {
         "enabled": false
@@ -139,7 +139,7 @@
         "beta": false,
         "visible": false,
         "workers_enabled": false,
-        "workers_waitlist": false
+        "workers_waitlist": true
     },
     "firewall": {
         "analytics_load_on_scroll": false,
