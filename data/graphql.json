@@ -500,6 +500,25 @@
         "packetsSent": "Total number of packets sent in this session",
         "tokenAuthDurationUs": "Time taken for client token authentication in microseconds"
     },
+    "AccountGatewayL4SessionsAdaptiveGroups": {
+        "count": "The number of Gateway L4 sessions",
+        "dimensions": "List of dimensions to group by"
+    },
+    "AccountGatewayL4SessionsAdaptiveGroupsDimensions": {
+        "action": "Enum identifier for the action taken by gateway, one of: (0, unknown) (1, allowedByRule) (2, blockByRule) (3, override) (4, allowedOnNoRuleMatch) (5, auditSsh) (6, authenticate)\n",
+        "datetime": "Datetime that the session was started",
+        "datetimeHour": "Datetime that the session was started truncated to hours",
+        "datetimeMinute": "Datetime that the session was started truncated to minutes",
+        "destinationIp": "The destination IP address for the session",
+        "destinationPort": "The destination port for the session",
+        "email": "The email address of the gateway user who initiated the session",
+        "sni": "The SNI pulled from the session tls handshake, if present",
+        "sourceIp": "The source IP address for the session",
+        "sourcePort": "The source port for the session",
+        "transport": "The transport protocol used in the session, one of (0, tcp) (1, quic) (2, udp)"
+    },
+    "AccountGatewayL4SessionsAdaptiveGroupsFilter_InputObject": {},
+    "AccountGatewayL4SessionsAdaptiveGroupsOrderBy": {},
     "AccountGatewayL4UpstreamSessionsAdaptiveGroups": {
         "count": "The number of upstream sessions",
         "dimensions": "List of dimensions to group by",
@@ -1616,6 +1635,7 @@
         "durableObjectsSubrequestsAdaptiveGroups": "",
         "flowtrackdNetworkAnalyticsAdaptiveGroups": "",
         "gatewayL4DownstreamSessionsAdaptiveGroups": "",
+        "gatewayL4SessionsAdaptiveGroups": "",
         "gatewayL4UpstreamSessionsAdaptiveGroups": "",
         "gatewayResolverByCategoryAdaptiveGroups": "",
         "gatewayResolverQueriesAdaptiveGroups": "",
@@ -1955,6 +1975,7 @@
         "sum": "The sum of values for a metric per dimension"
     },
     "AccountWorkersSubrequestsAdaptiveGroupsDimensions": {
+        "cacheStatus": "Cache status",
         "date": "Request datetime, truncated to start of a day",
         "datetime": "Request datetime",
         "datetimeHour": "Request datetime, truncated to start of an hour",
@@ -1966,7 +1987,8 @@
     "AccountWorkersSubrequestsAdaptiveGroupsFilter_InputObject": {},
     "AccountWorkersSubrequestsAdaptiveGroupsOrderBy": {},
     "AccountWorkersSubrequestsAdaptiveGroupsSum": {
-        "requestBodySizeUncached": "Workers fetch request body size in bytes where the request was not cached"
+        "requestBodySizeUncached": "Workers fetch request body size in bytes where the request was not cached",
+        "subrequests": "Number of subrequests"
     },
     "Date": {},
     "Query": {
@@ -2912,6 +2934,7 @@
         "durableObjectsSubrequestsAdaptiveGroups": "Durable Objects subrequests with adaptive sampling",
         "flowtrackdNetworkAnalyticsAdaptiveGroups": "Network analytics data for flowtrackd",
         "gatewayL4DownstreamSessionsAdaptiveGroups": "Aggregated metrics about downstream (client to edge) L4 Gateway Sessions. Metrics are reported on TCP or UDP session close",
+        "gatewayL4SessionsAdaptiveGroups": "BETA - Aggregate counts of Gateway L4 sessions with adaptive sampling",
         "gatewayL4UpstreamSessionsAdaptiveGroups": "Aggregated metrics about upstream (edge to client) L4 Gateway Sessions. Metrics are reported on TCP, QUIC or UDP session close",
         "gatewayResolverByCategoryAdaptiveGroups": "BETA - Aggregate counts of Gateway Resolver queries by category with adaptive sampling",
         "gatewayResolverQueriesAdaptiveGroups": "BETA - Aggregate counts of Gateway Resolver queries with adaptive sampling",
