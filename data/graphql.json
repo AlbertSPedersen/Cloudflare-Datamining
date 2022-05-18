@@ -2669,6 +2669,38 @@
         "edgeResponseBytes": "",
         "visits": "The number of requests by end-users that were initiated from a different website (i.e. where the request HTTP Referer header does not match the host in the HTTP Host header)"
     },
+    "ZoneHttpRequestsOverviewAdaptiveGroups": {
+        "avg": "The average value for a metric per dimension",
+        "dimensions": "List of dimensions to group by",
+        "sum": "The sum of values for a metric per dimension"
+    },
+    "ZoneHttpRequestsOverviewAdaptiveGroupsAvg": {
+        "sampleInterval": "Average sample interval"
+    },
+    "ZoneHttpRequestsOverviewAdaptiveGroupsDimensions": {
+        "clientCountryName": "Country from which request originated",
+        "clientRequestHTTPProtocol": "HTTP protocol version",
+        "clientSSLProtocol": "SSL protocol version",
+        "date": "The date the event occurred at the edge",
+        "datetime": "The date and time the event occurred at the edge",
+        "datetimeFifteenMinutes": "The date and time the event occurred at the edge truncated to a multiple of 15 minutes",
+        "datetimeFiveMinutes": "The date and time the event occurred at the edge truncated to a multiple of 5 minutes",
+        "datetimeHour": "The date and time the event occurred at the edge truncated to hours",
+        "datetimeMinute": "The date and time the event occurred at the edge truncated to the minute",
+        "edgeResponseContentTypeName": "Content type returned to client",
+        "edgeResponseStatus": "HTTP response status code returned to client",
+        "userAgentBrowser": "Browser parsed from the user agent"
+    },
+    "ZoneHttpRequestsOverviewAdaptiveGroupsFilter_InputObject": {},
+    "ZoneHttpRequestsOverviewAdaptiveGroupsOrderBy": {},
+    "ZoneHttpRequestsOverviewAdaptiveGroupsSum": {
+        "bytes": "",
+        "cachedBytes": "Bytes returned to client from cache",
+        "cachedRequests": "Requests served from cache",
+        "pageViews": "Successful requests for HTML content",
+        "requests": "",
+        "visits": "The number of requests by end-users that were initiated from a different website (i.e. where the request HTTP Referer header does not match the host in the HTTP Host header)"
+    },
     "ZoneImageResizingRequests1mGroups": {
         "count": "Counts a number of rows per specific dimensions",
         "dimensions": "List of dimensions to group by",
@@ -2818,6 +2850,7 @@
         "httpRequests1mByColoGroups": "",
         "httpRequests1mGroups": "",
         "httpRequestsAdaptiveGroups": "",
+        "httpRequestsOverviewAdaptiveGroups": "",
         "imageResizingRequests1mGroups": "",
         "loadBalancingRequestsAdaptive": "",
         "loadBalancingRequestsAdaptiveGroups": "",
@@ -3006,6 +3039,7 @@
         "httpRequests1mByColoGroups": "Deprecated. Minutely rollups of request data by colo",
         "httpRequests1mGroups": "Minutely rollups of request data",
         "httpRequestsAdaptiveGroups": "Aggregated HTTP requests data with adaptive sampling",
+        "httpRequestsOverviewAdaptiveGroups": "A high-level summary of HTTP requests made by end users.",
         "imageResizingRequests1mGroups": "Minutely rollups of Image Resizing requests",
         "loadBalancingRequestsAdaptive": "Raw Load Balancing origin requests with adaptive sampling",
         "loadBalancingRequestsAdaptiveGroups": "Aggregated Load Balancing origin requests with adaptive sampling",
