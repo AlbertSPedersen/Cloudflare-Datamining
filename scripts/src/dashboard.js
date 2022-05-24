@@ -58,7 +58,7 @@ async function getChunks() {
   const appJs = await appRes.text();
   
   // Trim this down to only the part we need right now
-  const idSection = appJs.substring(0, appJs.indexOf('../init.js'));
+  const idSection = appJs.substring(0, appJs.indexOf('../init.ts'));
 
   let scriptChunkIds = [];
 
