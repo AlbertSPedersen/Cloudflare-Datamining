@@ -511,11 +511,13 @@
         "datetimeMinute": "Datetime that the session was started truncated to minutes",
         "destinationIp": "The destination IP address for the session",
         "destinationPort": "The destination port for the session",
+        "deviceId": "The device ID of the gateway user who initiated the session",
         "email": "The email address of the gateway user who initiated the session",
         "sni": "The SNI pulled from the session tls handshake, if present",
         "sourceIp": "The source IP address for the session",
         "sourcePort": "The source port for the session",
-        "transport": "The transport protocol used in the session, one of (0, tcp) (1, quic) (2, udp)"
+        "transport": "The transport protocol used in the session, one of (0, tcp) (1, quic) (2, udp)",
+        "userId": "The ID of the gateway user who initiated the session"
     },
     "AccountGatewayL4SessionsAdaptiveGroupsFilter_InputObject": {},
     "AccountGatewayL4SessionsAdaptiveGroupsOrderBy": {},
@@ -567,9 +569,11 @@
         "datetime": "Datetime that the request happened",
         "datetimeHour": "Datetime that the request happened truncated to hours",
         "datetimeMinute": "Datetime that the request happened truncated to minutes",
+        "deviceId": "The device ID of the gateway user who made the request",
         "email": "The email address of the gateway user who made the request",
         "httpHost": "The destination host for the request",
-        "isIsolated": "Indicates whether this request was made through an isolated link"
+        "isIsolated": "Indicates whether this request was made through an isolated link",
+        "userId": "The ID of the gateway user who made the request"
     },
     "AccountGatewayL7RequestsAdaptiveGroupsFilter_InputObject": {},
     "AccountGatewayL7RequestsAdaptiveGroupsOrderBy": {},
