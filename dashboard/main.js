@@ -1397,12 +1397,12 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
       };
       try {
         n.g.build = _e({}, {
-          branch: "release-1653487434",
+          branch: "alvis/LOUI-3381-revert-legacy-hc-form-removal-hotfix",
           isReleaseCandidate: "true",
-          commit: "acc0beda8b3aebc97704f4f043d097556f97e5f4",
+          commit: "91f2747cbc855a60c8c69dea79b6c8ba1c3a181b",
           env: "production",
-          builtAt: 1653487944043,
-          dashVersion: "ca69fc8df9a3cd463c4857c25caa4584c9d90582",
+          builtAt: 1653558395116,
+          dashVersion: "92da8d5f60185d54ac9ccca4129716b7789e808c",
           versions: {
             "@cloudflare/app-dash": "25.39.1",
             node: "14.18.3",
@@ -58163,4 +58163,4 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   }
 ]);
 
-//# sourceMappingURL=3cdc521b4a8e7ecbadf4.js.map
+//# sourceMappingURL=261c24089f31d6a14e86.js.map
