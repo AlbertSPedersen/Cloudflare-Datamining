@@ -904,6 +904,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
           load_balancing_origins: o.eg.any.optional,
           load_balancing_probe_regions: o.eg.any.optional,
           legacyDeepLink: o.eg.any.optional,
+          locale: o.eg.any.optional,
           location: o.eg.any.optional,
           maliciousCode: o.eg.any.optional,
           maliciousDomain: o.eg.any.optional,
@@ -918,6 +919,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
           millis: o.eg.any.optional,
           "mirage-recommendation": o.eg.any.optional,
           mode: o.eg.any.optional,
+          mrktCheckboxDisplayed: o.eg.any.optional,
           name: o.eg.any.optional,
           newTotalCount: o.eg.any.optional,
           novalidate: o.eg.any.optional,
@@ -1397,14 +1399,14 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
       };
       try {
         n.g.build = _e({}, {
-          branch: "release-1653573866",
+          branch: "release-1653660170",
           isReleaseCandidate: "true",
-          commit: "308a2c6534caec1254d7370836a7a3ef78a6acd3",
+          commit: "a81d8966ddae6cb1b053c81da6c131d6e09f58a4",
           env: "production",
-          builtAt: 1653574209025,
-          dashVersion: "d5070d245cd3d02be138fad694b5722ef6d676af",
+          builtAt: 1653660504650,
+          dashVersion: "a7ea98d094bfc1b31c8cc2bd1ae99d628e748830",
           versions: {
-            "@cloudflare/app-dash": "25.40.2",
+            "@cloudflare/app-dash": "25.40.10",
             node: "14.18.3",
             yarn: "1.18.0",
             webpack: "5.38.1"
@@ -58178,4 +58180,4 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   }
 ]);
 
-//# sourceMappingURL=31296d6fed71eff2c549.js.map
+//# sourceMappingURL=57e1863ac6508e7d08e4.js.map
