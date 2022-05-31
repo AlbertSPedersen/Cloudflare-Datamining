@@ -81,6 +81,7 @@
         "zap_opt_in": false
     },
     "anomaly_detection_alerter": {
+        "http_edge_error_alert_enabled": false,
         "http_origin_error_alert_high_sensitivity_enabled": false,
         "http_origin_error_rate_alert_high_sensitivity_enabled": false,
         "periodicity_alerting_enabled": false
