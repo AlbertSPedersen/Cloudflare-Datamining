@@ -1098,5 +1098,21 @@
         "created_date": "2022-05-04T17:47:28.000000",
         "edited_date": "2022-05-04T17:47:28.000000",
         "deleted_date": ""
+    },
+    {
+        "id": "rulesets.cache_settings_rule_max",
+        "feature": {
+            "feature_set": "rulesets",
+            "id": 1021,
+            "key": "rulesets.cache_settings_rule_max",
+            "name": "Rulesets - Cache Settings Rule Max"
+        },
+        "allocation": {
+            "value": 10,
+            "type": "max_count"
+        },
+        "created_date": "2022-06-01T23:06:29.000000",
+        "edited_date": "2022-06-01T23:06:29.000000",
+        "deleted_date": ""
     }
 ]
