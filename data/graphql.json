@@ -1689,7 +1689,8 @@
         "workersAnalyticsEngineAdaptiveGroups": "",
         "workersInvocationsAdaptive": "",
         "workersInvocationsScheduled": "",
-        "workersSubrequestsAdaptiveGroups": ""
+        "workersSubrequestsAdaptiveGroups": "",
+        "zeroTrustPrivateNetworkDiscoveryGroups": ""
     },
     "AccountSpectrumNetworkAnalyticsAdaptiveGroups": {
         "avg": "The average of values for a metric per dimension",
@@ -2009,6 +2010,32 @@
     "AccountWorkersSubrequestsAdaptiveGroupsSum": {
         "requestBodySizeUncached": "Workers fetch request body size in bytes where the request was not cached",
         "subrequests": "Number of subrequests"
+    },
+    "AccountZeroTrustPrivateNetworkDiscoveryGroups": {
+        "count": "Sum of network access during the select range",
+        "dimensions": "List of dimensions to group by",
+        "max": "",
+        "uniq": ""
+    },
+    "AccountZeroTrustPrivateNetworkDiscoveryGroupsDimensions": {
+        "date": "Request date",
+        "datetimeHour": "Request datetime and start of the hour",
+        "destinationIP": "Destination IPv4 or IPv6",
+        "destinationPort": "Destination port",
+        "email": "The email address of the user who accessed the resource",
+        "hostname": "SNI hostname of the origin if TLS intercept is enabled",
+        "transport": "The transport protocol used in the session, one of (0, tcp) (1, quic) (2, udp)",
+        "userId": "The ID of the user who accessed the resource"
+    },
+    "AccountZeroTrustPrivateNetworkDiscoveryGroupsFilter_InputObject": {},
+    "AccountZeroTrustPrivateNetworkDiscoveryGroupsMax": {
+        "dateTime": "Latest access time of a user"
+    },
+    "AccountZeroTrustPrivateNetworkDiscoveryGroupsOrderBy": {},
+    "AccountZeroTrustPrivateNetworkDiscoveryGroupsUniq": {
+        "emails": "Approximate count of unique emails",
+        "origins": "Approximate count of unique origins. An origin is a (transport, destinationIP, destinationPort)",
+        "userIds": "Approximate count of unique users"
     },
     "Date": {},
     "Query": {
@@ -2961,7 +2988,8 @@
         "datetimeFiveMinutes": "The date and time the event was written to the database, truncated to a multiple of 5 minutes",
         "datetimeHour": "The date and time the event was written to the database, truncated to the hour",
         "datetimeMinute": "The date and time the event was written to the database, truncated to the minute",
-        "sampleInterval": "ABR sample interval"
+        "sampleInterval": "ABR sample interval",
+        "waitingRoomId": "Unique Identifier for the waiting room"
     },
     "ZoneWaitingRoomAnalyticsAdaptiveGroupsFilter_InputObject": {},
     "ZoneWaitingRoomAnalyticsAdaptiveGroupsMax": {
@@ -3024,6 +3052,7 @@
         "workersInvocationsAdaptive": "Beta. Workers invocations with adaptive sampling",
         "workersInvocationsScheduled": "Workers scheduled invocations",
         "workersSubrequestsAdaptiveGroups": "Beta. Workers subrequests with adaptive sampling",
+        "zeroTrustPrivateNetworkDiscoveryGroups": "Beta - Unique origins, applications, and users discovered for Zero Trust private networks",
         "zones": ""
     },
     "bool": {},
