@@ -1458,14 +1458,14 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
       };
       try {
         n.g.build = He({}, {
-          branch: "release-1654697129",
+          branch: "release-1654783385",
           isReleaseCandidate: "true",
-          commit: "c9d56a82bc52cbc61887f99ae09fc84517bc9fea",
+          commit: "64eb35a61327f8dc9bef8c8a2ae57cff7a5d8631",
           env: "production",
-          builtAt: 1654786618131,
-          dashVersion: "5209a8c2de5143efe3b62e94251843ef6dd12187",
+          builtAt: 1654790515966,
+          dashVersion: "5a17f44c21434c52ff6334d0633346da2a43a076",
           versions: {
-            "@cloudflare/app-dash": "25.47.20",
+            "@cloudflare/app-dash": "25.47.27",
             node: "14.18.3",
             yarn: "1.18.0",
             webpack: "5.38.1"
@@ -1479,7 +1479,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
             return regeneratorRuntime.wrap(function(J) {
               for (;;) switch (J.prev = J.next) {
                 case 0:
-                  return At = (0, _.bh)(), Et = (Ze == null ? void 0 : Ze.data) || {}, At.dispatch((0, L.mW)("user", Et == null ? void 0 : Et.user)), It = Ze == null || (ot = Ze.data) === null || ot === void 0 || (it = ot.user) === null || it === void 0 ? void 0 : it.id, On(It), n.g.bootstrap = Ze, It && x.ZP.setUserId(It), (0, Dn.gm)() && x.ZP.setEnabled(!1), wt = W(), J.next = 11, Promise.all([V(), Promise.all([n.e(44113), n.e(13688), n.e(27360), n.e(32472)]).then(n.bind(n, "../microfrontends/index.ts"))]);
+                  return At = (0, _.bh)(), Et = (Ze == null ? void 0 : Ze.data) || {}, At.dispatch((0, L.mW)("user", Et == null ? void 0 : Et.user)), It = Ze == null || (ot = Ze.data) === null || ot === void 0 || (it = ot.user) === null || it === void 0 ? void 0 : it.id, On(It), n.g.bootstrap = Ze, It && x.ZP.setUserId(It), (0, Dn.gm)() && x.ZP.setEnabled(!1), wt = W(), J.next = 11, Promise.all([V(), Promise.all([n.e(44113), n.e(13688), n.e(27360), n.e(23479)]).then(n.bind(n, "../microfrontends/index.ts"))]);
                 case 11:
                   return Ht = J.sent, Sn = mt(Ht, 2), Un = Sn[1].initializeSingleSpa, Me(), ne = He({}, (0, x.TJ)()), (0, gr.Jd)() && (ne.isCloudflare = !0), x.ZP.identify(ne), M(), J.abrupt("return", Un({
                     store: At,
@@ -5104,7 +5104,11 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
           waitingRooms: (0, p.ZP)("waitingRooms", {
             insertDelete: "waitingRoom"
           }),
-          waitingRoom: (0, p.ZP)("waitingRoom")
+          waitingRoom: (0, p.ZP)("waitingRoom"),
+          waitingRoomEvents: (0, p.ZP)("waitingRoomEvents", {
+            insertDelete: "waitingRoomEvent"
+          }),
+          waitingRoomEvent: (0, p.ZP)("waitingRoomEvent")
         }),
         Fs = {
           reducer: (0, t.combineReducers)({
@@ -7483,6 +7487,11 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         }, {
           entityType: "waitingRooms",
           to: "waitingRoom"
+        }, {
+          entityType: "waitingRoomEvent"
+        }, {
+          entityType: "waitingRoomEvents",
+          to: "waitingRoomEvent"
         }, {
           entityType: "railgun"
         }, {
@@ -58252,4 +58261,4 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   }
 ]);
 
-//# sourceMappingURL=7f249016e7a9ff539a65.js.map
+//# sourceMappingURL=22129bc12ebe244dc5db.js.map
