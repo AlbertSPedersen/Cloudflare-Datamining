@@ -1458,14 +1458,14 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
       };
       try {
         n.g.build = He({}, {
-          branch: "release-1654869815",
+          branch: "release-1655129069",
           isReleaseCandidate: "true",
-          commit: "3a2c4cac4f3733b15a3c9a3f0b84ee04f90932d0",
+          commit: "314d5451b91f6cefb076fc3225a6e9ffddc42e14",
           env: "production",
-          builtAt: 1654870220711,
-          dashVersion: "2a6cdfb97cc54b5c608b7005b492820d75bd8952",
+          builtAt: 1655129484384,
+          dashVersion: "36cb82eabcc4e5ea2af46ed5ee91a562b0e3336a",
           versions: {
-            "@cloudflare/app-dash": "25.47.37",
+            "@cloudflare/app-dash": "25.47.46",
             node: "14.18.3",
             yarn: "1.18.0",
             webpack: "5.38.1"
@@ -58398,4 +58398,4 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   }
 ]);
 
-//# sourceMappingURL=8faa079eca5939937f9e.js.map
+//# sourceMappingURL=e15b7dc44686b73f6f09.js.map
