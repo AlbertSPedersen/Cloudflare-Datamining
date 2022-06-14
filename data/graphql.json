@@ -2024,6 +2024,8 @@
         "destinationPort": "Destination port",
         "email": "The email address of the user who accessed the resource",
         "hostname": "SNI hostname of the origin if TLS intercept is enabled",
+        "originId": "UUID of the origin if it has been identified before",
+        "status": "status of the origin, one of unreviewed, in_review, approved, unapproved",
         "transport": "The transport protocol used in the session, one of (0, tcp) (1, quic) (2, udp)",
         "userId": "The ID of the user who accessed the resource"
     },
