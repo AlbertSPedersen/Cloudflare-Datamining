@@ -290,7 +290,7 @@
         "maxProcessingConcurrency": 120,
         "maxWatermarks": 1000,
         "max_download_concurrency": 120,
-        "max_fps": 60,
+        "max_fps": 90,
         "mp4download": true,
         "quality_parameter": 23,
         "rtmp_playback": true,
