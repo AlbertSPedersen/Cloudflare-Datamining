@@ -1326,6 +1326,11 @@
         "datetimeFiveMinutes": "Date and time that the packet was received, rounded to the start of the nearest five minutes",
         "datetimeHour": "Date and time that the packet was received, rounded to the start of the nearest hour",
         "direction": "Traffic Direction",
+        "edgeColoCity": "City where the Cloudflare datacenter that received the packet is located",
+        "edgeColoCode": "Cloudflare datacenter that received the packet (nearest IATA airport code)",
+        "edgeColoCountry": "Country where the Cloudflare datacenter that received the packet is located (ISO 3166-1 alpha-2)",
+        "edgeColoGeohash": "Latitude and longitude where the Cloudflare datacenter that received the packet is located (Geohash encoding)",
+        "edgeColoName": "Cloudflare datacenter that received the packet (unique site identifier)",
         "system": "System to collect info on",
         "tunnelName": "Tunnel device name"
     },
