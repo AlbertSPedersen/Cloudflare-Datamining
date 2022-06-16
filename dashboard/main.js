@@ -1458,14 +1458,14 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
       };
       try {
         n.g.build = He({}, {
-          branch: "release-1655301902",
+          branch: "release-1655388179",
           isReleaseCandidate: "true",
-          commit: "b5fcba56765c7d865d753c6af615f3fad1f22593",
+          commit: "a48a95491fa5c30ec7a60c4c414de29b14063891",
           env: "production",
-          builtAt: 1655302321323,
-          dashVersion: "f8ba073ceb8fd91247b7f81f6d1575085605a5dc",
+          builtAt: 1655397689166,
+          dashVersion: "e0af29a794757579de539291366d6f0cf4a59bde",
           versions: {
-            "@cloudflare/app-dash": "25.48.5",
+            "@cloudflare/app-dash": "25.48.9",
             node: "14.18.3",
             yarn: "1.18.0",
             webpack: "5.38.1"
@@ -47870,7 +47870,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
             a = l === void 0 ? "105px" : l,
             d = E.height,
             s = d === void 0 ? "41px" : d,
-            C = (R = u) !== null && R !== void 0 ? R : y ? T.colors.white : T.colors.marketing.black;
+            C = (R = u) !== null && R !== void 0 ? R : y ? T.colors.white : T.colors.black;
           return e().createElement("div", null, e().createElement("svg", {
             viewBox: "0 0 105 36",
             role: "img",
@@ -47944,7 +47944,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
       _.displayName = "MobileOnly";
       var L = function() {
           return e().createElement(N, null, e().createElement(x, null, e().createElement(W, {
-            textColor: (0, D.Yc)() ? D.Rl.colors.gray[1] : void 0
+            textColor: (0, D.Yc)() ? D.Rl.colors.black : void 0
           })), e().createElement(_, null, e().createElement(w, {
             width: "70px",
             height: "41px"
@@ -47959,7 +47959,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
             u = y === void 0 ? "200px" : y,
             l = E.height,
             a = l === void 0 ? "46px" : l,
-            d = T ? R.colors.white : R.colors.marketing.black;
+            d = T ? R.colors.white : R.colors.black;
           return e().createElement("svg", {
             viewBox: "0 0 1179.5 271.2",
             width: u,
@@ -58414,4 +58414,4 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   }
 ]);
 
-//# sourceMappingURL=f9ab5bb6860e1c463087.js.map
+//# sourceMappingURL=f2795d2e5801f243eaef.js.map
