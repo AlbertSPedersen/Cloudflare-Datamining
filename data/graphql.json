@@ -1907,12 +1907,13 @@
         "dimensions": "List of dimensions to group by"
     },
     "AccountWorkersAnalyticsEngineAdaptiveGroupsDimensions": {
+        "dataset": "The dataset name",
+        "date": "The date the event occurred",
         "datetime": "The date and time the event occurred",
         "datetimeFifteenMinutes": "The date and time the event occurred truncated to a multiple of 15 minutes",
         "datetimeFiveMinutes": "The date and time the event occurred truncated to a multiple of 5 minutes",
         "datetimeHour": "The date and time the event occurred truncated to the start of an hour",
-        "datetimeMinute": "The date and time the event occurred truncated to the start of a minute",
-        "name": "The metric name"
+        "datetimeMinute": "The date and time the event occurred truncated to the start of a minute"
     },
     "AccountWorkersAnalyticsEngineAdaptiveGroupsFilter_InputObject": {},
     "AccountWorkersAnalyticsEngineAdaptiveGroupsOrderBy": {},
