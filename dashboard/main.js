@@ -1458,14 +1458,14 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
       };
       try {
         n.g.build = He({}, {
-          branch: "release-1655474684",
+          branch: "release-1655733934",
           isReleaseCandidate: "true",
-          commit: "c86b3b01283d520a82f0c489259c52e71112dc43",
+          commit: "5c9feec83ecafcbdb443d6d419b03a4525866c31",
           env: "production",
-          builtAt: 1655475051866,
-          dashVersion: "677ca8de9c8816c1145912d5523143a0a50b453a",
+          builtAt: 1655734299721,
+          dashVersion: "8aa815755eefe64264dc229dd73e25d313dce30e",
           versions: {
-            "@cloudflare/app-dash": "25.48.17",
+            "@cloudflare/app-dash": "25.48.26",
             node: "14.18.3",
             yarn: "1.18.0",
             webpack: "5.38.1"
@@ -51664,7 +51664,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                 opacity: rt ? .5 : 1,
                 borderWidth: "1px",
                 borderStyle: "solid",
-                borderColor: H.colors.gray[(0, _.Yc)() ? 4 : 5]
+                borderColor: Le.borderColor || H.colors.gray[(0, _.Yc)() ? 4 : 5]
               })
             },
             menu: function(r) {
@@ -51782,7 +51782,8 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         placeholder: c().node,
         label: c().node,
         theme: c().object.isRequired,
-        className: c().string.isRequired
+        className: c().string.isRequired,
+        borderColor: c().string
       };
       var O = (0, x.createComponent)(function(b) {
         var A = b.theme,
@@ -58414,4 +58415,4 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   }
 ]);
 
-//# sourceMappingURL=4c888de98743c42ee218.js.map
+//# sourceMappingURL=662c12833fb53783a378.js.map
