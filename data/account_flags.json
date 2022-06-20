@@ -56,7 +56,8 @@
         "dos_analytics": false,
         "dos_analytics_v2": false,
         "grey_cloud": true,
-        "overview": true
+        "overview": true,
+        "workers_analytics_engine": false
     },
     "addressing": {
         "ip_prefixes": false
