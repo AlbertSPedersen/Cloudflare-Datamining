@@ -309,6 +309,7 @@
     },
     "test_product_description": {},
     "waitingroomaccessfeatureflipper": {
+        "analytics": false,
         "waiting_rooms_ga": true,
         "waiting_rooms_survey": false
     },
