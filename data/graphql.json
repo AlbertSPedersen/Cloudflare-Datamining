@@ -105,6 +105,24 @@
         "bits": "Sum of bits received",
         "packets": "Sum of packets received"
     },
+    "AccountChallengeApiAdaptiveGroups": {
+        "avg": "",
+        "count": "Number of Challenge API events processed",
+        "dimensions": "List of dimensions to group by"
+    },
+    "AccountChallengeApiAdaptiveGroupsAvg": {
+        "sampleInterval": "Average sample interval"
+    },
+    "AccountChallengeApiAdaptiveGroupsDimensions": {
+        "action": "The action tag of the Challenge API event",
+        "date": "The date the challenge event was emitted",
+        "datetime": "The date and time the challenge event was emitted",
+        "datetimeMinute": "The date and time the challenge event was emitted truncated to the minute",
+        "eventType": "The type of the Challenge API event",
+        "siteKey": "The sitekey of the widget associated with the Challenge API event"
+    },
+    "AccountChallengeApiAdaptiveGroupsFilter_InputObject": {},
+    "AccountChallengeApiAdaptiveGroupsOrderBy": {},
     "AccountDosdAttackAnalyticsGroups": {
         "attackId": "Unique identifier of the mitigation that matched the packet, if any",
         "attackType": "Type of attack traffic",
@@ -1651,6 +1669,7 @@
     "AccountRumWebVitalsEventsAdaptiveOrderBy": {},
     "AccountSettings": {
         "cdnNetworkAnalyticsAdaptiveGroups": "",
+        "challengeApiAdaptiveGroups": "",
         "dosdAttackAnalyticsGroups": "",
         "dosdNetworkAnalyticsAdaptiveGroups": "",
         "durableObjectsInvocationsAdaptiveGroups": "",
@@ -3015,6 +3034,7 @@
     "account": {
         "accountTag": "",
         "cdnNetworkAnalyticsAdaptiveGroups": "Network analytics data for Cloudflare CDN traffic",
+        "challengeApiAdaptiveGroups": "Challenge API aggregated events with adaptive sampling",
         "dosdAttackAnalyticsGroups": "Attack analytics metadata for attacks detected by dosd",
         "dosdNetworkAnalyticsAdaptiveGroups": "Network analytics data for dosd",
         "durableObjectsInvocationsAdaptiveGroups": "Durable Objects invocations with adaptive sampling",
