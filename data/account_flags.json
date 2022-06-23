@@ -49,6 +49,7 @@
         "teams_ui_core": false,
         "tls_client_auth": false,
         "zt_dlp_beta": false,
+        "zt_network_discovery": false,
         "zt_seats_garbage_collector": false
     },
     "account_analytics": {
@@ -147,6 +148,7 @@
         "connect_source_limit": 1000,
         "custom_hostnames": true,
         "custom_hostnames_limit": 5,
+        "customer_subdomain": false,
         "encode2": true,
         "encoding_bufsize_multiple": 1,
         "encoding_maxbitrate_multiple": 1,
