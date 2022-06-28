@@ -143,6 +143,7 @@
     "stream": {
         "4k": false,
         "allrenditionsreadywebhook": false,
+        "clipping": false,
         "connect": true,
         "connect_destination_limit": 10,
         "connect_source_limit": 1000,
