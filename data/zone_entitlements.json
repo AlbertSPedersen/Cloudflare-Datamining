@@ -1114,5 +1114,21 @@
         "created_date": "2022-06-01T23:06:29.000000",
         "edited_date": "2022-06-01T23:06:29.000000",
         "deleted_date": ""
+    },
+    {
+        "id": "rulesets.config_rule_max",
+        "feature": {
+            "feature_set": "rulesets",
+            "id": 1036,
+            "key": "rulesets.config_rule_max",
+            "name": "Rulesets - Config Rule Max"
+        },
+        "allocation": {
+            "value": 3,
+            "type": "max_count"
+        },
+        "created_date": "2022-06-22T18:01:05.000000",
+        "edited_date": "2022-06-22T18:01:05.000000",
+        "deleted_date": ""
     }
 ]
