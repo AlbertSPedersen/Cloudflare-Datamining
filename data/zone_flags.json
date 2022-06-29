@@ -83,7 +83,8 @@
         "logpush_v2_enabled": true,
         "secondary_nav": true,
         "zap_enabled": true,
-        "zap_opt_in": false
+        "zap_opt_in": false,
+        "zone-overview-abr": false
     },
     "anomaly_detection_alerter": {
         "http_edge_error_alert_enabled": false,
