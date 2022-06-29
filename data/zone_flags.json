@@ -1,4 +1,7 @@
 {
+    "APIGatewayandAPIShieldsecurity/managementfeatures.": {
+        "json_body_validation": false
+    },
     "ChallengeAPI": {
         "beta": false
     },
