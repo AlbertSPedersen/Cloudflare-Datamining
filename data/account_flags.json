@@ -169,7 +169,8 @@
         "storageUseEmail": true,
         "storage_0": false,
         "storage_1": true,
-        "storage_2": false
+        "storage_2": false,
+        "tcdc": false
     },
     "support_2": {
         "tsf_helperbot": true,
