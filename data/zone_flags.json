@@ -378,5 +378,9 @@
     },
     "zaraz": {
         "enabled": true
+    },
+    "zt_gateway": {
+        "dedicated_egress_udp": false,
+        "h3_inspection": false
     }
 }
