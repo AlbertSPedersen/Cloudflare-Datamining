@@ -1955,6 +1955,7 @@
         "environmentName": "The name of the script environment",
         "namespaceName": "The name of the script namespace",
         "scriptName": "The name of the script",
+        "scriptTag": "The unique tag of the script",
         "status": "Status of the worker invocation",
         "usageModel": "Usage model of the worker invocation"
     },
@@ -2276,26 +2277,6 @@
         "value": "The value of the metadata. Value format can vary by Cloudflare security product and can change over time."
     },
     "ZoneFirewallEventsAdaptiveOrderBy": {},
-    "ZoneHealthCheckEvents": {
-        "date": "The date the event was written to the database",
-        "datetime": "The date and time the event was written to the database",
-        "eventId": "The event id that created this healthcheck event",
-        "expectedResponseCodes": "The expected response codes for the health check",
-        "failureReason": "Reason why the health check failed",
-        "fqdn": "Fully qualified domain name of the origin (if available)",
-        "healthChanged": "1 if the origin health status has changed since the last health check, 0 otherwise",
-        "healthCheckId": "A unique identifier for the health check",
-        "healthCheckName": "Human-identifiable health check name",
-        "healthStatus": "Origin health status",
-        "originIP": "IP address of the origin",
-        "originResponseStatus": "HTTP status code returned by the origin",
-        "region": "Region where the health check occurred",
-        "rttMs": "RTT (milliseconds) to reach the origin",
-        "scope": "Geographic aggregation level of the health status",
-        "tcpConnMs": "Time taken for the tcp connection to be established",
-        "timeToFirstByteMs": "Time taken for the first byte to be received once connection is available",
-        "tlsHandshakeMs": "Time taken for the tls handshake to be completed"
-    },
     "ZoneHealthCheckEventsAdaptive": {
         "datetime": "The date and time the event was written to the database",
         "eventId": "The event id that created this healthcheck event",
@@ -2358,47 +2339,6 @@
         "healthStatus": ""
     },
     "ZoneHealthCheckEventsAdaptiveOrderBy": {},
-    "ZoneHealthCheckEventsFilter_InputObject": {},
-    "ZoneHealthCheckEventsGroups": {
-        "avg": "The average value for a metric",
-        "count": "The number of values for a metric per dimension",
-        "dimensions": "List of dimensions to group by",
-        "sum": "The sum of values for a metric per dimension"
-    },
-    "ZoneHealthCheckEventsGroupsAvg": {
-        "rttMs": "Average RTT (milliseconds)",
-        "tcpConnMs": "Average TCP Connection time (milliseconds)",
-        "timeToFirstByteMs": "Average Time To First Byte (milliseconds)",
-        "tlsHandshakeMs": "Average TLS Handshake time (milliseconds)"
-    },
-    "ZoneHealthCheckEventsGroupsDimensions": {
-        "date": "Date the event was written to the database",
-        "datetime": "Datetime the event was written to the database",
-        "datetimeFifteenMinutes": "Datetime the event was written to the database truncated to a multiple of 15 minutes",
-        "datetimeFiveMinutes": "Datetime the event was written to the database truncated to a multiple of 5 minutes",
-        "datetimeHour": "Datetime the event was written to the database truncated to the hour",
-        "datetimeMinute": "Datetime the event was written to the database truncated to the minute",
-        "failureReason": "Reason why the health check failed",
-        "fqdn": "Fully qualified domain name of the origin (if available)",
-        "healthChanged": "1 if the origin health status has changed since the last health check, 0 otherwise",
-        "healthCheckId": "A unique identifier for the health check",
-        "healthCheckName": "Human-identifiable health check name",
-        "healthStatus": "Origin health status",
-        "originIP": "IP address of the origin",
-        "originResponseStatus": "HTTP status code returned by the origin",
-        "region": "Region where the health check occurred",
-        "rttMs": "RTT (milliseconds) to reach the origin",
-        "scope": "Geographic aggregation level of the health status",
-        "tcpConnMs": "Time taken for the tcp connection to be established",
-        "timeToFirstByteMs": "Time taken for the first byte to be received once connection is available",
-        "tlsHandshakeMs": "Time taken for the tls handshake to be completed"
-    },
-    "ZoneHealthCheckEventsGroupsFilter_InputObject": {},
-    "ZoneHealthCheckEventsGroupsOrderBy": {},
-    "ZoneHealthCheckEventsGroupsSum": {
-        "healthStatus": ""
-    },
-    "ZoneHealthCheckEventsOrderBy": {},
     "ZoneHttpRequests1dByColoGroups": {
         "dimensions": "List of dimensions to group by",
         "sum": "The sum of values for a metric per dimension"
@@ -2915,10 +2855,8 @@
         "firewallEventsAdaptive": "",
         "firewallEventsAdaptiveByTimeGroups": "",
         "firewallEventsAdaptiveGroups": "",
-        "healthCheckEvents": "",
         "healthCheckEventsAdaptive": "",
         "healthCheckEventsAdaptiveGroups": "",
-        "healthCheckEventsGroups": "",
         "httpRequests1dByColoGroups": "",
         "httpRequests1dGroups": "",
         "httpRequests1hGroups": "",
@@ -3106,10 +3044,8 @@
         "firewallEventsAdaptive": "Raw Firewall events with adaptive sampling",
         "firewallEventsAdaptiveByTimeGroups": "Aggregated Firewall events with adaptive sampling grouped by time",
         "firewallEventsAdaptiveGroups": "Aggregated Firewall events with adaptive sampling",
-        "healthCheckEvents": "Raw Health Check events",
         "healthCheckEventsAdaptive": "Raw Health Check events with adaptive sampling",
         "healthCheckEventsAdaptiveGroups": "Aggregated Health Check events with adaptive sampling",
-        "healthCheckEventsGroups": "Aggregated Health Check events",
         "httpRequests1dByColoGroups": "Deprecated. Daily rollups of request data by colo",
         "httpRequests1dGroups": "Daily rollups of request data",
         "httpRequests1hGroups": "Hourly rollups of request data",
