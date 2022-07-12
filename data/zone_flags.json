@@ -258,6 +258,7 @@
     "spectrum": {
         "argo_smart_routing": false,
         "byoip": false,
+        "dns_grpc": false,
         "enabled": false,
         "ftp": false,
         "ipv4_quota": 10,
