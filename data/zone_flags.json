@@ -147,6 +147,8 @@
     },
     "email": {
         "beta": false,
+        "max_addresses": 200,
+        "max_rules": 200,
         "visible": false,
         "workers_enabled": false,
         "workers_waitlist": true
