@@ -13,7 +13,7 @@
     },
     {
         "id": "always_online",
-        "value": "on",
+        "value": "off",
         "modified_on": null,
         "editable": true
     },
