@@ -1130,5 +1130,37 @@
         "created_date": "2022-06-22T18:01:05.000000",
         "edited_date": "2022-06-22T18:01:05.000000",
         "deleted_date": ""
+    },
+    {
+        "id": "rulesets.dynamic_redirect_rule_max",
+        "feature": {
+            "feature_set": "rulesets",
+            "id": 1043,
+            "key": "rulesets.dynamic_redirect_rule_max",
+            "name": "Rulesets - Dynamic Redirect Rule Max"
+        },
+        "allocation": {
+            "value": 10,
+            "type": "max_count"
+        },
+        "created_date": "2022-07-05T21:14:44.000000",
+        "edited_date": "2022-07-05T21:14:44.000000",
+        "deleted_date": ""
+    },
+    {
+        "id": "rulesets.origin_rule_sni_override_allowed",
+        "feature": {
+            "feature_set": "rulesets",
+            "id": 1044,
+            "key": "rulesets.origin_rule_sni_override_allowed",
+            "name": "Rulesets - Origin Rule SNI Override Allowed"
+        },
+        "allocation": {
+            "value": false,
+            "type": "bool"
+        },
+        "created_date": "2022-07-05T21:14:44.000000",
+        "edited_date": "2022-07-05T21:14:44.000000",
+        "deleted_date": ""
     }
 ]
