@@ -498,10 +498,13 @@
         "datetimeHour": "Start timestamp of this session, truncated to the hour",
         "datetimeMinute": "Start timestamp of this session, truncated to the minute",
         "quicErrorCode": "QUIC specific error code. Possible values are https://www.iana.org/assignments/quic/quic.xhtml#quic-transport-error-codes",
+        "rttUs": "Last Round Trip Time estimation for this session in microseconds",
         "sessionId": "Identifier for this session",
         "sourceIP": "IP address of the client making this session",
         "tokenAuthStatus": "Client token authentication status. Possible values are success | failed with invalid token and upto date token key ID | failed with invalid token due to outdated/missing token key ID | failed due to reused token",
+        "tokenSigningRegion": "Broad location assigned to client in this session",
         "transport": "Transport protocol used for this session. Possible values are tcp | quic | udp",
+        "transportHandshakeDurationUs": "Time taken for TCP/TLS or QUIC handshake in microsecond",
         "transportStatus": "Transport Status. Possible values are unknown | success | failure"
     },
     "AccountGatewayL4DownstreamSessionsAdaptiveGroupsFilter_InputObject": {},
@@ -558,6 +561,9 @@
         "downstreamSessionId": "Downstream session identifier of this session",
         "httpConnectReqStatus": "Client HTTP CONNECT request status. Possible values are unknown | success | failure",
         "quicErrorCode": "QUIC error code. Possible values are https://www.iana.org/assignments/quic/quic.xhtml#quic-transport-error-codes",
+        "rttUs": "Last Round Trip Time estimation for this session in microseconds",
+        "tokenSigningRegion": "Broad location assigned to client in this session",
+        "totalTunnelSetupDurationUs": "Total time taken for tunnel setup in microseconds",
         "transport": "Transport protocol used for this session. Possible values are tcp | quic | udp",
         "transportStatus": "Transport status. Possible values are unknown | success | failure"
     },
