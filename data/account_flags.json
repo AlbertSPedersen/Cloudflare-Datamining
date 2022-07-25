@@ -175,7 +175,8 @@
     },
     "support_2": {
         "tsf_helperbot": true,
-        "tsf_v2": true
+        "tsf_v2": true,
+        "tsf_v3": false
     },
     "workers": {
         "actors": false,
