@@ -373,6 +373,52 @@
     "AccountDurableObjectsSubrequestsAdaptiveGroupsSum": {
         "requestBodySizeUncached": "Outgoing Durable Objects fetch request body size in bytes where the request was not cached"
     },
+    "AccountFbmFlowDataAdaptiveGroups": {
+        "avg": "The average of values for a metric per dimension",
+        "dimensions": "List of dimensions to group by",
+        "sum": "The sum of values for a metric per dimension"
+    },
+    "AccountFbmFlowDataAdaptiveGroupsAvg": {
+        "bitRate": "Sum of bits received, divided by 1 second, providing a per-second bit rate when grouped by datetime",
+        "bitRateDay": "Sum of bits received, divided by 86400 seconds, providing a per-second bit rate when grouped by date",
+        "bitRateFifteenMinutes": "Sum of bits received, divided by 900 seconds, providing a per-second bit rate when grouped by datetimeFifteenMinutes",
+        "bitRateFiveMinutes": "Sum of bits received, divided by 300 seconds, providing a per-second bit rate when grouped by datetimeFiveMinutes",
+        "bitRateHour": "Sum of bits received, divided by 3600 seconds, providing a per-second bit rate when grouped by datetimeHour",
+        "bitRateMinute": "Sum of bits received, divided by 60 seconds, providing a per-second bit rate when grouped by datetimeMinute",
+        "bitRateTenSeconds": "Sum of bits received, divided by 10 seconds, providing a per-second bit rate when grouped by datetimeTenSeconds",
+        "packetRate": "Sum of packets received, divided by 1 second, providing a per-second packet rate when grouped by datetime",
+        "packetRateDay": "Sum of packets received, divided by 86400 seconds, providing a per-second packet rate when grouped by date",
+        "packetRateFifteenMinutes": "Sum of packets received, divided by 900 seconds, providing a per-second packet rate when grouped by datetimeFifteenMinutes",
+        "packetRateFiveMinutes": "Sum of packets received, divided by 300 seconds, providing a per-second packet rate when grouped by datetimeFiveMinutes",
+        "packetRateHour": "Sum of packets received, divided by 3600 seconds, providing a per-second packet rate when grouped by datetimeHour",
+        "packetRateMinute": "Sum of packets received, divided by 60 seconds, providing a per-second packet rate when grouped by datetimeMinute",
+        "packetRateTenSeconds": "Sum of packets received, divided by 10 seconds, providing a per-second packet rate when grouped by datetimeTenSeconds"
+    },
+    "AccountFbmFlowDataAdaptiveGroupsDimensions": {
+        "date": "Date that the packet was received",
+        "datetime": "Date and time that the packet was received",
+        "datetimeFifteenMinutes": "Date and time that the packet was received, rounded to the start of the nearest fifteen minutes",
+        "datetimeFiveMinutes": "Date and time that the packet was received, rounded to the start of the nearest five minutes",
+        "datetimeHour": "Date and time that the packet was received, rounded to the start of the nearest hour",
+        "datetimeMinute": "Date and time that the packet was received, rounded to the start of the nearest minute",
+        "datetimeTenSeconds": "Date and time that the packet was received, rounded to the start of the nearest ten seconds",
+        "destinationAddress": "IP to which the data was sent",
+        "destinationPort": "Value of the Destination Port header field in the packet",
+        "ethertype": "Value of the Ethertype header field in the Ethernet packet (2048 for IPv4; 34525 for IPv6)",
+        "protocol": "Layer 4 protocol",
+        "protocolString": "Human-readable string representation of the protocol",
+        "routerAddress": "IP of the router that sampled the flows",
+        "sourceAddress": "IP from which the data was sent",
+        "sourcePort": "Value of the Source Port header field in the packet",
+        "tcpFlags": "Value of the Flags header field in the TCP packet",
+        "tcpFlagsString": "Human-readable string representation of the Flags header field in the TCP packet"
+    },
+    "AccountFbmFlowDataAdaptiveGroupsFilter_InputObject": {},
+    "AccountFbmFlowDataAdaptiveGroupsOrderBy": {},
+    "AccountFbmFlowDataAdaptiveGroupsSum": {
+        "bits": "Sum of bits",
+        "packets": "Sum of packets"
+    },
     "AccountFilter_InputObject": {},
     "AccountFlowtrackdNetworkAnalyticsAdaptiveGroups": {
         "avg": "The average of values for a metric per dimension",
@@ -1684,6 +1730,7 @@
         "durableObjectsPeriodicGroups": "",
         "durableObjectsStorageGroups": "",
         "durableObjectsSubrequestsAdaptiveGroups": "",
+        "fbmFlowDataAdaptiveGroups": "",
         "flowtrackdNetworkAnalyticsAdaptiveGroups": "",
         "gatewayL4DownstreamSessionsAdaptiveGroups": "",
         "gatewayL4SessionsAdaptiveGroups": "",
@@ -2997,6 +3044,7 @@
         "durableObjectsPeriodicGroups": "Durable Objects periodic metrics",
         "durableObjectsStorageGroups": "Durable Objects storage metrics",
         "durableObjectsSubrequestsAdaptiveGroups": "Durable Objects subrequests with adaptive sampling",
+        "fbmFlowDataAdaptiveGroups": "Flow data collected through flow-based monitoring",
         "flowtrackdNetworkAnalyticsAdaptiveGroups": "Network analytics data for flowtrackd",
         "gatewayL4DownstreamSessionsAdaptiveGroups": "Aggregated metrics about downstream (client to edge) L4 Gateway Sessions. Metrics are reported on TCP or UDP session close",
         "gatewayL4SessionsAdaptiveGroups": "BETA - Aggregate counts of Gateway L4 sessions with adaptive sampling",
