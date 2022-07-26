@@ -386,6 +386,7 @@
         "enabled": true
     },
     "zt_gateway": {
+        "1000_dns_rules": false,
         "dedicated_egress_udp": false,
         "h3_inspection": false
     }
