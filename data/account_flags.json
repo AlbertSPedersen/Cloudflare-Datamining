@@ -204,6 +204,7 @@
         "green_compute": true,
         "live_tailing": false,
         "origin_workers": true,
+        "origin_workers_limit": 100,
         "queues": false,
         "r2_admin_bindings": false,
         "r2_bindings": true,
