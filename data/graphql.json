@@ -392,7 +392,8 @@
         "packetRateFiveMinutes": "Sum of packets received, divided by 300 seconds, providing a per-second packet rate when grouped by datetimeFiveMinutes",
         "packetRateHour": "Sum of packets received, divided by 3600 seconds, providing a per-second packet rate when grouped by datetimeHour",
         "packetRateMinute": "Sum of packets received, divided by 60 seconds, providing a per-second packet rate when grouped by datetimeMinute",
-        "packetRateTenSeconds": "Sum of packets received, divided by 10 seconds, providing a per-second packet rate when grouped by datetimeTenSeconds"
+        "packetRateTenSeconds": "Sum of packets received, divided by 10 seconds, providing a per-second packet rate when grouped by datetimeTenSeconds",
+        "sampleInterval": "Average sample interval applied to the data"
     },
     "AccountFbmFlowDataAdaptiveGroupsDimensions": {
         "date": "Date that the packet was received",
