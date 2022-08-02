@@ -221,6 +221,9 @@
         "to_react": true,
         "transform_rules": true
     },
+    "ppv2_webrtcturn": {
+        "ppv2_webrtcturn": false
+    },
     "protocols": {
         "gRPC": false,
         "grpc_beta": true,
@@ -266,6 +269,7 @@
         "ftp": false,
         "ipv4_quota": 10,
         "payg": false,
+        "ppv2_webrtcturn": false,
         "subscribed": false,
         "udp": false,
         "webrtc_turn": false,
