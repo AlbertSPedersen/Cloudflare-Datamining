@@ -785,7 +785,7 @@
             "feature_set": "rum",
             "id": 733,
             "key": "rum.max_rules",
-            "name": "Browser Insights Rules - Max Rules"
+            "name": "Web Analytics - Max Rules"
         },
         "allocation": {
             "value": 0,
