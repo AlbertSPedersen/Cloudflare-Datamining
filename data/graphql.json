@@ -1128,6 +1128,34 @@
         "bits": "Total number of bits received",
         "packets": "Total number of packets received"
     },
+    "AccountLogpushHealthAdaptiveGroups": {
+        "avg": "",
+        "count": "The number of values for a metric per dimension",
+        "dimensions": "List of dimensions to group by",
+        "sum": "The sum of values for a metric per dimension"
+    },
+    "AccountLogpushHealthAdaptiveGroupsAvg": {
+        "sampleInterval": "Average sample interval"
+    },
+    "AccountLogpushHealthAdaptiveGroupsDimensions": {
+        "date": "Date that we completed pushing the log batch",
+        "datetime": "Datetime that we completed pushing the log batch",
+        "datetimeFifteenMinutes": "Datetime that we completed pushing the log batch, truncated to multiple of 15 minutes",
+        "datetimeFiveMinutes": "Datetime that we completed pushing the log batch, truncated to multiple of 5 minutes",
+        "datetimeHour": "Datetime that we completed pushing the log batch, truncated to the hour",
+        "datetimeMinute": "Datetime that we completed pushing the log batch, truncated to the minute",
+        "destinationType": "Destination type, e.g. 'S3' or 'GCS'",
+        "final": "Cloudflare may attempt to push a batch of logs multiple times if we encounter a failure. This field will be set to 'true' if this was the last push attempt for this batch of logs. If this field is set to false, it means the push failed but another retry was attempted. If this field is set to true and status >= 300, then the batch of logs failed to push and log data was lost. If you want to count the total number of logs that succeeded or failed, you should always set final = true.",
+        "jobId": "The Logpush Job ID",
+        "status": "HTTP response status code of the log destination"
+    },
+    "AccountLogpushHealthAdaptiveGroupsFilter_InputObject": {},
+    "AccountLogpushHealthAdaptiveGroupsOrderBy": {},
+    "AccountLogpushHealthAdaptiveGroupsSum": {
+        "bytes": "Bytes of uncompressed log data pushed",
+        "bytesCompressed": "Bytes of compressed log data pushed",
+        "records": "A count of the total number of records pushed."
+    },
     "AccountMagicFirewallNetworkAnalyticsAdaptiveGroups": {
         "avg": "The average of values for a metric per dimension",
         "dimensions": "List of dimensions to group by",
@@ -1748,6 +1776,7 @@
         "ipFlows1hGroups": "",
         "ipFlows1mAttacksGroups": "",
         "ipFlows1mGroups": "",
+        "logpushHealthAdaptiveGroups": "",
         "magicFirewallNetworkAnalyticsAdaptiveGroups": "",
         "magicFirewallSamplesAdaptiveGroups": "",
         "magicTransitNetworkAnalyticsAdaptiveGroups": "",
@@ -2886,6 +2915,34 @@
         "id": "A unique identifier for the pool",
         "poolName": "Pool name"
     },
+    "ZoneLogpushHealthAdaptiveGroups": {
+        "avg": "",
+        "count": "The number of values for a metric per dimension",
+        "dimensions": "List of dimensions to group by",
+        "sum": "The sum of values for a metric per dimension"
+    },
+    "ZoneLogpushHealthAdaptiveGroupsAvg": {
+        "sampleInterval": "Average sample interval"
+    },
+    "ZoneLogpushHealthAdaptiveGroupsDimensions": {
+        "date": "Date that we completed pushing the log batch",
+        "datetime": "Datetime that we completed pushing the log batch",
+        "datetimeFifteenMinutes": "Datetime that we completed pushing the log batch, truncated to multiple of 15 minutes",
+        "datetimeFiveMinutes": "Datetime that we completed pushing the log batch, truncated to multiple of 5 minutes",
+        "datetimeHour": "Datetime that we completed pushing the log batch, truncated to the hour",
+        "datetimeMinute": "Datetime that we completed pushing the log batch, truncated to the minute",
+        "destinationType": "Destination type, e.g. 'S3' or 'GCS'",
+        "final": "Cloudflare may attempt to push a batch of logs multiple times if we encounter a failure. This field will be set to 'true' if this was the last push attempt for this batch of logs. If this field is set to false, it means the push failed but another retry was attempted. If this field is set to true and status >= 300, then the batch of logs failed to push and log data was lost. If you want to count the total number of logs that succeeded or failed, you should always set final = true.",
+        "jobId": "The Logpush Job ID",
+        "status": "HTTP response status code of the log destination"
+    },
+    "ZoneLogpushHealthAdaptiveGroupsFilter_InputObject": {},
+    "ZoneLogpushHealthAdaptiveGroupsOrderBy": {},
+    "ZoneLogpushHealthAdaptiveGroupsSum": {
+        "bytes": "Bytes of uncompressed log data pushed",
+        "bytesCompressed": "Bytes of compressed log data pushed",
+        "records": "A count of the total number of records pushed."
+    },
     "ZoneNelReportsAdaptiveGroups": {
         "avg": "",
         "count": "The number of NEL Reports",
@@ -2934,6 +2991,7 @@
         "imageResizingRequests1mGroups": "",
         "loadBalancingRequestsAdaptive": "",
         "loadBalancingRequestsAdaptiveGroups": "",
+        "logpushHealthAdaptiveGroups": "",
         "nelReportsAdaptiveGroups": "",
         "synAvgPps1mGroups": "",
         "waitingRoomAnalyticsAdaptive": "",
@@ -3072,6 +3130,7 @@
         "ipFlows1hGroups": "Beta. Hourly rollups of IP flows",
         "ipFlows1mAttacksGroups": "Beta. Minutely rollups of IP flows including only attack traffic",
         "ipFlows1mGroups": "Beta. Minutely rollups of IP flows",
+        "logpushHealthAdaptiveGroups": "Beta. Logpush job health metrics",
         "magicFirewallNetworkAnalyticsAdaptiveGroups": "Network analytics data for Magic Firewall",
         "magicFirewallSamplesAdaptiveGroups": "Data to visualize traffic allowed and blocked by Magic Firewall rules",
         "magicTransitNetworkAnalyticsAdaptiveGroups": "Network analytics data for Magic Transit traffic",
@@ -3134,6 +3193,7 @@
         "imageResizingRequests1mGroups": "Minutely rollups of Image Resizing requests",
         "loadBalancingRequestsAdaptive": "Raw Load Balancing origin requests with adaptive sampling",
         "loadBalancingRequestsAdaptiveGroups": "Aggregated Load Balancing origin requests with adaptive sampling",
+        "logpushHealthAdaptiveGroups": "Beta. Logpush job health metrics",
         "nelReportsAdaptiveGroups": "Data to visualize network error logs",
         "settings": "",
         "synAvgPps1mGroups": "Minutely rollups of average packets per second sent in a SYN attack",
