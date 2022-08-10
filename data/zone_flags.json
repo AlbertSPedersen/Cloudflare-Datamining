@@ -358,6 +358,7 @@
         "cloudflare_pages_project_limit_override": false,
         "cloudflare_pages_skip_commit": true,
         "cloudflare_pages_streaming_logs": true,
+        "cloudflare_pages_wfp_routing": false,
         "cron_triggers": -1,
         "durable_object_alarms": false,
         "durable_objects": false,
