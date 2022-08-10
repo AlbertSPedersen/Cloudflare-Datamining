@@ -99,6 +99,7 @@
         "early_release_access": true
     },
     "ddos_protection": {
+        "advanced_tcp_protection": false,
         "l4_rulesets": true
     },
     "http_applications": {
