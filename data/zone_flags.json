@@ -297,7 +297,7 @@
         "connect_source_limit": 1000,
         "custom_hostnames": true,
         "custom_hostnames_limit": 5,
-        "customer_subdomain": false,
+        "customer_subdomain": true,
         "encode2": true,
         "encoding_bufsize_multiple": 1,
         "encoding_maxbitrate_multiple": 1,
@@ -323,7 +323,7 @@
     "support_2": {
         "tsf_helperbot": true,
         "tsf_v2": true,
-        "tsf_v3": false
+        "tsf_v3": true
     },
     "test_product_description": {},
     "waitingroomaccessfeatureflipper": {
