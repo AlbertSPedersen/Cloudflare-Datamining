@@ -2,6 +2,10 @@
     "APIGatewayandAPIShieldsecurity/managementfeatures.": {
         "json_body_validation": false
     },
+    "Calls": {
+        "calls": false,
+        "enabled": false
+    },
     "ChallengeAPI": {
         "beta": false
     },

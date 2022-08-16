@@ -1,4 +1,8 @@
 {
+    "Calls": {
+        "calls": false,
+        "enabled": false
+    },
     "ChallengeAPI": {
         "beta": false
     },
