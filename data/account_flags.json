@@ -164,6 +164,7 @@
         "max_fps": 90,
         "mp4download": true,
         "quality_parameter": 23,
+        "rm-11631": false,
         "rtmp_playback": true,
         "source_stats": true,
         "srt": true,
