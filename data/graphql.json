@@ -272,9 +272,9 @@
     },
     "AccountDurableObjectsInvocationsAdaptiveGroupsDimensions": {
         "date": "Request datetime, truncated to start of a day",
+        "datetime": "Request datetime",
         "datetimeHour": "Request datetime, truncated to start of an hour",
         "datetimeMinute": "Request datetime, truncated to start of a minute",
-        "datetimeSecond": "Request datetime, truncated to start of a second",
         "environmentName": "The name of the script environment",
         "namespaceId": "Durable Object namespace ID",
         "objectId": "Durable Object ID as a hex string",
@@ -360,9 +360,9 @@
     },
     "AccountDurableObjectsSubrequestsAdaptiveGroupsDimensions": {
         "date": "Request datetime, truncated to start of a day",
+        "datetime": "Request datetime",
         "datetimeHour": "Request datetime, truncated to start of an hour",
         "datetimeMinute": "Request datetime, truncated to start of a minute",
-        "datetimeSecond": "Request datetime, truncated to start of a second",
         "environmentName": "The name of the script environment",
         "namespaceId": "Durable Object namespace ID",
         "objectId": "Durable Object ID as a hex string",
@@ -563,7 +563,6 @@
     "AccountGatewayL4DownstreamSessionsAdaptiveGroupsSum": {
         "bytesRecvd": "Total bytes received in this session",
         "bytesSent": "Total bytes sent in this session",
-        "clientBytesRetransmitted": "Total bytes retransmitted by client in this session",
         "packetsRecvd": "Total number of packets received in this session",
         "packetsSent": "Total number of packets sent in this session",
         "tokenAuthDurationUs": "Time taken for client token authentication in microseconds"
@@ -625,7 +624,6 @@
         "bytesRecvd": "Total bytes received in this session",
         "bytesSent": "Total bytes sent in this session",
         "connectReqHandlingDurationUs": "Time taken for CONNECT request handling in microseconds",
-        "originBytesRetransmitted": "Total bytes retransmitted by origin in this session",
         "packetsRecvd": "Total number of packets received in this session",
         "packetsSent": "Total number of packets sent in this session",
         "totalTunnelSetupDurationUs": "Total time taken for tunnel setup in microseconds",
@@ -900,6 +898,7 @@
     "AccountHttpRequestsOverviewAdaptiveGroups": {
         "avg": "The average value for a metric per dimension",
         "dimensions": "List of dimensions to group by",
+        "ratio": "The ratio of a range of status codes, between 0 and 1",
         "sum": "The sum of values for a metric per dimension"
     },
     "AccountHttpRequestsOverviewAdaptiveGroupsAvg": {
@@ -923,6 +922,10 @@
     },
     "AccountHttpRequestsOverviewAdaptiveGroupsFilter_InputObject": {},
     "AccountHttpRequestsOverviewAdaptiveGroupsOrderBy": {},
+    "AccountHttpRequestsOverviewAdaptiveGroupsRatio": {
+        "status4xx": "",
+        "status5xx": ""
+    },
     "AccountHttpRequestsOverviewAdaptiveGroupsSum": {
         "bytes": "",
         "cachedBytes": "Bytes returned to client from cache",
@@ -2204,6 +2207,7 @@
         "dmarc": "DMARC check status of the source email",
         "errorDetail": "Detailed error message (if any)",
         "from": "The sender email address of the source email",
+        "isNDR": "Is this event related to a NDR (bounce) email?",
         "messageId": "The Message-ID header of the source email (if present)",
         "ruleMatched": "The UUID of the routing rule matched by the source email",
         "sampleInterval": "ABR sample interval",
@@ -2226,6 +2230,7 @@
         "datetimeMinute": "The date and time the source email was received truncated to the minute",
         "dkim": "DKIM check status of the source email",
         "dmarc": "DMARC check status of the source email",
+        "isNDR": "Is this event related to a NDR (bounce) email?",
         "ruleMatched": "The UUID of the routing rule matched by the source email",
         "sampleInterval": "ABR sample interval",
         "spf": "SPF check status of the source email",
@@ -2237,6 +2242,7 @@
     "ZoneFilter_InputObject": {},
     "ZoneFirewallEventsAdaptive": {
         "action": "The code of the first-class action the Cloudflare Firewall took on this request",
+        "apiGatewayMatchedEndpoint": "API Gateway endpoint matched at the edge",
         "botScore": "The final score originated from bot management detections.",
         "botScoreSrcName": "Name of the source detection which generated the bot management score.",
         "clientASNDescription": "The ASN of the visitor as string",
@@ -2290,6 +2296,7 @@
         "sampleInterval": ""
     },
     "ZoneFirewallEventsAdaptiveByTimeGroupsDimensions": {
+        "apiGatewayMatchedEndpoint": "API Gateway endpoint matched at the edge",
         "botScore": "The final score originated from bot management detections.",
         "botScoreSrcName": "Name of the source detection which generated the bot management score.",
         "date": "The date the event occurred at the edge",
@@ -2318,6 +2325,7 @@
     },
     "ZoneFirewallEventsAdaptiveGroupsDimensions": {
         "action": "The code of the first-class action the Cloudflare Firewall took on this request",
+        "apiGatewayMatchedEndpoint": "API Gateway endpoint matched at the edge",
         "botScore": "The final score originated from bot management detections.",
         "botScoreSrcName": "Name of the source detection which generated the bot management score.",
         "clientASNDescription": "The ASN of the visitor as string",
@@ -2723,12 +2731,14 @@
         "avg": "The average value used for sample interval",
         "count": "The number of values for a metric per dimension",
         "dimensions": "List of dimensions to group by",
+        "ratio": "The ratio of a range of status codes, between 0 and 1",
         "sum": "The sum of values for a metric per dimension"
     },
     "ZoneHttpRequestsAdaptiveGroupsAvg": {
         "sampleInterval": ""
     },
     "ZoneHttpRequestsAdaptiveGroupsDimensions": {
+        "apiGatewayMatchedEndpoint": "API Gateway endpoint matched at the edge",
         "botManagementDecision": "Judgement of the bot management system",
         "botScore": "The final score originated from bot management detections.",
         "botScoreBucketBy10": "Range of the bot management score",
@@ -2774,6 +2784,10 @@
     },
     "ZoneHttpRequestsAdaptiveGroupsFilter_InputObject": {},
     "ZoneHttpRequestsAdaptiveGroupsOrderBy": {},
+    "ZoneHttpRequestsAdaptiveGroupsRatio": {
+        "status4xx": "",
+        "status5xx": ""
+    },
     "ZoneHttpRequestsAdaptiveGroupsSum": {
         "edgeResponseBytes": "",
         "visits": "The number of requests by end-users that were initiated from a different website (i.e. where the request HTTP Referer header does not match the host in the HTTP Host header)"
@@ -2781,6 +2795,7 @@
     "ZoneHttpRequestsOverviewAdaptiveGroups": {
         "avg": "The average value for a metric per dimension",
         "dimensions": "List of dimensions to group by",
+        "ratio": "The ratio of a range of status codes, between 0 and 1",
         "sum": "The sum of values for a metric per dimension"
     },
     "ZoneHttpRequestsOverviewAdaptiveGroupsAvg": {
@@ -2804,6 +2819,10 @@
     },
     "ZoneHttpRequestsOverviewAdaptiveGroupsFilter_InputObject": {},
     "ZoneHttpRequestsOverviewAdaptiveGroupsOrderBy": {},
+    "ZoneHttpRequestsOverviewAdaptiveGroupsRatio": {
+        "status4xx": "",
+        "status5xx": ""
+    },
     "ZoneHttpRequestsOverviewAdaptiveGroupsSum": {
         "bytes": "",
         "cachedBytes": "Bytes returned to client from cache",
