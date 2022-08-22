@@ -178,6 +178,7 @@
         "storage_1": true,
         "storage_2": false,
         "stream-4371": false,
+        "stream-subdomain-copy": false,
         "tcdc": false
     },
     "support_2": {
