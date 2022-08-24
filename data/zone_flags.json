@@ -226,9 +226,6 @@
         "to_react": true,
         "transform_rules": true
     },
-    "ppv2_webrtcturn": {
-        "ppv2_webrtcturn": false
-    },
     "protocols": {
         "gRPC": false,
         "grpc_beta": true,
