@@ -221,8 +221,12 @@
         "dash_view": false
     },
     "page_rules": {
+        "cache_rules": false,
+        "config_rules": false,
+        "dynamic_redirects": false,
         "edge_visualization": false,
         "normalization": true,
+        "origin_rules": false,
         "response_headers": false,
         "to_react": true,
         "transform_rules": true
