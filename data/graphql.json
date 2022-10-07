@@ -1819,6 +1819,7 @@
         "rumWebVitalsEventsAdaptive": "",
         "rumWebVitalsEventsAdaptiveGroups": "",
         "spectrumNetworkAnalyticsAdaptiveGroups": "",
+        "storageTraces": "",
         "streamMinutesViewedAdaptiveGroups": "",
         "turnstileAdaptiveGroups": "",
         "videoBufferEventsAdaptiveGroups": "",
@@ -1936,6 +1937,16 @@
         "bits": "Sum of bits received",
         "packets": "Sum of packets received"
     },
+    "AccountStorageTraces": {
+        "containerId": "The container that this resource is stored under.",
+        "datetime": "Storage trace timestamp",
+        "resourceId": "The identifier to access this resource in the container.",
+        "serviceId": "The identifier of the storage service that houses the resourse.",
+        "traceId": "The ID that this trace entry is under.",
+        "userAccountId": "The AccountID of the user who owns the resource."
+    },
+    "AccountStorageTracesFilter_InputObject": {},
+    "AccountStorageTracesOrderBy": {},
     "AccountStreamMinutesViewedAdaptiveGroups": {
         "count": "The number of values for a metric per dimension",
         "dimensions": "List of dimensions to group by",
@@ -3289,6 +3300,7 @@
         "rumWebVitalsEventsAdaptiveGroups": "Beta. Aggregated RUM Web Vitals event metrics with adaptive sampling",
         "settings": "",
         "spectrumNetworkAnalyticsAdaptiveGroups": "Network analytics data for Spectrum traffic",
+        "storageTraces": "Storage Tracing Information",
         "streamMinutesViewedAdaptiveGroups": "A high-level summary of Cloudflare Stream minutes viewed.",
         "turnstileAdaptiveGroups": "Beta. Cloudflare Turnstile aggregated events with adaptive sampling",
         "videoBufferEventsAdaptiveGroups": "Beta. Aggregated video streaming buffer event metrics with adaptive sampling",
