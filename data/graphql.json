@@ -1668,6 +1668,33 @@
         "subrequests": "Sum of Subrequests",
         "wallTime": "Sum of Wall Time"
     },
+    "AccountQueueMessageOperationsAdaptiveGroups": {
+        "avg": "The average value for a metric per dimension",
+        "count": "Number of Message Operations",
+        "dimensions": "List of dimensions to group by",
+        "max": "The max of values for a metric per dimension",
+        "sum": "The sum of values for a metric per dimension"
+    },
+    "AccountQueueMessageOperationsAdaptiveGroupsAvg": {
+        "sampleInterval": "The average value used for sample interval"
+    },
+    "AccountQueueMessageOperationsAdaptiveGroupsDimensions": {
+        "actionType": "The type of the Queue message operation",
+        "date": "Message operation timestamp, truncated to start of a day",
+        "datetime": "Message operation timestamp",
+        "datetimeHour": "Message operation timestamp, truncated to start of an hour",
+        "datetimeMinute": "Message operation timestamp, truncated to start of an minute",
+        "queueId": "The ID of the Queue"
+    },
+    "AccountQueueMessageOperationsAdaptiveGroupsFilter_InputObject": {},
+    "AccountQueueMessageOperationsAdaptiveGroupsMax": {
+        "messageSize": "Max Message Size"
+    },
+    "AccountQueueMessageOperationsAdaptiveGroupsOrderBy": {},
+    "AccountQueueMessageOperationsAdaptiveGroupsSum": {
+        "billableOperations": "Number of Billable Operations (some message operations count as multiple billable operations)",
+        "bytes": "Total size (in bytes) of message operations"
+    },
     "AccountQueuesMessagesAdaptiveGroups": {
         "avg": "The average value for a metric per dimension",
         "dimensions": "List of dimensions to group by",
@@ -2017,6 +2044,7 @@
         "mnmFlowDataAdaptiveGroups": "",
         "nelReportsAdaptiveGroups": "",
         "pagesFunctionsInvocationsAdaptiveGroups": "",
+        "queueMessageOperationsAdaptiveGroups": "",
         "queuesMessagesAdaptiveGroups": "",
         "r2OperationsAdaptiveGroups": "",
         "r2StorageAdaptiveGroups": "",
@@ -3611,6 +3639,7 @@
         "mnmFlowDataAdaptiveGroups": "Flow data collected through Magic Network Monitoring",
         "nelReportsAdaptiveGroups": "Data to visualize network error logs",
         "pagesFunctionsInvocationsAdaptiveGroups": "Pages Functions invocations with adaptive sampling",
+        "queueMessageOperationsAdaptiveGroups": "Beta. Queue message operation data with adaptive sampling",
         "queuesMessagesAdaptiveGroups": "Beta. Queue message data with adaptive sampling",
         "r2OperationsAdaptiveGroups": "Beta. R2 operations with adaptive sampling",
         "r2StorageAdaptiveGroups": "Beta. R2 storage with adaptive sampling",
