@@ -344,6 +344,7 @@
     "AccountDurableObjectsPeriodicGroupsSum": {
         "activeTime": "Sum of active time - microseconds",
         "cpuTime": "Sum of CPU time - microseconds",
+        "duration": "Sum of Duration - GB*s",
         "exceededCpuErrors": "Sum of CPU exceeded errors",
         "exceededMemoryErrors": "Sum of memory exceeded errors",
         "fatalInternalErrors": "Sum of fatal internal server errors",
@@ -3609,7 +3610,8 @@
         "avgWeighted": "Beta. The avgWeighted values for a metric per dimension",
         "dimensions": "List of dimensions to group by",
         "max": "Beta. The max value for a metric per dimenstion",
-        "min": "Beta. The minimum value for a metric per dimenstion"
+        "min": "Beta. The minimum value for a metric per dimenstion",
+        "sum": "The sum for a metric per dimension"
     },
     "ZoneWaitingRoomAnalyticsAdaptiveGroupsAvg": {
         "maxEstimatedTimeMinutes": "Average of the maximum estimated wait time per minute. A negative number means no data",
@@ -3669,6 +3671,9 @@
         "totalQueuedUsers": "The minimum value of total number of queued users. A negative number means no data"
     },
     "ZoneWaitingRoomAnalyticsAdaptiveGroupsOrderBy": {},
+    "ZoneWaitingRoomAnalyticsAdaptiveGroupsSum": {
+        "newUsersPerMinute": "Sum of new users per minute. A negative number means no data"
+    },
     "ZoneWaitingRoomAnalyticsAdaptiveOrderBy": {},
     "ZoneWorkersZoneInvocationsAdaptiveGroups": {
         "avg": "The average of values for a metric per dimension",
