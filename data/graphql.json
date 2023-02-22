@@ -1687,6 +1687,34 @@
     },
     "AccountMagicTransitTunnelTrafficAdaptiveGroupsFilter_InputObject": {},
     "AccountMagicTransitTunnelTrafficAdaptiveGroupsOrderBy": {},
+    "AccountMagicWANConnectorMetricsAdaptiveGroups": {
+        "avg": "",
+        "dimensions": "List of dimensions to group by",
+        "max": ""
+    },
+    "AccountMagicWANConnectorMetricsAdaptiveGroupsAvg": {
+        "rxBitrateFiveMinute": "Rx Bitrate over 5 minutes",
+        "rxBitrateMinute": "Rx Bitrate over 1 minute",
+        "rxPacketrateFiveMinute": "Rx Packet rate over 5 minutes",
+        "rxPacketrateMinute": "Rx Packet rate over 1 minute",
+        "txBitrateFiveMinute": "Tx Bitrate over 5 minutes",
+        "txBitrateMinute": "Tx Bitrate over 1 minute",
+        "txPacketrateFiveMinute": "Tx Packet rate over 5 minutes",
+        "txPacketrateMinute": "Tx Packet rate over 1 minute"
+    },
+    "AccountMagicWANConnectorMetricsAdaptiveGroupsDimensions": {
+        "datetime": "",
+        "datetimeFiveMinutes": "The date and time the event occurred at the edge truncated to a multiple of 5 minutes",
+        "datetimeMinute": "The date and time the event occurred at the edge truncated to the minute",
+        "mconnInterfaceName": "Name of connector interface",
+        "mconnInterfaceType": "Interface type LAN, WAN or IPSEC",
+        "mconnSiteID": "Customer site identifier"
+    },
+    "AccountMagicWANConnectorMetricsAdaptiveGroupsFilter_InputObject": {},
+    "AccountMagicWANConnectorMetricsAdaptiveGroupsMax": {
+        "interfaceCount": "Number of interfaces of a given Type"
+    },
+    "AccountMagicWANConnectorMetricsAdaptiveGroupsOrderBy": {},
     "AccountMnmFlowDataAdaptiveGroups": {
         "avg": "The average of values for a metric per dimension",
         "dimensions": "List of dimensions to group by",
@@ -2136,6 +2164,7 @@
     },
     "AccountRumWebVitalsEventsAdaptiveOrderBy": {},
     "AccountSettings": {
+        "MagicWANConnectorMetricsAdaptiveGroups": "",
         "accessLoginRequestsAdaptiveGroups": "",
         "cdnNetworkAnalyticsAdaptiveGroups": "",
         "dosdAttackAnalyticsGroups": "",
@@ -2619,6 +2648,28 @@
         "notOlderThan": "Cannot reach for data beyond this distance in the past (seconds)"
     },
     "Time": {},
+    "ZoneApiGatewayMatchedSessionIDsAdaptiveGroups": {
+        "avg": "",
+        "count": "Number of events with Session Identifiers",
+        "dimensions": "List of dimensions to group by"
+    },
+    "ZoneApiGatewayMatchedSessionIDsAdaptiveGroupsAvg": {
+        "sampleInterval": "Average sample interval"
+    },
+    "ZoneApiGatewayMatchedSessionIDsAdaptiveGroupsDimensions": {
+        "apiGatewayMatchedSessionIdentifierName": "Name of session identifier",
+        "apiGatewayMatchedSessionIdentifierType": "Type of session identifier. Possible values are header | cookie",
+        "date": "",
+        "datetime": "",
+        "datetimeDay": "",
+        "datetimeFifteenMinutes": "",
+        "datetimeFiveMinutes": "",
+        "datetimeHalfOfHour": "",
+        "datetimeHour": "",
+        "datetimeMinute": ""
+    },
+    "ZoneApiGatewayMatchedSessionIDsAdaptiveGroupsFilter_InputObject": {},
+    "ZoneApiGatewayMatchedSessionIDsAdaptiveGroupsOrderBy": {},
     "ZoneApiRequestSequencesGroups": {
         "aggArgMax": "",
         "aggMax": "",
@@ -3549,6 +3600,7 @@
     "ZoneNelReportsAdaptiveGroupsFilter_InputObject": {},
     "ZoneNelReportsAdaptiveGroupsOrderBy": {},
     "ZoneSettings": {
+        "apiGatewayMatchedSessionIDsAdaptiveGroups": "",
         "apiRequestSequencesGroups": "",
         "cacheReserveOperationsAdaptiveGroups": "",
         "cacheReserveStorageAdaptiveGroups": "",
@@ -3787,6 +3839,7 @@
     "ZoneZarazTriggersAdaptiveGroupsFilter_InputObject": {},
     "ZoneZarazTriggersAdaptiveGroupsOrderBy": {},
     "account": {
+        "MagicWANConnectorMetricsAdaptiveGroups": "Beta. Magic WAN Connector Metrics",
         "accessLoginRequestsAdaptiveGroups": "Access login requests",
         "accountTag": "",
         "cdnNetworkAnalyticsAdaptiveGroups": "Network analytics data for Cloudflare CDN traffic",
@@ -3866,6 +3919,7 @@
         "zones": ""
     },
     "zone": {
+        "apiGatewayMatchedSessionIDsAdaptiveGroups": "Beta. Aggregated count of Session Identifier matches",
         "apiRequestSequencesGroups": "Sequences of API endpoint operations. Sequences are grouped by AuthID and currently ranked by correlation score. Correlation scores are estimated over a 24 hour window and are current to within 10 minutes",
         "cacheReserveOperationsAdaptiveGroups": "Beta. Cache Reserve operations with adaptive sampling",
         "cacheReserveStorageAdaptiveGroups": "Beta. Cache Reserve storage with adaptive sampling",
