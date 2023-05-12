@@ -2284,6 +2284,7 @@
         "videoPlaybackEventsAdaptiveGroups": "",
         "videoQualityEventsAdaptiveGroups": "",
         "warpDeviceAdaptiveGroups": "",
+        "workerPlacementAdaptiveGroups": "",
         "workersAnalyticsEngineAdaptiveGroups": "",
         "workersInvocationsAdaptive": "",
         "workersInvocationsScheduled": "",
@@ -2551,6 +2552,28 @@
     "AccountWarpDeviceAdaptiveGroupsOrderBy": {},
     "AccountWarpDeviceAdaptiveGroupsUniq": {
         "deviceIds": "Approximate count of unique deviceIds"
+    },
+    "AccountWorkerPlacementAdaptiveGroups": {
+        "dimensions": "List of dimensions to group by",
+        "sum": "The sum of values for a metric per dimension"
+    },
+    "AccountWorkerPlacementAdaptiveGroupsDimensions": {
+        "date": "Request timestamp, truncated to start of a day",
+        "datetime": "Request timestamp",
+        "datetimeHour": "Request timestamp, truncated to start of an hour",
+        "datetimeMinute": "Request timestamp, truncated to start of an minute",
+        "httpStatus": "Response status of worker",
+        "placementUsed": "1 if the request was processed using Smart Placement, 0 if it was processed in default mode",
+        "requestDurationBucketMin": "Bucket of request duration rounded down to nearest 10*2^n",
+        "requestDurationBucketMin100ms": "Bucket of request duration rounded down to nearest 100ms",
+        "scriptName": "The script name",
+        "scriptTag": "The unique tag of the script"
+    },
+    "AccountWorkerPlacementAdaptiveGroupsFilter_InputObject": {},
+    "AccountWorkerPlacementAdaptiveGroupsOrderBy": {},
+    "AccountWorkerPlacementAdaptiveGroupsSum": {
+        "requestDuration": "Sum of duration ms of requests measured at the data centers that receive the requests",
+        "requests": "Total number of requests"
     },
     "AccountWorkersAnalyticsEngineAdaptiveGroups": {
         "count": "The number of values for a metric per dimension",
@@ -4148,6 +4171,7 @@
         "videoPlaybackEventsAdaptiveGroups": "Beta. Aggregated video streaming playback event metrics with adaptive sampling",
         "videoQualityEventsAdaptiveGroups": "Beta. Aggregated video streaming quality change event metrics with adaptive sampling",
         "warpDeviceAdaptiveGroups": "Beta. Warp device health events with adaptive sampling",
+        "workerPlacementAdaptiveGroups": "Worker placement metrics",
         "workersAnalyticsEngineAdaptiveGroups": "Beta. Custom Events with adaptive sampling",
         "workersInvocationsAdaptive": "Beta. Workers invocations with adaptive sampling",
         "workersInvocationsScheduled": "Workers scheduled invocations",
